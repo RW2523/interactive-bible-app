@@ -27,8 +27,9 @@ class Settings(BaseSettings):
     frontend_dist: Path = PROJECT_ROOT / "frontend" / "dist"
     secret_key: str = "local-dev-secret-change-me"
     token_ttl_hours: int = 72
-    demo_password: str = "bible-demo"
+    demo_password: str = ""  # password of the seeded demo accounts; scripts/setup.sh writes a random one to .env
     allow_signup: bool = True
+    public_base_url: str = ""  # e.g. https://bible.example.org: the address share links use (default: this computer's network address)
     # Personal (single-user) mode: no sign-in. Requests made on this computer act as the owner account, which has full
     # (admin) access. Other devices on the network still sign in with an account unless single_user_trust_network is on.
     single_user_mode: bool = True

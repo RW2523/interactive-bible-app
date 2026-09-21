@@ -372,7 +372,7 @@ export default function BibleTimelineExplorer({ mapEvents, onClose, onOpenMapEve
             <button type="button" aria-pressed={testament === 'OT'} onClick={() => setTestament('OT')}>Old</button>
             <button type="button" aria-pressed={testament === 'NT'} onClick={() => setTestament('NT')}>New</button>
           </div>
-          <button type="button" className="secondary btn-sm" onClick={openStoryMode} disabled={!storyPool.length} title="A short narrated walk through the events you are viewing">
+          <button type="button" className="secondary btn-sm" onClick={openStoryMode} disabled={!storyPool.length} title="A short guided walk through the events you are viewing">
             <Film size={15} aria-hidden /> Story mode
           </button>
           <button type="button" className="icon-button" onClick={exportJson} aria-label="Download these events as a file" title="Download these events (JSON file)">
@@ -604,7 +604,7 @@ export default function BibleTimelineExplorer({ mapEvents, onClose, onOpenMapEve
         open={story.open}
         onClose={() => setStory((s) => ({ ...s, open: false }))}
         title={story.step === 'play' ? story.title : 'Story mode'}
-        description={story.step === 'intro' ? 'A short narrated walk through the events you are viewing — good for opening a class or a family devotion.' : undefined}
+        description={story.step === 'intro' ? 'A short guided walk through the events you are viewing, scene by scene — good for opening a class or a family devotion.' : undefined}
         icon={<Film size={20} />}
         size="md"
         busy={story.step === 'loading'}

@@ -2,6 +2,8 @@
   "name": "interactive-bible-app",
   "private": true,
   "version": "1.0.0",
+  "description": "Interactive Bible App web client",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",

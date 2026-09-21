@@ -38,14 +38,23 @@ command -v tesseract >/dev/null && echo "✓ tesseract (OCR for scanned PDFs)" |
 command -v pdftoppm >/dev/null && echo "✓ poppler" || echo "• poppler not found — needed for OCR (brew install poppler)"
 
 bold "2/7 Environment file"
+random_token() { "$PY" -c 'import secrets, sys; print(secrets.token_urlsafe(int(sys.argv[1])))' "$1"; }
+set_env() {  # set_env KEY VALUE: replace the KEY= line in .env, or add it
+  if grep -q "^$1=" .env; then sed -i.bak "s|^$1=.*|$1=$2|" .env && rm -f .env.bak; else printf '%s=%s\n' "$1" "$2" >> .env; fi
+}
 if [ ! -f .env ]; then
   cp .env.example .env
-  SECRET="$("$PY" -c 'import secrets; print(secrets.token_urlsafe(48))')"
-  sed -i.bak "s|^SECRET_KEY=.*|SECRET_KEY=${SECRET}|" .env && rm -f .env.bak
   echo "✓ created .env (add your GEMINI_API_KEY there)"
 else
   echo "✓ .env exists"
 fi
+# never keep a placeholder or a published default: random session key and sample-account password (values not shown)
+case "$(grep '^SECRET_KEY=' .env | cut -d= -f2-)" in
+  ""|change-me|local-dev-secret-change-me) set_env SECRET_KEY "$(random_token 48)"; echo "✓ generated SECRET_KEY" ;;
+esac
+case "$(grep '^DEMO_PASSWORD=' .env | cut -d= -f2-)" in
+  ""|bible-demo) set_env DEMO_PASSWORD "$(random_token 12)"; echo "✓ generated a password for the sample accounts (DEMO_PASSWORD in .env)" ;;
+esac
 
 bold "3/7 Python environment"
 if [ ! -x backend/.venv/bin/python ]; then "$PY" -m venv backend/.venv; fi
@@ -81,5 +90,6 @@ Next:
   2. Verify it:                      make check-gemini
   3. Start everything:               make start     (http://localhost:8000)
      or for development:             make dev       (http://localhost:5173)
-Demo users (password: bible-demo): admin@interactivebible.local · editor@interactivebible.local · member@interactivebible.local · outsider@interactivebible.local
+Sample accounts for other devices (password: DEMO_PASSWORD in .env): admin@interactivebible.local · editor@interactivebible.local ·
+member@interactivebible.local · outsider@interactivebible.local
 EOF

@@ -10,7 +10,7 @@ from interactive_bible.bible import books as B
 from interactive_bible.pipeline.detectors import grounded_span
 
 from .fakes import FakeCall, best_sentence
-from .support import EDITOR, VISIBLE, create_resource, insert_fake_verse_embeddings, link_by_ref, links_for, process_now, refs, sql, sql_one
+from .support import EDITOR, MEMBER, VISIBLE, auth_headers, create_resource, insert_fake_verse_embeddings, link_by_ref, links_for, process_now, refs, sql, sql_one
 
 
 def native(client, login, text: str, **fields) -> str:
@@ -289,7 +289,9 @@ def test_ac07_why_related_on_demand_uses_p09_and_is_stored(client, fake_llm):
     items = client.get("/v1/verses/ROM.8.28/related?limit=5").json()
     target = items[0]
     assert target["why_status"] == "pending"  # AI available: an explanation can be generated
-    first = client.get(f"/v1/verses/ROM.8.28/related/{target['ref']}/why").json()
+    visitor = client.get(f"/v1/verses/ROM.8.28/related/{target['ref']}/why").json()
+    assert visitor["status"] == "template" and visitor["why"] == target["why"] and not fake_llm.calls_for("P-09")  # no account: no Gemini call
+    first = client.get(f"/v1/verses/ROM.8.28/related/{target['ref']}/why", headers=auth_headers(MEMBER)).json()
     assert first["status"] == "generated" and first["why"] == "Both passages speak about God's faithful care for his people."
     assert first["provenance"]["prompt_id"] == "P-09"
     p09 = fake_llm.calls_for("P-09")[0]
@@ -303,7 +305,8 @@ def test_ac07_low_confidence_explanations_are_not_shown_for_cross_references(cli
     """AC-07 An explanation the model marks as unsupported (low confidence) must not replace the grounded vote template."""
     fake_llm.on("P-09", {"why_related": "These passages are not clearly connected by the supplied texts.", "confidence": 0.2})
     target = client.get("/v1/verses/ROM.8.28/related?limit=5").json()[0]
-    client.get(f"/v1/verses/ROM.8.28/related/{target['ref']}/why")
+    client.get(f"/v1/verses/ROM.8.28/related/{target['ref']}/why", headers=auth_headers(MEMBER))
+    assert len(fake_llm.calls_for("P-09")) == 1
     again = next(i for i in client.get("/v1/verses/ROM.8.28/related?limit=5").json() if i["ref"] == target["ref"])
     assert again["why"].startswith("Listed as a cross-reference by")
 

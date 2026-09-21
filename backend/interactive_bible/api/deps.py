@@ -1,6 +1,7 @@
 """FastAPI dependencies: DB session, viewer resolution, RBAC guards, rate limits."""
 from __future__ import annotations
 
+import socket
 from typing import Iterator
 
 from fastapi import Depends, HTTPException, Request
@@ -33,6 +34,29 @@ def token_from_request(request: Request) -> str | None:
 def is_local_client(request: Request) -> bool:
     host = (request.client.host if request.client else "") or ""
     return host in ("::1", "localhost") or host.startswith("127.") or host.startswith("::ffff:127.")
+
+
+def lan_address() -> str | None:
+    """This computer's address on the local network (the UDP probe sends no packets), or None when offline."""
+    try:
+        with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as probe:
+            probe.connect(("10.255.255.255", 1))
+            address = probe.getsockname()[0]
+    except OSError:
+        return None
+    return None if address.startswith("127.") or address == "0.0.0.0" else address
+
+
+def share_base(request: Request) -> tuple[str | None, str | None]:
+    """(base URL, source) for links meant for other people: PUBLIC_BASE_URL, else this computer's network address."""
+    configured = get_settings().public_base_url.strip().rstrip("/")
+    if configured:
+        return configured, "config"
+    address = lan_address()
+    if not address:
+        return None, None
+    port = request.url.port
+    return f"{request.url.scheme}://{address}{f':{port}' if port else ''}", "lan"
 
 
 def owner_access(request: Request) -> bool:

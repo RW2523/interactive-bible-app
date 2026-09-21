@@ -1,7 +1,7 @@
 PY := backend/.venv/bin/python
 CLI := cd backend && PYTHONPATH=. .venv/bin/python -m interactive_bible.cli
 
-.PHONY: help setup start dev stop status db-start db-stop bootstrap seed reseed check-gemini embed test eval eval-ai build typecheck fetch-data demo-media reset-demo backup restore
+.PHONY: help setup start dev stop status db-start db-stop bootstrap seed reseed check-gemini embed test eval eval-ai build typecheck fetch-data demo-media reset-demo backup restore demo-password new-demo-password
 
 help:
 	@echo "make setup         one-shot local setup (venv, npm, Postgres, Bible corpus, demo content)"
@@ -11,6 +11,8 @@ help:
 	@echo "make check-gemini  verify GEMINI_API_KEY, models, JSON generation and embeddings"
 	@echo "make embed         build the Bible verse embedding index now (resumable)"
 	@echo "make seed          register + process the demo resources"
+	@echo "make new-demo-password  new password for the sample accounts (saved as DEMO_PASSWORD in .env)"
+	@echo "make demo-password      apply DEMO_PASSWORD from .env to the sample accounts"
 	@echo "make reset-demo    wipe resources/mappings and re-seed the demo"
 	@echo "make test          backend test suite (uses the interactive_bible_test database)"
 	@echo "make eval          evaluation harness on the gold set (deterministic or AI when a key is set)"
@@ -55,6 +57,12 @@ reset-demo:
 
 check-gemini:
 	$(CLI) check-gemini
+
+demo-password:
+	$(CLI) demo-password
+
+new-demo-password:
+	$(CLI) demo-password --new
 
 embed:
 	$(CLI) embed-bible --all

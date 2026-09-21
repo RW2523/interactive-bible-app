@@ -414,6 +414,9 @@ export interface Viewer {
   /** "single_user": personal mode on this computer — no sign-in, the owner account has full access */
   auth_mode?: "single_user" | "accounts";
   allow_signup?: boolean;
+  /** Base for links other people open: PUBLIC_BASE_URL ("config") or this computer's network address ("lan"). */
+  share_base_url?: string | null;
+  share_base_url_source?: "config" | "lan" | null;
 }
 
 export interface AskResponse {

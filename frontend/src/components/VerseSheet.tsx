@@ -1,12 +1,14 @@
 import {
   ArrowRight, BookOpen, CalendarDays, ChevronDown, ChevronRight, Copy, ExternalLink, Headphones, Info, LayoutGrid, Library, Link2, Loader2, MapPin, MessageCircleQuestion,
-  Network, PenLine, PlayCircle, Plus, Send, Sparkles, Tags, Users, X, type LucideIcon,
+  LogIn, Network, PenLine, PlayCircle, Plus, Send, Sparkles, Tags, Users, X, type LucideIcon,
 } from "lucide-react";
 import { useEffect, useRef, useState, type KeyboardEvent, type ReactNode } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "sonner";
 import { useAsk, useExploreByVerse, useScriptureMap, useVerseIntelligence, useVerseResources, useWhy } from "../api/hooks";
 import type { MediaKind, RelatedVerse, ResourceCardData, VerseIntelligence } from "../api/types";
+import { useAuth } from "../auth/AuthContext";
+import { shareableUrl } from "../lib/share";
 import { cn } from "../lib/utils";
 import { copyText, readHref } from "../utils/format";
 import { AnswerCard, AnswerSkeleton } from "./AnswerCard";
@@ -87,7 +89,7 @@ export function VerseIntelligencePanel({ refId, translation, onClose, variant }:
     else toast.error("Couldn't copy the verse");
   };
   const copyLink = async () => {
-    const ok = await copyText(`${window.location.origin}${readHref(d?.verse.ref || refId)}`);
+    const ok = await copyText(shareableUrl(readHref(d?.verse.ref || refId)));
     if (ok) toast.success("Link copied");
     else toast.error("Couldn't copy the link");
   };
@@ -676,6 +678,8 @@ function AskPanel({ refId, displayRef, translation, aiAvailable }: { refId: stri
   const [asked, setAsked] = useState<string | null>(null);
   const ask = useAsk();
   const navigate = useNavigate();
+  const location = useLocation();
+  const { viewer } = useAuth();
   const resultRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     if (ask.isPending || ask.data || ask.error) resultRef.current?.scrollIntoView({ block: "nearest", behavior: "smooth" });
@@ -688,6 +692,17 @@ function AskPanel({ refId, displayRef, translation, aiAvailable }: { refId: stri
         title="Ask AI isn't set up yet"
         description="Add a Google Gemini API key on the server (GEMINI_API_KEY in the .env file), then restart the app."
         action={<button type="button" className={buttonClass("secondary", "sm")} onClick={() => navigate("/admin/system")}>Open System settings</button>}
+      />
+    );
+  }
+  if (viewer && !viewer.authenticated) {
+    return (
+      <EmptyState
+        compact
+        icon={LogIn}
+        title="Sign in to ask AI"
+        description={`Ask AI answers questions about ${displayRef} from the passage, related Scripture and the library, with sources. It needs an account because each answer uses the app's Gemini key.`}
+        action={<button type="button" className={buttonClass("primary", "sm")} onClick={() => navigate("/login", { state: { from: location.pathname + location.search } })}>Sign in</button>}
       />
     );
   }

@@ -39,6 +39,8 @@ settings.cache_dir.mkdir(parents=True, exist_ok=True)
 settings.gemini_api_key = ""  # all AI in tests is faked
 settings.embed_bible_on_start = False
 settings.single_user_mode = False  # tests exercise accounts; personal mode has its own tests (test_single_user_mode.py)
+settings.demo_password = "test-demo-password"  # demo accounts' password in the test database (never the one in .env)
+settings.public_base_url = ""
 
 import httpx  # noqa: E402
 

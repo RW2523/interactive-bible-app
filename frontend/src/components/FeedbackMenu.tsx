@@ -2,6 +2,7 @@ import { Flag, MoreHorizontal, ThumbsDown, ThumbsUp, Timer, BookX, Quote } from 
 import { useState } from "react";
 import { toast } from "sonner";
 import { useFeedback } from "../api/hooks";
+import { useAuth } from "../auth/AuthContext";
 import { cn } from "../lib/utils";
 import { Button } from "./ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "./ui/dialog";
@@ -19,6 +20,7 @@ const OPTIONS = [
 
 export function FeedbackMenu({ objectType, objectId, small = true }: { objectType: ObjectType; objectId: string | null | undefined; small?: boolean }) {
   const feedback = useFeedback();
+  const { isEditor } = useAuth();
   const [reportOpen, setReportOpen] = useState(false);
   const [note, setNote] = useState("");
   if (!objectId) return null;
@@ -30,7 +32,7 @@ export function FeedbackMenu({ objectType, objectId, small = true }: { objectTyp
         onSuccess: (r) =>
           toast.success(
             r?.status === "duplicate_ignored" ? "We already have your report" : kind === "helpful" ? "Thanks for the feedback" : "Thanks — this will be reviewed",
-            kind === "helpful" || r?.status === "duplicate_ignored" ? undefined : { description: "It appears in Admin → User feedback." },
+            kind === "helpful" || r?.status === "duplicate_ignored" ? undefined : { description: isEditor ? "It appears in Admin → Feedback." : "An editor will look at it." },
           ),
         onError: (e) => toast.error("Couldn't send feedback", { description: (e as Error).message }),
       },

@@ -32,7 +32,7 @@ from ..services.embeddings import embedding_progress, ensure_embedding_job
 from ..services.resources import Forbidden
 from . import schemas as S
 from .util import json_safe
-from .deps import client_key, get_session, get_viewer, owner_access, rate_limit, require_editor, require_user
+from .deps import client_key, get_session, get_viewer, owner_access, rate_limit, require_editor, require_user, share_base
 
 log = logging.getLogger("interactive_bible.api")
 
@@ -40,7 +40,14 @@ log = logging.getLogger("interactive_bible.api")
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     setup_logging()
+    from ..cli import PUBLISHED_DEMO_PASSWORDS
     from ..db import session_scope
+
+    settings = get_settings()
+    if settings.secret_key in ("change-me", "local-dev-secret-change-me"):
+        log.warning("SECRET_KEY is a placeholder: sign-ins and file links can be forged. Run scripts/setup.sh or set a random SECRET_KEY in .env.")
+    if settings.demo_password in PUBLISHED_DEMO_PASSWORDS:
+        log.warning("DEMO_PASSWORD is a published default: set a new one in .env (or re-run scripts/setup.sh) and restart.")
 
     try:
         with session_scope() as s:
@@ -169,8 +176,10 @@ def me(request: Request, viewer: Viewer = Depends(get_viewer), session: Session 
     if viewer.is_authenticated:
         church = (fetch_one(session, "SELECT church FROM users WHERE id = :id", id=viewer.user_id) or {}).get("church")
     single_user = owner_access(request) and viewer.user_id == get_settings().owner_user_id
+    base, source = share_base(request)
     return {"authenticated": viewer.is_authenticated, **viewer.to_dict(), "church": church,
-            "auth_mode": "single_user" if single_user else "accounts", "allow_signup": get_settings().allow_signup}
+            "auth_mode": "single_user" if single_user else "accounts", "allow_signup": get_settings().allow_signup,
+            "share_base_url": base, "share_base_url_source": source}
 
 
 # ----------------------------------------------------------------------------- bible
@@ -223,7 +232,8 @@ def verse_related(ref: str, limit: int = Query(24, le=60), session: Session = De
 
 @v1.get("/verses/{ref}/related/{to_ref}/why", tags=["verses"], dependencies=[Depends(rate_limit("why", 60))])
 def why_related(ref: str, to_ref: str, session: Session = Depends(get_session), viewer: Viewer = Depends(get_viewer)):
-    return related.why_related_now(session, viewer, intelligence.resolve_ref(ref), intelligence.resolve_ref(to_ref))
+    # visitors who aren't signed in see stored explanations; only accounts spend Gemini calls on new ones
+    return related.why_related_now(session, viewer, intelligence.resolve_ref(ref), intelligence.resolve_ref(to_ref), generate=viewer.is_authenticated)
 
 
 # ----------------------------------------------------------------------------- resources
@@ -370,7 +380,7 @@ def search(body: S.SearchIn, session: Session = Depends(get_session), viewer: Vi
 
 
 @v1.post("/ask", tags=["ask"])
-def ask(body: S.AskIn, request: Request, session: Session = Depends(get_session), viewer: Viewer = Depends(get_viewer)):
+def ask(body: S.AskIn, request: Request, session: Session = Depends(get_session), viewer: Viewer = Depends(require_user)):
     from ..security import rate_limiter
 
     if not rate_limiter.allow(f"ask:{client_key(request, viewer)}", get_settings().ask_rate_limit_per_minute):

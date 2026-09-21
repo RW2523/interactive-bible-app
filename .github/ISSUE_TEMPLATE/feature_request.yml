@@ -1,0 +1,22 @@
+name: Feature request
+description: Suggest an idea or improvement
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you like to do?
+      description: Describe the need from a reader's, preacher's or admin's point of view.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How could the app help?
+      description: Your idea for a solution, and any alternatives you considered.
+  - type: checkboxes
+    id: local-first
+    attributes:
+      label: Local-first
+      options:
+        - label: This works without adding a new cloud service (Gemini is the only remote dependency).

@@ -3,6 +3,7 @@ import { createContext, useCallback, useContext, useMemo, type ReactNode } from 
 import { api, setToken } from "../api/client";
 import { useMe } from "../api/hooks";
 import type { Viewer } from "../api/types";
+import { rememberShareBase } from "../lib/share";
 
 export interface SignupInput {
   email: string;
@@ -35,6 +36,7 @@ const Ctx = createContext<AuthState | null>(null);
 export function AuthProvider({ children }: { children: ReactNode }) {
   const qc = useQueryClient();
   const me = useMe();
+  rememberShareBase(me.data);
   const login = useCallback(
     async (email: string, password: string) => {
       const res = await api<{ token: string }>("/v1/auth/login", { method: "POST", body: { email, password } });
