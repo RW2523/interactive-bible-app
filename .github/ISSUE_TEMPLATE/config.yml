@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: User manual
+    url: https://github.com/RW2523/interactive-bible-app/blob/main/docs/user-manual.md
+    about: How to use Read, Explore, Sermon Studio, YouTube links and the admin tools.
+  - name: Report a security problem
+    url: https://github.com/RW2523/interactive-bible-app/security/advisories/new
+    about: Please report vulnerabilities privately.
