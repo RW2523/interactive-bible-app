@@ -23,7 +23,8 @@ make stop && make start
 | `OWNER_USER_ID` | `usr_admin` | The account that personal mode signs in as. |
 | `SINGLE_USER_TRUST_NETWORK` | `false` | Also give owner access to *other devices* that can reach the port. Only on a network you trust — anyone who can reach it gets full access and uses your Gemini key. |
 | `ALLOW_SIGNUP` | `true` | Let visitors on other devices create member accounts on `/signup`. |
-| `DEMO_PASSWORD` | `bible-demo` | Password of the seeded demo accounts (`admin@`, `editor@`, `member@`, `outsider@interactivebible.local`), used from other devices or with personal mode off. |
+| `DEMO_PASSWORD` | *(random, set by setup)* | Shared password of the sample accounts (`admin@`, `editor@`, `member@`, `outsider@interactivebible.local`), used from other devices or with personal mode off. `make new-demo-password` replaces it with a new random one and applies it at once; after setting your own, run `make demo-password`. Empty: the sample accounts can't be signed into. |
+| `PUBLIC_BASE_URL` | *(empty)* | The address share links use (sermon share pages, verse and chapter links), e.g. `https://bible.example.org`. Empty: links copied on the computer itself use its address on your network instead of `localhost`. |
 | `SECRET_KEY` | *(random, set by setup)* | Signs session tokens and file links. Keep it secret; changing it signs everyone out. |
 | `TOKEN_TTL_HOURS` | `72` | How long a sign-in lasts. |
 | `CORS_ORIGINS` | `http://localhost:5173,…` | Origins allowed to call the API (only the Vite dev server needs this). |
@@ -79,6 +80,7 @@ Model names accept Google's `-latest` aliases. If a model is unavailable, the fa
 | `TEST_DATABASE_URL` | `…/interactive_bible_test` | Used only by `make test`; must differ from `DATABASE_URL` |
 | `PG_PORT` / `PG_BIN` | `54329` / auto | Local PostgreSQL port and binaries used by `scripts/pg.sh` |
 | `API_PORT` / `WEB_PORT` | `8000` / `5173` | App port and Vite dev-server port |
+| `API_HOST` | `0.0.0.0` | Where `make start` listens: `0.0.0.0` lets phones and other computers on your network open the app (they still sign in); `127.0.0.1` keeps it to this computer |
 | `STORAGE_DIR` | `storage/` | Uploaded files, sermon media, story videos |
 | `CACHE_DIR` | `.data/cache/` | Local caches |
 

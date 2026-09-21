@@ -8,6 +8,7 @@ import time
 import pytest
 
 from interactive_bible import security
+from interactive_bible.config import get_settings
 
 from .support import (
     ADMIN,
@@ -291,7 +292,7 @@ def test_processing_run_records_versions_stages_and_metrics(library, client):
 def test_login_endpoint_me_and_logout(library, client):
     bad = client.post("/v1/auth/login", json={"email": MEMBER, "password": "wrong"})
     assert bad.status_code == 401
-    ok = client.post("/v1/auth/login", json={"email": MEMBER.upper(), "password": "bible-demo"})
+    ok = client.post("/v1/auth/login", json={"email": MEMBER.upper(), "password": get_settings().demo_password})
     assert ok.status_code == 200 and ok.json()["user"]["role"] == "member" and "ibible_token" in ok.cookies
     me = client.get("/v1/auth/me", headers={"Authorization": f"Bearer {ok.json()['token']}"}).json()
     assert me["authenticated"] is True and me["email"] == MEMBER and me["organization_ids"] == ["org_grace"]
@@ -343,8 +344,11 @@ def test_system_status_health_and_metrics(library, client):
     assert doctor["configured"] is False and doctor["ok"] is False
 
 
-def test_ask_requires_ai_and_drops_ungrounded_citations(library, client, no_llm):
-    resp = client.post("/v1/ask", json={"ref": "ROM.8.28", "question": "What does this promise mean?"})
+def test_ask_requires_an_account_and_ai(library, client, no_llm):
+    body = {"ref": "ROM.8.28", "question": "What does this promise mean?"}
+    anonymous = client.post("/v1/ask", json=body)
+    assert anonymous.status_code == 401  # visitors who aren't signed in can't spend the owner's Gemini budget
+    resp = client.post("/v1/ask", json=body, headers=auth_headers(MEMBER))
     assert resp.status_code == 403 and "Gemini" in resp.json()["detail"]
 
 

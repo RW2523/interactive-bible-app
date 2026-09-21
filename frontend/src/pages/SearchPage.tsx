@@ -1,12 +1,13 @@
 import { useQuery } from "@tanstack/react-query";
 import {
-  ArrowRight, BookOpen, History, Library, Loader2, MessageCircleQuestion, Search, SearchX, Sparkles, Tags, Users, Video, X, type LucideIcon,
+  ArrowRight, BookOpen, History, Library, Loader2, LogIn, MessageCircleQuestion, Search, SearchX, Sparkles, Tags, Users, Video, X, type LucideIcon,
 } from "lucide-react";
 import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
-import { Link, useSearchParams } from "react-router-dom";
+import { Link, useLocation, useSearchParams } from "react-router-dom";
 import { api } from "../api/client";
 import { useAsk, useBooks, useSearch } from "../api/hooks";
 import type { Book, SearchResponse, SearchVerse } from "../api/types";
+import { useAuth } from "../auth/AuthContext";
 import { AnswerCard, AnswerSkeleton } from "../components/AnswerCard";
 import { buttonClass, EmptyState, FilterChip, PageContainer, PageHeader, SegmentedControl, Skeleton } from "../components/page";
 import { ResourceCard } from "../components/ResourceCard";
@@ -385,6 +386,9 @@ function VerseResult({ v }: { v: SearchVerse }) {
 function AskCard({ d, query, autoAsk, books }: { d: SearchResponse; query: string; autoAsk: boolean; books: Book[] | undefined }) {
   const aiConfigured = useAiConfigured();
   const ask = useAsk();
+  const { viewer } = useAuth();
+  const location = useLocation();
+  const signedOut = !!viewer && !viewer.authenticated; // Ask AI needs an account (it uses the app's Gemini key)
   const candidates = useMemo(() => {
     const list: { ref: string; label: string }[] = [];
     d.parsed.explicit_refs.forEach((r) => {
@@ -410,11 +414,11 @@ function AskCard({ d, query, autoAsk, books }: { d: SearchResponse; query: strin
   };
 
   useEffect(() => {
-    if (!autoAsk || !aiConfigured || !candidates[0] || query.trim().length < 3) return;
+    if (!autoAsk || !aiConfigured || signedOut || !candidates[0] || query.trim().length < 3) return;
     if (autoFired.current) return; // once per question — changing filters never re-asks
     autoFired.current = true;
     run(candidates[0].ref);
-  }, [autoAsk, aiConfigured, candidates, query]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [autoAsk, aiConfigured, signedOut, candidates, query]); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (!aiConfigured || candidates.length === 0 || query.trim().length < 3) return null;
 
@@ -443,12 +447,12 @@ function AskCard({ d, query, autoAsk, books }: { d: SearchResponse; query: strin
       <div className="min-w-0 flex-1">
         <p className="font-semibold text-ink">Want a direct answer?</p>
         <p className="mt-0.5 text-sm/relaxed text-ink-2">
-          Ask AI answers “{query.length > 70 ? `${query.slice(0, 70)}…` : query}” from a passage and your library, with sources. About 10 seconds.
+          {signedOut ? "Sign in and " : ""}Ask AI answers “{query.length > 70 ? `${query.slice(0, 70)}…` : query}” from a passage and your library, with sources. About 10 seconds.
         </p>
         {ask.error && <div className="mt-3"><ErrorState error={ask.error} onRetry={() => run(ref)} /></div>}
       </div>
       <div className="flex shrink-0 flex-col gap-2 sm:items-end">
-        {candidates.length > 1 && (
+        {candidates.length > 1 && !signedOut && (
           <label className="flex items-center gap-2 text-xs text-ink-3">
             Based on
             <select className="select h-8 w-auto rounded-lg py-0 pr-8 pl-2.5 text-[13px]" value={ref} onChange={(e) => setRef(e.target.value)} aria-label="Passage to ground the answer in">
@@ -456,9 +460,15 @@ function AskCard({ d, query, autoAsk, books }: { d: SearchResponse; query: strin
             </select>
           </label>
         )}
-        <button type="button" onClick={() => run(ref)} className={buttonClass("primary")}>
-          <Sparkles aria-hidden /> Ask AI{candidates.length === 1 ? ` about ${candidates[0].label}` : ""}
-        </button>
+        {signedOut ? (
+          <Link to="/login" state={{ from: location.pathname + location.search }} className={buttonClass("primary")}>
+            <LogIn aria-hidden /> Sign in to ask
+          </Link>
+        ) : (
+          <button type="button" onClick={() => run(ref)} className={buttonClass("primary")}>
+            <Sparkles aria-hidden /> Ask AI{candidates.length === 1 ? ` about ${candidates[0].label}` : ""}
+          </button>
+        )}
       </div>
     </section>
   );

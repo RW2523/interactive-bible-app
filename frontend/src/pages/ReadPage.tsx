@@ -12,6 +12,7 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "../components/ui/toolti
 import { ErrorState, useMediaQuery } from "../components/ui";
 import { VerseIntelligencePanel } from "../components/VerseSheet";
 import { pushRecent } from "../lib/recent";
+import { shareableUrl } from "../lib/share";
 import { cn } from "../lib/utils";
 import { copyText } from "../utils/format";
 
@@ -188,7 +189,7 @@ export function ReadPage() {
     else toast.error("Couldn't copy the verse");
   };
   const shareSelection = async () => {
-    const url = `${window.location.origin}/read/${book}/${chapterNo}${selected ? `?v=${selected}` : ""}`;
+    const url = shareableUrl(`/read/${book}/${chapterNo}${selected ? `?v=${selected}` : ""}`);
     if (typeof navigator.share === "function") {
       try {
         await navigator.share({ title: selectionLabel, text: `“${selectionText()}” — ${selectionLabel}`, url });

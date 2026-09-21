@@ -1,4 +1,5 @@
 import { useMutation, useMutationState, useQuery, useQueryClient, type MutationKey } from "@tanstack/react-query";
+import { shareableUrl, type ShareBase } from "@/lib/share";
 import { useMemo } from "react";
 import { toast } from "sonner";
 import { api, ApiError } from "@/api/client";
@@ -165,7 +166,7 @@ export function sharePathFromDetail(detail: Pick<SermonDetail, "outreach"> | nul
   return o?.is_public && o.share_slug ? o.share_path || `/share/${o.share_slug}` : null;
 }
 
-export const absoluteUrl = (path: string) => new URL(path, window.location.origin).href;
+export const absoluteUrl = (path: string, info?: ShareBase | null) => shareableUrl(path, info ?? undefined);
 
 /** Suggestions live in the query cache (keyed by draft) so they survive stage switches. */
 export const useStoredSuggestions = (id: string, draftId: string | undefined) =>

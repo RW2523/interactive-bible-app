@@ -117,7 +117,8 @@ def test_long_audio_is_transcribed_in_chunks_and_joined_in_order(client, login, 
     assert resp.status_code == 201, resp.text
     assert resp.json()["input"]["meta"]["chunks"] == 3  # 0-8 s, 8-16 s, 16-20 s
     calls = fake_llm.calls_for("P-00")
-    assert all("LANGUAGE_HINT: es" in c.text for c in calls) and calls[0].line("CLIP_DURATION_SECONDS") == "8.0" and calls[-1].line("CLIP_DURATION_SECONDS") == "4.0"
+    assert all("LANGUAGE_HINT: es" in c.text for c in calls) and calls[0].line("CLIP_DURATION_SECONDS") == "8.0"
+    assert abs(float(calls[-1].line("CLIP_DURATION_SECONDS")) - 4.0) < 0.25  # the remainder; MP3 frame padding varies by ffmpeg build
     # one P-00 per chunk; byte-identical chunks (here: silence) may be served from the per-chunk cache instead of paying again
     statuses = [r["status"] for r in sql("SELECT status FROM llm_calls WHERE prompt_id = 'P-00' ORDER BY id")]
     assert len(statuses) == 3 and statuses.count("ok") == len(calls) and set(statuses) <= {"ok", "cached"}

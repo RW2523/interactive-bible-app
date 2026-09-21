@@ -155,18 +155,20 @@ def explain_relationship(relationship_id: int) -> dict[str, Any]:
     return {"relationship_id": relationship_id, "confidence": conf}
 
 
-def why_related_now(session: Session, viewer: Viewer, from_ref: tuple[int, int], to_ref: tuple[int, int]) -> dict[str, Any]:
+def why_related_now(session: Session, viewer: Viewer, from_ref: tuple[int, int], to_ref: tuple[int, int], generate: bool = True) -> dict[str, Any]:
+    """Explain a related passage: the stored explanation, else a new P-09 one when ``generate`` (else the evidence template)."""
     items = related_verses(session, viewer, from_ref[0], from_ref[1], limit=60)
     item = next((i for i in items if B.parse_canonical_range(i["ref"]) == to_ref), None)
     llm = get_llm()
+    ai = generate and llm.available
     if item is None:
-        if not llm.available:
+        if not ai:
             return {"why": None, "status": "unavailable", "grounded_in": []}
         why, conf, prov = _explain(from_ref[0], from_ref[1], to_ref[0], to_ref[1], "semantic_similarity", "")
         return {"why": why if conf >= MIN_EXPLANATION_CONFIDENCE else "The connection between these passages is weak based on their texts.", "confidence": conf, "status": "generated", "provenance": prov, "relationship": "semantic_similarity"}
     if item["why_status"] == "ready":
         return {"why": item["why"], "confidence": item["why_confidence"], "status": "ready", "relationship": item["relationship"], "sources": item["sources"]}
-    if not llm.available:
+    if not ai:
         return {"why": item["why"], "confidence": None, "status": "template", "relationship": item["relationship"], "sources": item["sources"]}
     evidence = ""
     if "co_discussed" in item["sources"]:

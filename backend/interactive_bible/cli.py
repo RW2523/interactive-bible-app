@@ -7,6 +7,7 @@
   embed-bible        embed Bible verses with Gemini (resumable; --max-batches N)
   check-gemini       verify the Gemini key, models, JSON generation and embeddings
   create-user        create a user: --email --name --role --password [--org]
+  demo-password      apply DEMO_PASSWORD from .env to the sample accounts (--new: generate one, save it in .env, apply it)
   eval               run the evaluation harness (see eval/run_eval.py)
 """
 from __future__ import annotations
@@ -14,6 +15,7 @@ from __future__ import annotations
 import argparse
 import json
 import logging
+import secrets
 import sys
 from pathlib import Path
 
@@ -38,22 +40,51 @@ def cmd_migrate(_: argparse.Namespace) -> None:
     print("applied:", migrate() or "up to date")
 
 
+PUBLISHED_DEMO_PASSWORDS = {"bible-demo"}  # shipped as a default in public versions: known to everyone
+ENV_FILE = PROJECT_ROOT / ".env"
+
+
 def ensure_users() -> None:
+    """Demo organisation + accounts. Their password is DEMO_PASSWORD (setup generates one). Without it, new accounts get an
+    unguessable password and existing ones keep theirs; a password change never touches the owner's name or profile."""
     from .security import hash_password, verify_password
 
     password = get_settings().demo_password
+    if password in PUBLISHED_DEMO_PASSWORDS:
+        log.warning("DEMO_PASSWORD is a published default: anyone who can reach the app can sign in as admin. "
+                    "Set a new DEMO_PASSWORD in .env or re-run scripts/setup.sh, then restart.")
     with session_scope() as s:
         execute(s, "INSERT INTO organizations (id, name) VALUES (:id, :name) ON CONFLICT DO NOTHING", id=DEMO_ORG[0], name=DEMO_ORG[1])
         for uid, email, name, role, in_org in DEMO_USERS:
             existing = fetch_one(s, "SELECT email, password_hash FROM users WHERE id = :id", id=uid)
             if not existing:
-                execute(s, "INSERT INTO users (id, email, display_name, password_hash, role) VALUES (:id, :e, :n, :p, :r)", id=uid, e=email, n=name, p=hash_password(password), r=role)
-            elif existing["email"] != email or not verify_password(password, existing["password_hash"]):
-                # demo accounts follow the configured demo email/password (e.g. after a rename or a DEMO_PASSWORD change)
-                execute(s, "UPDATE users SET email = :e, display_name = :n, role = :r, password_hash = :p WHERE id = :id",
-                        id=uid, e=email, n=name, r=role, p=hash_password(password))
+                execute(s, "INSERT INTO users (id, email, display_name, password_hash, role) VALUES (:id, :e, :n, :p, :r)",
+                        id=uid, e=email, n=name, p=hash_password(password or secrets.token_urlsafe(32)), r=role)
+            else:
+                if existing["email"] != email:  # demo accounts follow the configured demo emails (e.g. after a rename)
+                    execute(s, "UPDATE users SET email = :e, display_name = :n, role = :r WHERE id = :id", id=uid, e=email, n=name, r=role)
+                if password and not verify_password(password, existing["password_hash"]):  # a DEMO_PASSWORD change
+                    execute(s, "UPDATE users SET password_hash = :p WHERE id = :id", id=uid, p=hash_password(password))
             if in_org:
                 execute(s, "INSERT INTO organization_members (organization_id, user_id) VALUES (:o, :u) ON CONFLICT DO NOTHING", o=DEMO_ORG[0], u=uid)
+
+
+def _save_env_value(key: str, value: str) -> None:
+    """Set KEY=value in .env, keeping every other line as it is."""
+    lines = ENV_FILE.read_text().splitlines() if ENV_FILE.exists() else []
+    found = any(line.startswith(f"{key}=") for line in lines)
+    lines = [f"{key}={value}" if line.startswith(f"{key}=") else line for line in lines] + ([] if found else [f"{key}={value}"])
+    ENV_FILE.write_text("\n".join(lines) + "\n")
+
+
+def cmd_demo_password(args: argparse.Namespace) -> None:
+    settings = get_settings()
+    if args.new or not settings.demo_password or settings.demo_password in PUBLISHED_DEMO_PASSWORDS:
+        settings.demo_password = secrets.token_urlsafe(12)
+        _save_env_value("DEMO_PASSWORD", settings.demo_password)
+        print("saved a new DEMO_PASSWORD in .env (not shown here)")
+    ensure_users()
+    print("the sample accounts now use DEMO_PASSWORD from .env: " + ", ".join(u[1] for u in DEMO_USERS))
 
 
 def cmd_bootstrap(_: argparse.Namespace) -> None:
@@ -71,7 +102,8 @@ def cmd_bootstrap(_: argparse.Namespace) -> None:
     with session_scope() as s:
         print("vocabulary:", seed_vocabulary(s))
     ensure_users()
-    print(f"demo users ready (password: {get_settings().demo_password}): " + ", ".join(u[1] for u in DEMO_USERS))
+    note = "password: DEMO_PASSWORD in .env" if get_settings().demo_password else "no DEMO_PASSWORD set: they cannot sign in until you set one"
+    print(f"demo users ready ({note}): " + ", ".join(u[1] for u in DEMO_USERS))
 
 
 def _register(manifest_item: dict, owner: str, visibility: str | None = None, transcript_mode: str = "auto") -> str:
@@ -242,6 +274,9 @@ def main(argv: list[str] | None = None) -> None:
     p.add_argument("--password", required=True)
     p.add_argument("--org")
     p.set_defaults(fn=cmd_create_user)
+    p = sub.add_parser("demo-password")
+    p.add_argument("--new", action="store_true", help="generate a new password, save it in .env and apply it")
+    p.set_defaults(fn=cmd_demo_password)
     p = sub.add_parser("eval")
     p.add_argument("--mode", default="auto", choices=["auto", "deterministic", "ai"])
     p.add_argument("--limit", type=int, default=0)

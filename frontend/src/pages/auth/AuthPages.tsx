@@ -1,4 +1,4 @@
-import { ArrowRight, BookOpen, Compass, Loader2, Lock, Mail, PenLine, Sparkles, UserRound } from "lucide-react";
+import { BookOpen, Compass, Info, Loader2, Lock, Mail, PenLine, UserRound } from "lucide-react";
 import { useEffect, useState, type FormEvent, type ReactNode } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "sonner";
@@ -9,12 +9,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
 /* Sign-in pages only render in accounts mode (other devices on the network). In personal mode App.tsx redirects home. */
-
-const DEMO_ACCOUNTS: [string, string, string][] = [
-  ["editor@interactivebible.local", "Editor", "Review queue, uploads, sermons"],
-  ["member@interactivebible.local", "Member", "Church member · sermons"],
-  ["admin@interactivebible.local", "Admin", "Everything, including system settings"],
-];
 
 function AuthLayout({ title, subtitle, children }: { title: string; subtitle: string; children: ReactNode }) {
   return (
@@ -71,61 +65,47 @@ export function LoginPage() {
   const from = useRedirectTarget();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [busy, setBusy] = useState<string | null>(null);
+  const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     if (viewer?.authenticated && !busy) navigate(from, { replace: true });
   }, [viewer, busy, from, navigate]);
 
-  const signIn = async (e: FormEvent | null, account?: string, pw?: string) => {
-    e?.preventDefault();
-    setBusy(account || "form");
+  const signIn = async (e: FormEvent) => {
+    e.preventDefault();
+    setBusy(true);
     setError(null);
     try {
-      await login(account || email, pw ?? password);
+      await login(email, password);
       toast.success("Welcome back");
       navigate(from, { replace: true });
     } catch (err) {
       setError(err instanceof Error ? err.message : "Sign-in failed");
     } finally {
-      setBusy(null);
+      setBusy(false);
     }
   };
 
   return (
     <AuthLayout title="Welcome back" subtitle="Sign in to your sermons, library uploads and saved stories.">
-      <form onSubmit={(e) => signIn(e)} className="grid grid-cols-1 gap-4">
+      <form onSubmit={signIn} className="grid grid-cols-1 gap-4">
         <Field id="email" label="Email" icon={<Mail className="size-4" />} type="email" value={email} onChange={(e) => setEmail(e.target.value)} autoComplete="username" required placeholder="you@church.org" />
         <Field id="password" label="Password" icon={<Lock className="size-4" />} type="password" value={password} onChange={(e) => setPassword(e.target.value)} autoComplete="current-password" required placeholder="Your password" />
         {error && <p className="rounded-xl border border-danger/20 bg-danger-soft px-3 py-2.5 text-sm text-danger" role="alert">{error}</p>}
-        <Button type="submit" className="h-11 rounded-xl text-[15px] font-semibold" disabled={!!busy}>
-          {busy === "form" ? <Loader2 className="size-4 animate-spin" /> : null} Sign in
+        <Button type="submit" className="h-11 rounded-xl text-[15px] font-semibold" disabled={busy}>
+          {busy ? <Loader2 className="size-4 animate-spin" /> : null} Sign in
         </Button>
       </form>
-      <p className="mt-5 text-center text-sm text-ink-2">
-        New here? <Link to="/signup" state={{ from }} className="font-semibold">Create an account</Link>
+      {viewer?.allow_signup !== false && (
+        <p className="mt-5 text-center text-sm text-ink-2">
+          New here? <Link to="/signup" state={{ from }} className="font-semibold">Create an account</Link>
+        </p>
+      )}
+      <p className="mt-8 flex gap-2.5 rounded-2xl border border-dashed border-line-2 p-4 text-[13px]/relaxed text-ink-3">
+        <Info className="mt-0.5 size-4 shrink-0" aria-hidden />
+        <span>On the computer that runs the app you don't need to sign in. On other devices, use your own account or one the app's owner set up for you.</span>
       </p>
-      <div className="mt-8 rounded-2xl border border-dashed border-line-2 p-4">
-        <div className="flex items-center gap-2 text-xs font-semibold tracking-wide text-ink-3 uppercase"><Sparkles className="size-3.5 text-gold-600 dark:text-gold-400" /> Try a sample account</div>
-        <div className="mt-3 grid grid-cols-1 gap-2">
-          {DEMO_ACCOUNTS.map(([account, role, desc]) => (
-            <button
-              key={account}
-              type="button"
-              onClick={() => signIn(null, account, "bible-demo")}
-              disabled={!!busy}
-              className="flex items-center justify-between gap-3 rounded-xl border border-border bg-card px-3.5 py-2.5 text-left transition hover:border-gold-500/40 hover:bg-surface-2 disabled:opacity-60 dark:bg-white/[0.03]"
-            >
-              <span className="min-w-0">
-                <span className="block text-sm font-semibold text-ink">{role}</span>
-                <span className="block truncate text-xs text-ink-3">{desc}</span>
-              </span>
-              {busy === account ? <Loader2 className="size-4 animate-spin text-ink-3" /> : <ArrowRight className="size-4 text-ink-3" />}
-            </button>
-          ))}
-        </div>
-      </div>
     </AuthLayout>
   );
 }

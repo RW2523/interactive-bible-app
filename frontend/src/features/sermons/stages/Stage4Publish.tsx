@@ -5,6 +5,7 @@ import {
 import { useEffect, useRef, useState, type ReactNode } from "react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
+import { shareReach } from "@/lib/share";
 import { cn } from "@/lib/utils";
 import { absoluteUrl, jobKey, sermonApi, sharePathFromDetail, useJob, useStudioMutation } from "../api";
 import {
@@ -522,6 +523,13 @@ export function Stage4Publish() {
                   onFocus={(e) => e.currentTarget.select()}
                   className="h-11 w-full min-w-0 rounded-xl border border-border bg-surface px-3 text-sm text-link outline-none focus:border-gold-500/60 focus:ring-3 focus:ring-ring sm:h-10 dark:bg-surface-2/40"
                 />
+                {shareReach() !== "unknown" && (
+                  <p className="text-xs leading-relaxed text-ink-3">
+                    {shareReach() === "network"
+                      ? "Opens on phones and computers connected to the same network as this computer. To share it beyond your network, set PUBLIC_BASE_URL (see the user manual)."
+                      : "This link only opens on this computer. Connect to a network, or set PUBLIC_BASE_URL, to share it with others."}
+                  </p>
+                )}
                 <div className="grid grid-cols-2 gap-2">
                   <Button
                     variant="outline"

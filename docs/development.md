@@ -30,6 +30,7 @@ make check-gemini   # verify the key, models, JSON generation and embeddings
 | `make seed` / `make reset-demo` | Process the demo resources again / wipe library data and re-seed (sermons, stories and accounts are kept) |
 | `make demo-media` | Rebuild the synthetic demo video, podcast, PDF and DOCX (macOS `say` + ffmpeg) |
 | `make embed` | Build the verse embedding index now |
+| `make new-demo-password` / `make demo-password` | New random password for the sample accounts (saved as `DEMO_PASSWORD` in `.env`) / apply the one in `.env` |
 | `make backup` / `make restore BACKUP=…` | Database dump + storage copy under `.data/backups/` |
 | `scripts/pg.sh psql` | SQL shell on the local database |
 | `backend/.venv/bin/python scripts/build_geodata.py` | Rebuild the offline basemap from Natural Earth |

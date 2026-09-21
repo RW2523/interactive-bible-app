@@ -51,7 +51,8 @@ def test_profile_update_and_password_change(client, login):
         assert ok.status_code == 200
         assert client.post("/v1/auth/login", json={"email": MEMBER, "password": "new-password-1"}).status_code == 200
     finally:
-        ensure_users()  # restore the demo password and display name for the rest of the suite
+        ensure_users()  # restore the demo password for the rest of the suite
+        sql("UPDATE users SET display_name = 'Mia Member' WHERE id = 'usr_member' RETURNING id")
     client.cookies.clear()  # /auth/login set a session cookie
     assert client.patch("/v1/auth/me", json={"church": "x"}).status_code == 401
 

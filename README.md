@@ -143,6 +143,10 @@ make start                 # runs the app and its background worker
 Open **<http://localhost:8000>**. There is no sign-in on your own computer — you are the owner with full access
 (rename yourself in the profile menu). `make stop` stops the app; `make dev` runs it with hot reload for development.
 
+Phones and other computers on your network can use it too, at `http://<this computer's address>:8000`. They sign in
+with an account: setup creates sample accounts whose shared password it saves as `DEMO_PASSWORD` in `.env`
+(see [the manual](docs/user-manual.md#on-a-phone-tablet-or-another-computer)).
+
 > **No key yet?** Everything except the AI features still works: reading, the atlas and timeline, the library, reviews,
 > exports and anything generated earlier.
 
@@ -173,8 +177,9 @@ See [docs/architecture.md](docs/architecture.md) for the full design.
 |---|---|---|
 | Database, uploads, sermons, stories, maps, fonts, search index | Text to analyse or write, images to paint, narration to record | A pasted video's details and caption track — never the video |
 
-AI results are cached and reused, a daily token budget and an hourly limit protect you from surprises, and the admin
-dashboard shows spend. Typical costs measured with the default models:
+Library analysis, Ask AI answers and Explore content are cached and reused (Sermon Studio writing and pictures are made
+fresh each time). A daily token budget and hourly limits protect you from surprises, AI features on other devices need an
+account, and the admin dashboard shows spend. Typical costs measured with the default models:
 
 | Task | Approximate cost |
 |---|---|

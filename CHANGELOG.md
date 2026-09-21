@@ -30,6 +30,14 @@ First public release.
 
 ### Platform
 - Personal mode: no sign-in on the computer running the app (owner = admin); other devices sign in.
+- Share links copied on the computer use its network address (or `PUBLIC_BASE_URL`) instead of `localhost`;
+  `API_HOST` chooses where `make start` listens.
 - Local PostgreSQL + pgvector, job queue with progress and graceful restarts, light/dark themes, phone layout.
+
+### Security
+- The sample accounts no longer share a published default password: setup generates a random `DEMO_PASSWORD`, the
+  sign-in page no longer offers one-tap sample sign-ins, and the app warns at startup about placeholder secrets.
+  Copies of `main` from before this release used `bible-demo` — run `make new-demo-password` to replace it.
+- Ask AI and on-demand *Why related?* explanations require an account on other devices.
 
 [1.0.0]: https://github.com/RW2523/interactive-bible-app/releases/tag/v1.0.0

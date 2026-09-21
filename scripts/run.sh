@@ -9,6 +9,7 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 if [ -f .env ]; then set -a; . ./.env; set +a; fi
 API_PORT="${API_PORT:-8000}"
+API_HOST="${API_HOST:-0.0.0.0}"  # 0.0.0.0: other devices on your network can open the app (and sign in); 127.0.0.1: this computer only
 WEB_PORT="${WEB_PORT:-5173}"
 LOGS="$ROOT/.data/logs"
 PIDS="$ROOT/.data/pids"
@@ -79,7 +80,7 @@ case "${1:-start}" in
       echo "port $API_PORT is already in use — run 'scripts/run.sh stop' (or free the port) first" >&2
       exit 1
     fi
-    start_bg api "$PY" -m uvicorn interactive_bible.api.main:app --host 0.0.0.0 --port "$API_PORT" --workers 2
+    start_bg api "$PY" -m uvicorn interactive_bible.api.main:app --host "$API_HOST" --port "$API_PORT" --workers 2
     start_bg worker "$PY" -m interactive_bible.worker --queues pipeline,embeddings,ai,media,default --threads 2
     wait_api && echo "→ Interactive Bible App is running at http://localhost:$API_PORT  (API docs: /docs)"
     ;;
@@ -94,7 +95,7 @@ case "${1:-start}" in
     wait
     ;;
   stop)
-    stop_bg api "uvicorn interactive_bible.api.main:app --host 0.0.0.0 --port $API_PORT"
+    stop_bg api "uvicorn interactive_bible.api.main:app --host [^ ]+ --port $API_PORT --workers"
     stop_bg worker "interactive_bible.worker --queues"
     ;;
   status)
