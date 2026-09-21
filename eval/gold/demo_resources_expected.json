@@ -1,0 +1,65 @@
+[
+  {
+    "resource_key": "sermon_all_things_for_good",
+    "text_path": "demo_content/texts/sermon_all_things_for_good.txt",
+    "expected": [
+      {"ref": "ROM.8.28", "type": "direct_reference", "evidence": "Romans chapter eight verse twenty-eight"},
+      {"ref": "ROM.8.35", "type": "scripture_quote", "evidence": "he asks whether anything at all could separate us from the love of Christ"},
+      {"ref": "ROM.8.37", "type": "direct_reference", "evidence": "Paul goes on in verse thirty-seven"},
+      {"ref": "GEN.50.20", "type": "scripture_quote", "evidence": "they had meant it for harm, but God had meant it for good"},
+      {"ref": "JER.29.11", "type": "scripture_quote", "evidence": "For I know the thoughts that I think toward you,” says the LORD, “thoughts of peace, and not of evil, to give you hope and a future."},
+      {"ref": "JAS.1.2-JAS.1.4", "type": "direct_reference", "evidence": "James chapter one, verses two through four"}
+    ],
+    "forbidden_books": ["JHN"],
+    "notes": "ROM.8.37 is context-inferred (Romans 8 was cited earlier) and is followed by the exact WEB text. GEN.50.20 is a paraphrase inside the Joseph story; a contextual_reference to the wider Joseph narrative is also reasonable. ROM.8.35 is a secondary paraphrase. 'My friend John' (twice) is a hard negative: no JHN refs."
+  },
+  {
+    "resource_key": "podcast_forgiveness",
+    "text_path": "demo_content/texts/podcast_forgiveness.txt",
+    "expected": [
+      {"ref": "MAT.6.12", "type": "scripture_quote", "evidence": "Forgive us our debts, as we also forgive our debtors."},
+      {"ref": "MAT.18.21-MAT.18.22", "type": "direct_reference", "evidence": "Matthew eighteen, twenty-one and twenty-two"},
+      {"ref": "LUK.15.11-LUK.15.32", "type": "contextual_reference", "evidence": "The prodigal son."},
+      {"ref": "EPH.4.32", "type": "direct_reference", "evidence": "Ephesians four thirty-two"}
+    ],
+    "forbidden_books": ["JOB"],
+    "notes": "MAT.6.12 is quoted in exact WEB wording without a citation. The Ephesians citation is followed by the WEB wording (minus the opening 'And'). 'I had only been at that job one day' is a hard negative: no JOB refs."
+  },
+  {
+    "resource_key": "devotional_anxiety",
+    "text_path": "demo_content/texts/devotional_anxiety.md",
+    "expected": [
+      {"ref": "PHP.4.6-PHP.4.7", "type": "direct_reference", "evidence": "Philippians 4:6-7"},
+      {"ref": "1PE.5.7", "type": "direct_reference", "evidence": "1 Peter 5:7"},
+      {"ref": "MAT.6.34", "type": "scripture_quote", "evidence": "Therefore don’t be anxious for tomorrow, for tomorrow will be anxious for itself. Each day’s own evil is sufficient."}
+    ],
+    "forbidden_books": [],
+    "notes": "MAT.6.34 is the full verse in exact WEB wording, uncited. Source media is the generated DOCX; the evidence strings survive DOCX text extraction unchanged."
+  },
+  {
+    "resource_key": "study_faith_hebrews11",
+    "text_path": "demo_content/texts/study_faith_hebrews11.md",
+    "expected": [
+      {"ref": "HEB.11.1-HEB.11.40", "type": "direct_reference", "evidence": "Hebrews 11"},
+      {"ref": "HEB.11.1", "type": "direct_reference", "evidence": "Hebrews 11:1"},
+      {"ref": "HEB.11.6", "type": "direct_reference", "evidence": "Heb. 11:6"},
+      {"ref": "GEN.22.1-GEN.22.19", "type": "contextual_reference", "evidence": "the day God tested Abraham"},
+      {"ref": "GEN.22.1-GEN.22.24", "type": "direct_reference", "evidence": "Genesis 22"},
+      {"ref": "ROM.4.20-ROM.4.21", "type": "direct_reference", "evidence": "Romans 4:20-21"}
+    ],
+    "forbidden_books": [],
+    "notes": "HEB.11 chapter reference comes from the title. The 'faith in the stock market' sentence is a hard negative and should produce no tag. In the PDF, typographic apostrophes are rendered as ASCII (didn't), so quote matching must normalise apostrophes."
+  },
+  {
+    "resource_key": "article_prayer",
+    "text_path": "demo_content/texts/article_prayer.md",
+    "expected": [
+      {"ref": "LUK.11.1-LUK.11.4", "type": "direct_reference", "evidence": "Luke 11:1-4"},
+      {"ref": "MAT.6.5-MAT.6.6", "type": "scripture_quote", "evidence": "he told his followers to slip away to a private room, shut out the audience, and speak to their Father alone"},
+      {"ref": "1TH.5.17", "type": "direct_reference", "evidence": "1 Thess 5:17"},
+      {"ref": "JAS.5.16", "type": "scripture_quote", "evidence": "The insistent prayer of a righteous person is powerfully effective."}
+    ],
+    "forbidden_books": [],
+    "notes": "MAT.6.5-6 is a paraphrase (not a quote) of the teaching on praying in secret. JAS.5.16 evidence is the second half of the verse in exact WEB wording, uncited."
+  }
+]

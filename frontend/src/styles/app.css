@@ -1,0 +1,333 @@
+/* Interactive Bible App — design system entry.
+   Layers: Tailwind theme/base (preflight) < legacy page styles < components < utilities. */
+@layer theme, base, legacy, explore, components, utilities;
+
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "./global.css" layer(legacy);
+
+/* Dark mode follows the data-theme attribute set by the theme toggle */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Base UI / shadcn state variants (MIT, from shadcn/tailwind.css) */
+@custom-variant data-open { &:where([data-state="open"]), &:where([data-open]:not([data-open="false"])) { @slot; } }
+@custom-variant data-closed { &:where([data-state="closed"]), &:where([data-closed]:not([data-closed="false"])) { @slot; } }
+@custom-variant data-checked { &:where([data-state="checked"]), &:where([data-checked]:not([data-checked="false"])) { @slot; } }
+@custom-variant data-unchecked { &:where([data-state="unchecked"]), &:where([data-unchecked]:not([data-unchecked="false"])) { @slot; } }
+@custom-variant data-selected { &:where([data-selected="true"]) { @slot; } }
+@custom-variant data-disabled { &:where([data-disabled="true"]), &:where([data-disabled]:not([data-disabled="false"])) { @slot; } }
+@custom-variant data-active { &:where([data-state="active"]), &:where([data-active]:not([data-active="false"])) { @slot; } }
+@custom-variant data-horizontal { &:where([data-orientation="horizontal"]) { @slot; } }
+@custom-variant data-vertical { &:where([data-orientation="vertical"]) { @slot; } }
+
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar { display: none; }
+}
+
+/* ─────────────────────────────────────────────── palette (one source for legacy + new components) */
+:root {
+  /* brand */
+  --navy-950: #070e1d;
+  --navy-900: #0b1426;
+  --navy-850: #0f1b33;
+  --navy-800: #13223f;
+  --navy-700: #1b3057;
+  --navy-600: #25406f;
+  --navy-500: #34568f;
+  --gold-50: #fdf8ec;
+  --gold-100: #f8edd2;
+  --gold-200: #f0dca6;
+  --gold-300: #e8c878;
+  --gold-400: #e3b448;
+  --gold-500: #c9962c;
+  --gold-600: #a8761d;
+  --gold-700: #7f5816;
+
+  /* surfaces + ink (legacy names) */
+  --paper: #f7f4ec;
+  --paper-2: #fbf9f4;
+  --surface: #ffffff;
+  --surface-2: #f1ece1;
+  --ink: #152036;
+  --ink-2: #445067;
+  --ink-3: #646f88; /* ≥4.5:1 on paper and white (WCAG AA) */
+  --line: #e5ddcd;
+  --line-2: #d6cbb7;
+  --accent: #1f3b6d;
+  --accent-2: #34568f;
+  --accent-soft: #e5eaf4;
+  --gold: #a8761d;
+  --gold-soft: #f8edd2;
+  --danger: #b3261e;
+  --danger-soft: #fbe9e7;
+  --ok: #2e7d32;
+  --ok-soft: #e5f3e6;
+  --warn: #a15c00;
+  --warn-soft: #fdf0dc;
+  --rel-direct: #3949ab;
+  --rel-direct-soft: #e8eafc;
+  --rel-quote: #00796b;
+  --rel-quote-soft: #e0f2ef;
+  --rel-context: #8a5700; /* ≥4.5:1 on --rel-context-soft (WCAG AA) */
+  --rel-context-soft: #fbf0db;
+  --rel-ai: #7b4fc4;
+  --rel-ai-soft: #f1ebfb;
+  --rel-human: #2e7d32;
+  --shadow-sm: 0 1px 2px rgba(21, 32, 54, 0.06), 0 1px 1px rgba(21, 32, 54, 0.04);
+  --shadow-md: 0 8px 24px rgba(21, 32, 54, 0.09), 0 2px 6px rgba(21, 32, 54, 0.05);
+  --shadow-lg: 0 24px 60px rgba(21, 32, 54, 0.18);
+  --radius: 12px;
+  --radius-sm: 8px;
+
+  /* type */
+  --sans: "Inter Variable", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --serif: "Source Serif 4 Variable", "Iowan Old Style", Palatino, Georgia, "Times New Roman", serif;
+  --display: "Fraunces Variable", "Source Serif 4 Variable", Georgia, serif;
+  --mono: "JetBrains Mono Variable", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --header-h: 56px;
+  --sidebar-w: 256px;
+  --bottom-nav-h: 0px;
+  --reading-size: 20px;
+
+  /* component tokens (shadcn names) */
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: var(--surface);
+  --card-foreground: var(--ink);
+  --popover: var(--surface);
+  --popover-foreground: var(--ink);
+  --primary: var(--navy-700);
+  --primary-foreground: #ffffff;
+  --secondary: var(--surface-2);
+  --secondary-foreground: var(--ink);
+  --muted: var(--surface-2);
+  --muted-foreground: var(--ink-2);
+  --accent-bg: #ece6d8;
+  --accent-foreground: var(--ink);
+  --brand: var(--gold-500);
+  --brand-foreground: var(--navy-900);
+  --destructive: #c62828;
+  --border: var(--line);
+  --input: var(--line-2);
+  --ring: rgba(52, 86, 143, 0.45);
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --paper: #0b1426;
+  --paper-2: #0e1830;
+  --surface: #111d35;
+  --surface-2: #17264a;
+  --ink: #eef2f9;
+  --ink-2: #b9c3d6;
+  --ink-3: #8491aa;
+  --line: #1f2e4d;
+  --line-2: #2c3e62;
+  --accent: #e8c878;
+  --accent-2: #f0dca6;
+  --accent-soft: rgba(227, 180, 72, 0.14);
+  --gold: #e3b448;
+  --gold-soft: rgba(227, 180, 72, 0.14);
+  --danger: #ff8a80;
+  --danger-soft: #3b1f1d;
+  --ok: #81c784;
+  --ok-soft: #1f3322;
+  --warn: #ffb74d;
+  --warn-soft: #3a2c16;
+  --rel-direct: #9fa8ff;
+  --rel-direct-soft: #262b4d;
+  --rel-quote: #6fd3c2;
+  --rel-quote-soft: #183532;
+  --rel-context: #f0bd5e;
+  --rel-context-soft: #3a2f18;
+  --rel-ai: #c3a3ff;
+  --rel-ai-soft: #30264a;
+  --rel-human: #81c784;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 24px 60px rgba(0, 0, 0, 0.6);
+
+  --primary: var(--gold-400);
+  --primary-foreground: var(--navy-900);
+  --secondary: #1a2a4f;
+  --accent-bg: #1b2b50;
+  --brand: var(--gold-400);
+  --brand-foreground: var(--navy-900);
+  --destructive: #ff6b6b;
+  --ring: rgba(227, 180, 72, 0.45);
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent-bg);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-line: var(--line);
+  --color-line-2: var(--line-2);
+  --color-link: var(--accent);
+  --color-ok: var(--ok);
+  --color-warn: var(--warn);
+  --color-danger: var(--danger);
+  --color-ok-soft: var(--ok-soft);
+  --color-warn-soft: var(--warn-soft);
+  --color-danger-soft: var(--danger-soft);
+  --color-accent-soft: var(--accent-soft);
+  --color-gold-soft: var(--gold-soft);
+  --color-rel-direct: var(--rel-direct);
+  --color-rel-quote: var(--rel-quote);
+  --color-rel-context: var(--rel-context);
+  --color-rel-ai: var(--rel-ai);
+  --color-navy-950: var(--navy-950);
+  --color-navy-900: var(--navy-900);
+  --color-navy-850: var(--navy-850);
+  --color-navy-800: var(--navy-800);
+  --color-navy-700: var(--navy-700);
+  --color-navy-600: var(--navy-600);
+  --color-navy-500: var(--navy-500);
+  --color-gold-50: var(--gold-50);
+  --color-gold-100: var(--gold-100);
+  --color-gold-200: var(--gold-200);
+  --color-gold-300: var(--gold-300);
+  --color-gold-400: var(--gold-400);
+  --color-gold-500: var(--gold-500);
+  --color-gold-600: var(--gold-600);
+  --color-gold-700: var(--gold-700);
+  --font-sans: var(--sans);
+  --font-serif: var(--serif);
+  --font-display: var(--display);
+  --font-mono: var(--mono);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+}
+
+@theme {
+  --animate-fade-up: fade-up 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-fade-in: fade-in 0.2s ease-out both;
+  --animate-sheet-up: sheet-up 0.28s cubic-bezier(0.32, 0.72, 0, 1) both;
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes sheet-up {
+    from { opacity: 0; transform: translateY(16px) scale(0.98); }
+    to { opacity: 1; transform: none; }
+  }
+}
+
+@media (max-width: 1023.98px) {
+  :root { --bottom-nav-h: calc(60px + env(safe-area-inset-bottom)); }
+}
+
+html.theme-switching *, html.theme-switching *::before, html.theme-switching *::after { transition: none !important; }
+
+@layer base {
+  /* shadcn default: borders without an explicit colour use the theme line colour (Tailwind 4 otherwise uses currentColor) */
+  *, ::after, ::before, ::backdrop, ::file-selector-button { border-color: var(--border); }
+  html { -webkit-tap-highlight-color: transparent; text-rendering: optimizeLegibility; }
+  ::selection { background: color-mix(in srgb, var(--gold-400) 35%, transparent); }
+  button:not(:disabled), [role="button"]:not([aria-disabled="true"]), summary { cursor: pointer; }
+  /* quiet, theme-aware scrollbars */
+  * { scrollbar-color: color-mix(in srgb, var(--ink-3) 38%, transparent) transparent; }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb { background: color-mix(in srgb, var(--ink-3) 35%, transparent); border-radius: 99px; border: 2px solid transparent; background-clip: content-box; }
+  ::-webkit-scrollbar-thumb:hover { background-color: color-mix(in srgb, var(--ink-3) 55%, transparent); }
+}
+
+@layer components {
+  /* soft glass surface used by hero cards and the app shell */
+  .glass {
+    background: color-mix(in srgb, var(--surface) 82%, transparent);
+    backdrop-filter: saturate(1.4) blur(14px);
+    border: 1px solid var(--line);
+  }
+  .brand-gradient { background-image: linear-gradient(135deg, var(--gold-300), var(--gold-500)); }
+  .hero-sky {
+    background:
+      radial-gradient(120% 90% at 85% -10%, color-mix(in srgb, var(--gold-400) 28%, transparent), transparent 55%),
+      radial-gradient(90% 80% at 0% 0%, color-mix(in srgb, var(--navy-500) 35%, transparent), transparent 60%),
+      linear-gradient(160deg, var(--navy-900), var(--navy-800) 55%, #1b2f55);
+  }
+  .text-balance { text-wrap: balance; }
+  .prose-sermon { font-family: var(--serif); font-size: 17px; line-height: 1.75; color: var(--ink); }
+  .prose-sermon h1, .prose-sermon h2 { font-family: var(--display); font-weight: 600; letter-spacing: -0.01em; margin: 1.6em 0 0.5em; line-height: 1.25; }
+  .prose-sermon h2 { font-size: 1.35em; }
+  .prose-sermon h3 { font-size: 1.1em; font-weight: 650; margin: 1.3em 0 0.4em; }
+  .prose-sermon p { margin: 0 0 0.9em; }
+  .prose-sermon ul, .prose-sermon ol { margin: 0 0 1em 1.3em; list-style: disc; }
+  .prose-sermon ol { list-style: decimal; }
+  .prose-sermon li { margin: 0.25em 0; }
+  .prose-sermon blockquote { border-left: 3px solid var(--gold-400); margin: 1em 0; padding: 0.4em 0 0.4em 1em; color: var(--ink-2); font-style: italic; }
+  .prose-sermon a { color: var(--accent); text-decoration: underline; }
+  .prose-sermon > :first-child { margin-top: 0; }
+
+  /* light "paper" hero band: warm parchment with a soft gold glow (pairs with .hero-sky in dark) */
+  .hero-paper {
+    background:
+      radial-gradient(100% 120% at 100% 0%, color-mix(in srgb, var(--gold-300) 30%, transparent), transparent 55%),
+      radial-gradient(80% 90% at 0% 100%, color-mix(in srgb, var(--navy-500) 10%, transparent), transparent 60%),
+      linear-gradient(180deg, var(--surface), var(--paper-2));
+  }
+  /* faint star field for dark bands */
+  .star-field {
+    background-image:
+      radial-gradient(circle at 12% 18%, rgb(255 255 255 / 0.35) 1px, transparent 1.6px),
+      radial-gradient(circle at 72% 62%, rgb(255 255 255 / 0.22) 1px, transparent 1.6px);
+    background-size: 34px 34px, 52px 52px;
+  }
+  /* soft edge fade for horizontally scrolling chip rows and tab lists */
+  .fade-x {
+    mask-image: linear-gradient(to right, transparent 0, #000 10px, #000 calc(100% - 28px), transparent 100%);
+  }
+  /* Scripture quotation block used in cards and panels */
+  .scripture-quote {
+    font-family: var(--serif);
+    color: var(--ink);
+    border-left: 3px solid color-mix(in srgb, var(--gold-500) 70%, transparent);
+    padding-left: 0.9em;
+  }
+  /* keyboard hint */
+  .kbd-hint {
+    display: inline-flex; align-items: center; justify-content: center; min-width: 1.35rem; height: 1.25rem; padding: 0 0.3rem;
+    border-radius: 0.375rem; border: 1px solid var(--line-2); border-bottom-width: 2px; background: var(--surface);
+    font-family: var(--sans); font-size: 11px; font-weight: 600; line-height: 1; color: var(--ink-3);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up, .animate-fade-in, .animate-sheet-up { animation: none !important; }
+}

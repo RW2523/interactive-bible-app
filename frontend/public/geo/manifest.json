@@ -1,0 +1,31 @@
+{
+  "bbox": {
+    "west": -22,
+    "south": 4,
+    "east": 74,
+    "north": 54
+  },
+  "relief": {
+    "url": "/geo/relief.jpg",
+    "bounds": [
+      [
+        4,
+        -22
+      ],
+      [
+        54,
+        74
+      ]
+    ],
+    "width": 2880,
+    "height": 1812,
+    "projection": "EPSG:3857"
+  },
+  "layers": {
+    "land": "/geo/land.geojson",
+    "lakes": "/geo/lakes.geojson",
+    "rivers": "/geo/rivers.geojson"
+  },
+  "attribution": "Made with Natural Earth (public domain)",
+  "generatedAt": "2026-09-17T06:21:39Z"
+}

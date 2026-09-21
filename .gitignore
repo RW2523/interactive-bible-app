@@ -1,0 +1,28 @@
+# secrets and local configuration (never commit the Gemini key)
+.env
+.env.*
+!.env.example
+
+# local data, uploads, backups, logs
+.data/
+storage/
+data/bible/
+*.log
+
+# dependencies and build output
+backend/.venv/
+.venv/
+frontend/node_modules/
+frontend/dist/
+*.tsbuildinfo
+
+# caches and editor/OS files
+**/__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+.claude/
+
+# evaluation run outputs
+eval/reports/*.json
+eval/reports/*.md

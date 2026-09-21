@@ -1,0 +1,760 @@
+[
+  {
+    "id": "ew-01",
+    "category": "explicit_written",
+    "text": "Our memory verse this week is John 3:16, and every child in the class can already recite it.",
+    "context_before": "",
+    "expected": [
+      {"ref": "JHN.3.16", "type": "direct_reference", "evidence": "John 3:16"}
+    ],
+    "forbidden": ["1JN.3.16"],
+    "notes": "Plain book chapter:verse citation; must not resolve to 1 John 3:16."
+  },
+  {
+    "id": "ew-02",
+    "category": "explicit_written",
+    "text": "If you have your Bible open, read Rom 8:28-30 with me before we pray.",
+    "context_before": "",
+    "expected": [
+      {"ref": "ROM.8.28-ROM.8.30", "type": "direct_reference", "evidence": "Rom 8:28-30"}
+    ],
+    "forbidden": [],
+    "notes": "Abbreviated book name with a verse range."
+  },
+  {
+    "id": "ew-03",
+    "category": "explicit_written",
+    "text": "Paul's description of love in 1 Cor. 13:4-7 is read at almost every wedding we host.",
+    "context_before": "",
+    "expected": [
+      {"ref": "1CO.13.4-1CO.13.7", "type": "direct_reference", "evidence": "1 Cor. 13:4-7"}
+    ],
+    "forbidden": ["2CO.13.4-2CO.13.7"],
+    "notes": "Numbered book, abbreviation with trailing period, verse range; must not resolve to 2 Corinthians."
+  },
+  {
+    "id": "ew-04",
+    "category": "explicit_written",
+    "text": "When my grandmother was in the hospital, we sat by her bed and read Psalm 23 aloud.",
+    "context_before": "",
+    "expected": [
+      {"ref": "PSA.23.1-PSA.23.6", "type": "direct_reference", "evidence": "Psalm 23"}
+    ],
+    "forbidden": [],
+    "notes": "Chapter-only citation expands to the whole chapter (Psalm 23 has 6 verses)."
+  },
+  {
+    "id": "ew-05",
+    "category": "explicit_written",
+    "text": "Our youth group has been memorizing Jude 3 this month.",
+    "context_before": "",
+    "expected": [
+      {"ref": "JUD.1.3", "type": "direct_reference", "evidence": "Jude 3"}
+    ],
+    "forbidden": ["JDG.3.1-JDG.3.31"],
+    "notes": "Single-chapter book: the lone number is the verse (Jude 1:3), not chapter 3; must not resolve to Judges 3."
+  },
+  {
+    "id": "ew-06",
+    "category": "explicit_written",
+    "text": "The two verses I lean on most are Romans 8:28; 12:2.",
+    "context_before": "",
+    "expected": [
+      {"ref": "ROM.8.28", "type": "direct_reference", "evidence": "Romans 8:28"},
+      {"ref": "ROM.12.2", "type": "direct_reference", "evidence": "12:2"}
+    ],
+    "forbidden": [],
+    "notes": "Semicolon-separated list; the second citation inherits the book (Romans 12:2)."
+  },
+  {
+    "id": "ew-07",
+    "category": "explicit_written",
+    "text": "This fall our sermon series walks slowly through Matthew 5-7.",
+    "context_before": "",
+    "expected": [
+      {"ref": "MAT.5.1-MAT.7.29", "type": "direct_reference", "evidence": "Matthew 5-7"}
+    ],
+    "forbidden": [],
+    "notes": "Chapter range without a colon: Matthew 5:1 through 7:29 (not verse 5:7)."
+  },
+  {
+    "id": "ew-08",
+    "category": "explicit_written",
+    "text": "Joseph's words to his brothers in Gen 50:20 have carried me through many hard seasons.",
+    "context_before": "",
+    "expected": [
+      {"ref": "GEN.50.20", "type": "direct_reference", "evidence": "Gen 50:20"}
+    ],
+    "forbidden": [],
+    "notes": "Three-letter book abbreviation without a period."
+  },
+  {
+    "id": "ew-09",
+    "category": "explicit_written",
+    "text": "The definition of faith in Heb. 11:1 is short but profound.",
+    "context_before": "",
+    "expected": [
+      {"ref": "HEB.11.1", "type": "direct_reference", "evidence": "Heb. 11:1"}
+    ],
+    "forbidden": [],
+    "notes": "Abbreviation with a period before the chapter number."
+  },
+  {
+    "id": "ew-10",
+    "category": "explicit_written",
+    "text": "Every seminary student should know 2 Tim 3:16-17 by heart.",
+    "context_before": "",
+    "expected": [
+      {"ref": "2TI.3.16-2TI.3.17", "type": "direct_reference", "evidence": "2 Tim 3:16-17"}
+    ],
+    "forbidden": ["1TI.3.16"],
+    "notes": "Numbered book abbreviation with a verse range; must not resolve to 1 Timothy."
+  },
+  {
+    "id": "ew-11",
+    "category": "explicit_written",
+    "text": "Read the whole parable in Luke 15:11–32 before Sunday.",
+    "context_before": "",
+    "expected": [
+      {"ref": "LUK.15.11-LUK.15.32", "type": "direct_reference", "evidence": "Luke 15:11–32"}
+    ],
+    "forbidden": [],
+    "notes": "Verse range written with an en dash (U+2013)."
+  },
+  {
+    "id": "ew-12",
+    "category": "explicit_written",
+    "text": "Our Good Friday reading is Isaiah 52:13-53:12.",
+    "context_before": "",
+    "expected": [
+      {"ref": "ISA.52.13-ISA.53.12", "type": "direct_reference", "evidence": "Isaiah 52:13-53:12"}
+    ],
+    "forbidden": [],
+    "notes": "Range that crosses a chapter boundary."
+  },
+  {
+    "id": "es-01",
+    "category": "explicit_spoken",
+    "text": "Turn with me to first Corinthians chapter thirteen.",
+    "context_before": "",
+    "expected": [
+      {"ref": "1CO.13.1-1CO.13.13", "type": "direct_reference", "evidence": "first Corinthians chapter thirteen"}
+    ],
+    "forbidden": ["2CO.13.1-2CO.13.14"],
+    "notes": "Spoken ordinal book prefix; chapter-only reference expands to the whole chapter."
+  },
+  {
+    "id": "es-02",
+    "category": "explicit_spoken",
+    "text": "Romans eight twenty-eight has been my anchor all year.",
+    "context_before": "",
+    "expected": [
+      {"ref": "ROM.8.28", "type": "direct_reference", "evidence": "Romans eight twenty-eight"}
+    ],
+    "forbidden": ["ROM.8.20"],
+    "notes": "Chapter and verse spoken as bare number words; 'twenty-eight' is one number."
+  },
+  {
+    "id": "es-03",
+    "category": "explicit_spoken",
+    "text": "Let's look at the eighth chapter of Romans, verse twenty-eight.",
+    "context_before": "",
+    "expected": [
+      {"ref": "ROM.8.28", "type": "direct_reference", "evidence": "the eighth chapter of Romans, verse twenty-eight"}
+    ],
+    "forbidden": [],
+    "notes": "Ordinal chapter before the book name."
+  },
+  {
+    "id": "es-04",
+    "category": "explicit_spoken",
+    "text": "Our reading this morning is Psalm one hundred and nineteen, verse one hundred and five.",
+    "context_before": "",
+    "expected": [
+      {"ref": "PSA.119.105", "type": "direct_reference", "evidence": "Psalm one hundred and nineteen, verse one hundred and five"}
+    ],
+    "forbidden": ["PSA.119.100", "PSA.100.5"],
+    "notes": "Compound spoken numbers with 'and'."
+  },
+  {
+    "id": "es-05",
+    "category": "explicit_spoken",
+    "text": "Please memorize second Timothy three sixteen this week.",
+    "context_before": "",
+    "expected": [
+      {"ref": "2TI.3.16", "type": "direct_reference", "evidence": "second Timothy three sixteen"}
+    ],
+    "forbidden": ["1TI.3.16"],
+    "notes": "Spoken ordinal book prefix with bare chapter and verse numbers."
+  },
+  {
+    "id": "es-06",
+    "category": "explicit_spoken",
+    "text": "If you only know one verse, it is probably John chapter three verse sixteen.",
+    "context_before": "",
+    "expected": [
+      {"ref": "JHN.3.16", "type": "direct_reference", "evidence": "John chapter three verse sixteen"}
+    ],
+    "forbidden": ["1JN.3.16"],
+    "notes": "Fully spelled-out chapter and verse keywords."
+  },
+  {
+    "id": "es-07",
+    "category": "explicit_spoken",
+    "text": "The graduation speaker closed with Isaiah forty verse thirty-one.",
+    "context_before": "",
+    "expected": [
+      {"ref": "ISA.40.31", "type": "direct_reference", "evidence": "Isaiah forty verse thirty-one"}
+    ],
+    "forbidden": [],
+    "notes": "Bare chapter number followed by the 'verse' keyword."
+  },
+  {
+    "id": "es-08",
+    "category": "explicit_spoken",
+    "text": "She wrote Philippians four thirteen on her wrist before the race.",
+    "context_before": "",
+    "expected": [
+      {"ref": "PHP.4.13", "type": "direct_reference", "evidence": "Philippians four thirteen"}
+    ],
+    "forbidden": [],
+    "notes": "Bare spoken chapter and verse."
+  },
+  {
+    "id": "es-09",
+    "category": "explicit_spoken",
+    "text": "Micah six eight sums up what the Lord requires of us.",
+    "context_before": "",
+    "expected": [
+      {"ref": "MIC.6.8", "type": "direct_reference", "evidence": "Micah six eight"}
+    ],
+    "forbidden": [],
+    "notes": "Short spoken reference; the rest of the sentence alludes to the same verse."
+  },
+  {
+    "id": "es-10",
+    "category": "explicit_spoken",
+    "text": "Proverbs three, verses five and six, has been our family verse for years.",
+    "context_before": "",
+    "expected": [
+      {"ref": "PRO.3.5-PRO.3.6", "type": "direct_reference", "evidence": "Proverbs three, verses five and six"}
+    ],
+    "forbidden": [],
+    "notes": "Two consecutive verses joined with 'and' form a range."
+  },
+  {
+    "id": "es-11",
+    "category": "explicit_spoken",
+    "text": "When I blow it, I go straight back to First John one nine.",
+    "context_before": "",
+    "expected": [
+      {"ref": "1JN.1.9", "type": "direct_reference", "evidence": "First John one nine"}
+    ],
+    "forbidden": ["JHN.1.9"],
+    "notes": "Spoken numbered epistle; must not resolve to the Gospel of John."
+  },
+  {
+    "id": "ci-01",
+    "category": "context_inferred",
+    "text": "Look at verse thirty-one.",
+    "context_before": "We are reading Romans 8 today.",
+    "expected": [
+      {"ref": "ROM.8.31", "type": "direct_reference", "evidence": "verse thirty-one"}
+    ],
+    "forbidden": [],
+    "notes": "Verse-only reference; book and chapter come from context_before."
+  },
+  {
+    "id": "ci-02",
+    "category": "context_inferred",
+    "text": "Verse four reminds us that God is with us even in the valley of the shadow of death.",
+    "context_before": "Open your Bibles to Psalm 23.",
+    "expected": [
+      {"ref": "PSA.23.4", "type": "direct_reference", "evidence": "Verse four"}
+    ],
+    "forbidden": [],
+    "notes": "Verse-only reference resolved from the chapter named in context_before."
+  },
+  {
+    "id": "ci-03",
+    "category": "context_inferred",
+    "text": "In verse five Jesus calls himself the vine and calls us the branches.",
+    "context_before": "This morning our text is John chapter fifteen.",
+    "expected": [
+      {"ref": "JHN.15.5", "type": "direct_reference", "evidence": "verse five"}
+    ],
+    "forbidden": [],
+    "notes": "Spoken chapter in context_before, spoken verse in text."
+  },
+  {
+    "id": "ci-04",
+    "category": "context_inferred",
+    "text": "Now drop down to verses eleven through thirteen, where Paul talks about contentment.",
+    "context_before": "Keep your finger in Philippians chapter four.",
+    "expected": [
+      {"ref": "PHP.4.11-PHP.4.13", "type": "direct_reference", "evidence": "verses eleven through thirteen"}
+    ],
+    "forbidden": [],
+    "notes": "Verse range inferred from context."
+  },
+  {
+    "id": "ci-05",
+    "category": "context_inferred",
+    "text": "The next verse tells us not to be conformed to this world.",
+    "context_before": "Romans 12:1 calls us to give our whole selves to God as a living sacrifice.",
+    "expected": [
+      {"ref": "ROM.12.2", "type": "direct_reference", "evidence": "The next verse"}
+    ],
+    "forbidden": ["ROM.12.1"],
+    "notes": "Relative reference resolved from the citation in context_before; Romans 12:1 belongs to the context, not to this text."
+  },
+  {
+    "id": "asr-01",
+    "category": "asr_errors",
+    "text": "Roman's 8 28 is the promise I held onto after the diagnosis.",
+    "context_before": "",
+    "expected": [
+      {"ref": "ROM.8.28", "type": "direct_reference", "evidence": "Roman's 8 28"}
+    ],
+    "forbidden": [],
+    "notes": "ASR artefacts: stray apostrophe and missing colon."
+  },
+  {
+    "id": "asr-02",
+    "category": "asr_errors",
+    "text": "Philippines 4:13 is painted on the locker room wall.",
+    "context_before": "",
+    "expected": [
+      {"ref": "PHP.4.13", "type": "direct_reference", "evidence": "Philippines 4:13"}
+    ],
+    "forbidden": [],
+    "notes": "Mis-transcription of Philippians as Philippines."
+  },
+  {
+    "id": "asr-03",
+    "category": "asr_errors",
+    "text": "Everybody knows John 316 even if they have never opened a Bible.",
+    "context_before": "",
+    "expected": [
+      {"ref": "JHN.3.16", "type": "direct_reference", "evidence": "John 316"}
+    ],
+    "forbidden": ["1JN.3.16"],
+    "notes": "Chapter and verse run together (316 = 3:16)."
+  },
+  {
+    "id": "asr-04",
+    "category": "asr_errors",
+    "text": "Revelations 21:4 promises a day when there will be no more tears.",
+    "context_before": "",
+    "expected": [
+      {"ref": "REV.21.4", "type": "direct_reference", "evidence": "Revelations 21:4"}
+    ],
+    "forbidden": [],
+    "notes": "Common misnaming 'Revelations' for Revelation."
+  },
+  {
+    "id": "asr-05",
+    "category": "asr_errors",
+    "text": "Galations 5:22 was the theme of the women's retreat.",
+    "context_before": "",
+    "expected": [
+      {"ref": "GAL.5.22", "type": "direct_reference", "evidence": "Galations 5:22"}
+    ],
+    "forbidden": [],
+    "notes": "Misspelling of Galatians."
+  },
+  {
+    "id": "asr-06",
+    "category": "asr_errors",
+    "text": "Mathew 11:28 is printed on the sign outside our church.",
+    "context_before": "",
+    "expected": [
+      {"ref": "MAT.11.28", "type": "direct_reference", "evidence": "Mathew 11:28"}
+    ],
+    "forbidden": [],
+    "notes": "Misspelling of Matthew."
+  },
+  {
+    "id": "eq-01",
+    "category": "exact_quotes",
+    "text": "I still remember the first verse I ever memorized: For God so loved the world, that he gave his only born Son, that whoever believes in him should not perish, but have eternal life.",
+    "context_before": "",
+    "expected": [
+      {"ref": "JHN.3.16", "type": "scripture_quote", "evidence": "For God so loved the world, that he gave his only born Son, that whoever believes in him should not perish, but have eternal life."}
+    ],
+    "forbidden": ["1JN.3.16"],
+    "notes": "Full verse, WEB wording, uncited."
+  },
+  {
+    "id": "eq-02",
+    "category": "exact_quotes",
+    "text": "Grandpa whispered the same words every night: The LORD is my shepherd; I shall not want.",
+    "context_before": "",
+    "expected": [
+      {"ref": "PSA.23.1", "type": "scripture_quote", "evidence": "The LORD is my shepherd; I shall not want."}
+    ],
+    "forbidden": ["JHN.10.11"],
+    "notes": "KJV wording with the italic [is] brackets removed; must not map to the good shepherd saying in John 10."
+  },
+  {
+    "id": "eq-03",
+    "category": "exact_quotes",
+    "text": "When the offer fell through, I kept repeating one line to myself: Trust in the LORD with all your heart, and don’t lean on your own understanding.",
+    "context_before": "",
+    "expected": [
+      {"ref": "PRO.3.5", "type": "scripture_quote", "evidence": "Trust in the LORD with all your heart, and don’t lean on your own understanding."}
+    ],
+    "forbidden": [],
+    "notes": "WEB wording, including the typographic apostrophe in don’t."
+  },
+  {
+    "id": "eq-04",
+    "category": "exact_quotes",
+    "text": "Coach taped a card inside every locker: they shall mount up with wings as eagles; they shall run, and not be weary.",
+    "context_before": "",
+    "expected": [
+      {"ref": "ISA.40.31", "type": "scripture_quote", "evidence": "they shall mount up with wings as eagles; they shall run, and not be weary"}
+    ],
+    "forbidden": [],
+    "notes": "Partial KJV quote taken from the middle of the verse."
+  },
+  {
+    "id": "eq-05",
+    "category": "exact_quotes",
+    "text": "Before you answer in anger, remember: Love is patient and is kind. Love doesn’t envy.",
+    "context_before": "",
+    "expected": [
+      {"ref": "1CO.13.4", "type": "scripture_quote", "evidence": "Love is patient and is kind. Love doesn’t envy."}
+    ],
+    "forbidden": [],
+    "notes": "Partial WEB quote (first two clauses of the verse)."
+  },
+  {
+    "id": "eq-06",
+    "category": "exact_quotes",
+    "text": "Leaders come and go, but Jesus Christ is the same yesterday, today, and forever.",
+    "context_before": "",
+    "expected": [
+      {"ref": "HEB.13.8", "type": "scripture_quote", "evidence": "Jesus Christ is the same yesterday, today, and forever."}
+    ],
+    "forbidden": [],
+    "notes": "Full WEB verse embedded in a sentence."
+  },
+  {
+    "id": "pa-01",
+    "category": "paraphrases",
+    "text": "God can take every part of our story, even the painful chapters, and weave it together for the good of the people who love him.",
+    "context_before": "",
+    "expected": [
+      {"ref": "ROM.8.28", "type": "scripture_quote", "evidence": "weave it together for the good of the people who love him"}
+    ],
+    "forbidden": [],
+    "notes": "Close paraphrase of Romans 8:28, uncited."
+  },
+  {
+    "id": "pa-02",
+    "category": "paraphrases",
+    "text": "With Christ giving me strength, there is nothing I am unable to face.",
+    "context_before": "",
+    "expected": [
+      {"ref": "PHP.4.13", "type": "scripture_quote", "evidence": "With Christ giving me strength, there is nothing I am unable to face."}
+    ],
+    "forbidden": [],
+    "notes": "Close paraphrase of Philippians 4:13, uncited."
+  },
+  {
+    "id": "pa-03",
+    "category": "paraphrases",
+    "text": "Jesus invites everyone who is exhausted and loaded down with heavy burdens to come to him, and he promises them rest.",
+    "context_before": "",
+    "expected": [
+      {"ref": "MAT.11.28", "type": "scripture_quote", "evidence": "Jesus invites everyone who is exhausted and loaded down with heavy burdens to come to him, and he promises them rest."}
+    ],
+    "forbidden": [],
+    "notes": "Close paraphrase of Matthew 11:28, uncited."
+  },
+  {
+    "id": "pa-04",
+    "category": "paraphrases",
+    "text": "If we own up to our sins before God, he can be trusted to forgive us and to wash away everything we have done wrong.",
+    "context_before": "",
+    "expected": [
+      {"ref": "1JN.1.9", "type": "scripture_quote", "evidence": "If we own up to our sins before God, he can be trusted to forgive us and to wash away everything we have done wrong."}
+    ],
+    "forbidden": ["JHN.1.9"],
+    "notes": "Close paraphrase of 1 John 1:9, uncited."
+  },
+  {
+    "id": "pa-05",
+    "category": "paraphrases",
+    "text": "Jesus left his friends a peace that is nothing like what the world hands out, so their hearts would not need to be troubled or afraid.",
+    "context_before": "",
+    "expected": [
+      {"ref": "JHN.14.27", "type": "scripture_quote", "evidence": "Jesus left his friends a peace that is nothing like what the world hands out, so their hearts would not need to be troubled or afraid."}
+    ],
+    "forbidden": ["PHP.4.7"],
+    "notes": "Close paraphrase of John 14:27, uncited; not the Philippians peace verse."
+  },
+  {
+    "id": "nc-01",
+    "category": "narrative_context",
+    "text": "The parable of the prodigal son shows a father who runs toward the child who wasted everything.",
+    "context_before": "",
+    "expected": [
+      {"ref": "LUK.15.11-LUK.15.32", "type": "contextual_reference", "evidence": "The parable of the prodigal son"}
+    ],
+    "forbidden": [],
+    "notes": "Named parable, no citation."
+  },
+  {
+    "id": "nc-02",
+    "category": "narrative_context",
+    "text": "Our food pantry volunteers live out the story of the good Samaritan every Saturday.",
+    "context_before": "",
+    "expected": [
+      {"ref": "LUK.10.25-LUK.10.37", "type": "contextual_reference", "evidence": "the story of the good Samaritan"}
+    ],
+    "forbidden": ["JHN.4.1-JHN.4.42"],
+    "notes": "Includes the lawyer's question that frames the parable; must not map to the Samaritan woman in John 4."
+  },
+  {
+    "id": "nc-03",
+    "category": "narrative_context",
+    "text": "The kids acted out David and Goliath with a cardboard sling and five smooth stones.",
+    "context_before": "",
+    "expected": [
+      {"ref": "1SA.17.1-1SA.17.58", "type": "contextual_reference", "evidence": "David and Goliath"}
+    ],
+    "forbidden": [],
+    "notes": "Whole chapter; 1 Samuel 17 ends at verse 58 (verified in WEB)."
+  },
+  {
+    "id": "nc-04",
+    "category": "narrative_context",
+    "text": "We close every small group meeting by praying the Lord's Prayer together.",
+    "context_before": "",
+    "expected": [
+      {"ref": "MAT.6.9-MAT.6.13", "type": "contextual_reference", "evidence": "the Lord's Prayer"}
+    ],
+    "forbidden": [],
+    "notes": "Mapped to the Matthew form; the shorter Luke form (LUK.11.2-LUK.11.4) is a defensible parallel and is not forbidden."
+  },
+  {
+    "id": "nc-05",
+    "category": "narrative_context",
+    "text": "If you want to know what Jesus expects of his followers, start with the Sermon on the Mount.",
+    "context_before": "",
+    "expected": [
+      {"ref": "MAT.5.1-MAT.7.27", "type": "contextual_reference", "evidence": "the Sermon on the Mount"}
+    ],
+    "forbidden": [],
+    "notes": "Discourse ends at 7:27 (wise and foolish builders); 7:28-29 is the narrator's comment (verified in WEB)."
+  },
+  {
+    "id": "nc-06",
+    "category": "narrative_context",
+    "text": "Like Zacchaeus climbing a tree just to catch a glimpse of Jesus, some of our visitors are simply curious.",
+    "context_before": "",
+    "expected": [
+      {"ref": "LUK.19.1-LUK.19.10", "type": "contextual_reference", "evidence": "Zacchaeus climbing a tree just to catch a glimpse of Jesus"}
+    ],
+    "forbidden": [],
+    "notes": "Named character and scene, no citation."
+  },
+  {
+    "id": "se-01",
+    "category": "semantic",
+    "text": "Nobody in this church should ever put money in the offering plate because they feel pressured or guilty; giving should come from a glad heart.",
+    "context_before": "",
+    "expected": [
+      {"ref": "2CO.9.7", "type": "ai_related", "evidence": "giving should come from a glad heart"}
+    ],
+    "forbidden": [],
+    "notes": "Cheerful giving, not under compulsion; no quotation or citation."
+  },
+  {
+    "id": "se-02",
+    "category": "semantic",
+    "text": "Before you fire back an angry reply, remember that a calm, soft response can cool down a heated argument, while cutting words only add fuel.",
+    "context_before": "",
+    "expected": [
+      {"ref": "PRO.15.1", "type": "ai_related", "evidence": "a calm, soft response can cool down a heated argument, while cutting words only add fuel"}
+    ],
+    "forbidden": [],
+    "notes": "A gentle answer turns away wrath; no quotation or citation."
+  },
+  {
+    "id": "se-03",
+    "category": "semantic",
+    "text": "I stopped trying to earn God's approval when I finally understood that salvation is a free gift, and nobody gets to brag about deserving it.",
+    "context_before": "",
+    "expected": [
+      {"ref": "EPH.2.8-EPH.2.9", "type": "ai_related", "evidence": "salvation is a free gift, and nobody gets to brag about deserving it"}
+    ],
+    "forbidden": [],
+    "notes": "Saved by grace as a gift, not of works, so no one can boast."
+  },
+  {
+    "id": "se-04",
+    "category": "semantic",
+    "text": "A marriage with God at the center is like a rope woven from three strands, and that kind of rope is very hard to snap.",
+    "context_before": "",
+    "expected": [
+      {"ref": "ECC.4.12", "type": "ai_related", "evidence": "like a rope woven from three strands, and that kind of rope is very hard to snap"}
+    ],
+    "forbidden": [],
+    "notes": "The threefold cord image; no quotation or citation."
+  },
+  {
+    "id": "se-05",
+    "category": "semantic",
+    "text": "People who keep waiting on God do not just survive hard seasons; they are given new strength, like a bird catching the wind and soaring high above the storm.",
+    "context_before": "",
+    "expected": [
+      {"ref": "ISA.40.31", "type": "ai_related", "evidence": "they are given new strength, like a bird catching the wind and soaring high above the storm"}
+    ],
+    "forbidden": [],
+    "notes": "Those who wait for the LORD renew their strength and mount up like eagles; allusion only."
+  },
+  {
+    "id": "hn-01",
+    "category": "hard_negatives",
+    "text": "My friend John called me last week to ask about the potluck.",
+    "context_before": "",
+    "expected": [],
+    "forbidden": ["JHN.1.1"],
+    "notes": "John is a person; any Gospel of John reference is a false positive."
+  },
+  {
+    "id": "hn-02",
+    "category": "hard_negatives",
+    "text": "I had only been at my job one day when the manager quit.",
+    "context_before": "",
+    "expected": [],
+    "forbidden": ["JOB.1.1-JOB.1.22"],
+    "notes": "'job one day' must not become Job 1."
+  },
+  {
+    "id": "hn-03",
+    "category": "hard_negatives",
+    "text": "Mark my words, at least 10 families will sign up for the retreat.",
+    "context_before": "",
+    "expected": [],
+    "forbidden": ["MRK.10.1-MRK.10.52"],
+    "notes": "Idiom 'mark my words' followed by a number is not Mark 10."
+  },
+  {
+    "id": "hn-04",
+    "category": "hard_negatives",
+    "text": "Our youth group does acts of kindness 2 times a week.",
+    "context_before": "",
+    "expected": [],
+    "forbidden": ["ACT.2.1-ACT.2.47"],
+    "notes": "'acts ... 2' is not Acts 2."
+  },
+  {
+    "id": "hn-05",
+    "category": "hard_negatives",
+    "text": "Please look at numbers 5 and 6 on the list before the meeting.",
+    "context_before": "",
+    "expected": [],
+    "forbidden": ["NUM.5.6", "NUM.5.1-NUM.5.31", "NUM.6.1-NUM.6.27"],
+    "notes": "List item numbers, not the book of Numbers."
+  },
+  {
+    "id": "hn-06",
+    "category": "hard_negatives",
+    "text": "Some people have more faith in the stock market than in anything else.",
+    "context_before": "",
+    "expected": [],
+    "forbidden": ["HEB.11.1"],
+    "notes": "Keyword 'faith' with no scripture meaning."
+  },
+  {
+    "id": "hn-07",
+    "category": "hard_negatives",
+    "text": "The committee meeting starts at 3:16 pm in room 12.",
+    "context_before": "",
+    "expected": [],
+    "forbidden": ["JHN.3.16"],
+    "notes": "A clock time that looks like a chapter:verse pair."
+  },
+  {
+    "id": "hn-08",
+    "category": "hard_negatives",
+    "text": "Honestly, my patience with the printer ran out long before my love for coffee did.",
+    "context_before": "",
+    "expected": [],
+    "forbidden": ["1CO.13.4"],
+    "notes": "Keyword overlap (patience, love) without quoting or alluding to 1 Corinthians 13."
+  },
+  {
+    "id": "hn-09",
+    "category": "hard_negatives",
+    "text": "We moved here with Ruth 2 years ago, right after the wedding.",
+    "context_before": "",
+    "expected": [],
+    "forbidden": ["RUT.2.1-RUT.2.23"],
+    "notes": "Ruth is a person; 'Ruth 2' is not the book of Ruth chapter 2."
+  },
+  {
+    "id": "hn-10",
+    "category": "hard_negatives",
+    "text": "The shepherd moved his sheep to the lower field before the storm rolled in.",
+    "context_before": "",
+    "expected": [],
+    "forbidden": ["PSA.23.1", "JHN.10.11"],
+    "notes": "Literal farm scene; shepherd and sheep keywords carry no scripture meaning here."
+  },
+  {
+    "id": "hn-11",
+    "category": "hard_negatives",
+    "text": "Jude brought 3 friends from school to youth night.",
+    "context_before": "",
+    "expected": [],
+    "forbidden": ["JUD.1.3"],
+    "notes": "Jude is a person; 'Jude 3' here is not Jude 1:3."
+  },
+  {
+    "id": "hn-12",
+    "category": "hard_negatives",
+    "text": "Our neighbor Daniel, 2 doors down, lent us his ladder.",
+    "context_before": "",
+    "expected": [],
+    "forbidden": ["DAN.2.1-DAN.2.49"],
+    "notes": "Daniel is a person; 'Daniel, 2' is not Daniel 2."
+  },
+  {
+    "id": "hn-13",
+    "category": "hard_negatives",
+    "text": "I finally found some peace and quiet when the kids went to their grandparents' house for the weekend.",
+    "context_before": "",
+    "expected": [],
+    "forbidden": ["PHP.4.7", "JHN.14.27"],
+    "notes": "Everyday use of 'peace'; no scripture meaning."
+  },
+  {
+    "id": "mq-01",
+    "category": "multi_quote",
+    "text": "Her voice cracked as she said it: I can do all things through Christ who strengthens me. If God is for us, who can be against us?",
+    "context_before": "",
+    "expected": [
+      {"ref": "PHP.4.13", "type": "scripture_quote", "evidence": "I can do all things through Christ who strengthens me."},
+      {"ref": "ROM.8.31", "type": "scripture_quote", "evidence": "If God is for us, who can be against us?"}
+    ],
+    "forbidden": [],
+    "notes": "Two WEB quotes back to back, uncited."
+  },
+  {
+    "id": "mq-02",
+    "category": "multi_quote",
+    "text": "Two lines hang over my desk: Thy word is a lamp unto my feet, and a light unto my path. Trust in the LORD with all thine heart; and lean not unto thine own understanding.",
+    "context_before": "",
+    "expected": [
+      {"ref": "PSA.119.105", "type": "scripture_quote", "evidence": "Thy word is a lamp unto my feet, and a light unto my path."},
+      {"ref": "PRO.3.5", "type": "scripture_quote", "evidence": "Trust in the LORD with all thine heart; and lean not unto thine own understanding."}
+    ],
+    "forbidden": [],
+    "notes": "Two KJV quotes back to back (brackets and pilcrow removed), uncited."
+  }
+]

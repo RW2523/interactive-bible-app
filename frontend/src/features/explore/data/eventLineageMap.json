@@ -1,0 +1,107 @@
+{
+  "call_of_abraham": {
+    "title": "God Calls Abraham",
+    "extraFocusIds": ["terah", "lot"],
+    "focusPeople": ["terah", "abram_abraham", "lot"],
+    "primaryPath": ["adam", "seth", "noah", "terah", "abram_abraham"],
+    "centerPersonId": "abram_abraham",
+    "defaultMode": "storybook",
+    "description": "God calls Abraham and begins the covenant family.",
+    "storyNote": "God calls Abram — the covenant family leaves Ur toward the land God will show."
+  },
+  "abrahamic_covenant": {
+    "extraFocusIds": ["abram_abraham", "isaac"],
+    "centerPersonId": "abram_abraham",
+    "storyNote": "God’s covenant promises are sealed with Abraham."
+  },
+  "birth_of_isaac": {
+    "extraFocusIds": ["isaac", "abram_abraham"],
+    "centerPersonId": "isaac",
+    "storyNote": "The child of promise is born to Abraham and Sarah."
+  },
+  "birth_of_jesus": {
+    "title": "Birth of Jesus",
+    "focusPeople": ["mary", "joseph_3", "jesus_messiah", "david", "judah", "abram_abraham"],
+    "extraFocusIds": ["mary", "joseph_3", "jesus_messiah", "david", "judah", "abram_abraham"],
+    "primaryPath": ["abram_abraham", "isaac", "jacob_israel", "judah", "david", "jesus_messiah"],
+    "centerPersonId": "jesus_messiah",
+    "defaultMode": "storybook",
+    "description": "Jesus is born in Bethlehem as the promised Son of David.",
+    "storyNote": "The Messiah is born — the line from Abraham to David finds its goal in Jesus."
+  },
+  "burning_bush": {
+    "title": "Moses and the Burning Bush",
+    "focusPeople": ["levi", "amram", "moses", "aaron", "miriam"],
+    "extraFocusIds": ["levi", "amram", "moses", "aaron", "miriam"],
+    "primaryPath": ["abram_abraham", "isaac", "jacob_israel", "levi", "amram", "moses"],
+    "centerPersonId": "moses",
+    "defaultMode": "storybook",
+    "description": "God calls Moses from the line of Levi to deliver Israel.",
+    "storyNote": "God calls Moses — priestly and prophetic leadership for Israel begins."
+  },
+  "golden_calf_tabernacle": {
+    "extraFocusIds": ["aaron", "moses"],
+    "centerPersonId": "aaron",
+    "storyNote": "Israel worships at the tabernacle; Aaron’s priestly line matters for access to God."
+  },
+  "ten_commandments": {
+    "extraFocusIds": ["moses", "aaron"],
+    "centerPersonId": "moses",
+    "storyNote": "Covenant law is given at Sinai."
+  },
+  "jacob_becomes_israel": {
+    "extraFocusIds": ["jacob_israel", "isaac", "abram_abraham"],
+    "centerPersonId": "jacob_israel",
+    "storyNote": "Jacob becomes Israel — father of the twelve tribes."
+  },
+  "david_king_jerusalem": {
+    "extraFocusIds": ["david", "jesse", "judah"],
+    "centerPersonId": "david",
+    "storyNote": "David reigns in Jerusalem — toward the Messianic king."
+  },
+  "davidic_covenant": {
+    "extraFocusIds": ["david", "solomon", "jesus_messiah"],
+    "centerPersonId": "david",
+    "storyNote": "God promises an everlasting kingdom through David’s line."
+  },
+  "crucifixion_resurrection": {
+    "extraFocusIds": ["jesus_messiah", "mary", "joseph_3"],
+    "centerPersonId": "jesus_messiah",
+    "storyNote": "Jesus dies and rises — the climax of the Messianic line."
+  },
+  "john_baptist_prepares_way": {
+    "extraFocusIds": ["jesus_messiah"],
+    "centerPersonId": "jesus_messiah",
+    "storyNote": "The forerunner points to the Messiah."
+  },
+  "baptism_temptation_jesus": {
+    "extraFocusIds": ["jesus_messiah"],
+    "centerPersonId": "jesus_messiah",
+    "storyNote": "Jesus is revealed and tested as Son of God."
+  },
+  "sermon_on_mount": {
+    "extraFocusIds": ["jesus_messiah"],
+    "centerPersonId": "jesus_messiah",
+    "storyNote": "Jesus teaches as the authoritative prophet-king."
+  },
+  "noahs_ark": {
+    "extraFocusIds": ["noah", "shem", "ham", "japheth"],
+    "centerPersonId": "noah",
+    "storyNote": "Through Noah’s family the world is preserved toward Shem’s line."
+  },
+  "tower_of_babel": {
+    "extraFocusIds": ["terah", "nahor_2"],
+    "centerPersonId": "terah",
+    "storyNote": "Nations scatter; later Terah’s line leads toward Abraham."
+  },
+  "creation": {
+    "extraFocusIds": ["adam"],
+    "centerPersonId": "adam",
+    "storyNote": "Humanity begins — every storyline flows from Adam."
+  },
+  "fall_of_man": {
+    "extraFocusIds": ["adam"],
+    "centerPersonId": "adam",
+    "storyNote": "Sin enters; the promise of redemption will run through a family line."
+  }
+}

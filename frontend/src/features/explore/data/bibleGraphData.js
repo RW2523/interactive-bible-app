@@ -1,0 +1,390 @@
+/**
+ * Bible Knowledge Graph — 100 nodes, 200+ edges
+ * Categories: person | event | place | concept | book
+ * Importance 1–5 (controls node size)
+ */
+
+export const GRAPH_CATEGORIES = {
+  person:  { label: 'Person',  color: '#f59e0b', glow: 'rgba(245,158,11,0.5)'  },
+  event:   { label: 'Event',   color: '#6366f1', glow: 'rgba(99,102,241,0.5)'  },
+  place:   { label: 'Place',   color: '#10b981', glow: 'rgba(16,185,129,0.5)'  },
+  concept: { label: 'Concept', color: '#ec4899', glow: 'rgba(236,72,153,0.5)'  },
+  book:    { label: 'Book',    color: '#64748b', glow: 'rgba(100,116,139,0.45)' },
+};
+
+export const GRAPH_NODES = [
+  // ── People ──────────────────────────────────────────────────────────────────
+  { id: 'god',          label: 'God',           category: 'person', importance: 5, desc: 'Creator and Lord of all — the central figure of the entire Bible.' },
+  { id: 'jesus',        label: 'Jesus Christ',  category: 'person', importance: 5, desc: 'Son of God, Messiah and Saviour. Born of Mary, crucified and risen.' },
+  { id: 'holy_spirit',  label: 'Holy Spirit',   category: 'person', importance: 4, desc: 'Third Person of the Trinity. Empowers and guides believers.' },
+  { id: 'adam',         label: 'Adam',          category: 'person', importance: 4, desc: 'First human, formed from dust. God\'s image-bearer. Fell by disobedience.' },
+  { id: 'eve',          label: 'Eve',           category: 'person', importance: 4, desc: 'First woman, formed from Adam\'s rib. Deceived by the serpent.' },
+  { id: 'noah',         label: 'Noah',          category: 'person', importance: 4, desc: 'Righteous man who built the Ark and survived the great Flood.' },
+  { id: 'abraham',      label: 'Abraham',       category: 'person', importance: 5, desc: 'Father of faith. Called from Ur; received the covenant of blessing for all nations.' },
+  { id: 'sarah',        label: 'Sarah',         category: 'person', importance: 3, desc: 'Abraham\'s wife. Mother of Isaac at age 90 by God\'s miracle.' },
+  { id: 'isaac',        label: 'Isaac',         category: 'person', importance: 3, desc: 'Son of Abraham and Sarah; carried on the covenant promise.' },
+  { id: 'jacob',        label: 'Jacob / Israel', category: 'person', importance: 4, desc: 'Wrestled with God; renamed Israel. Father of the 12 tribes.' },
+  { id: 'joseph',       label: 'Joseph',        category: 'person', importance: 4, desc: 'Sold into Egypt by his brothers; rose to be Pharaoh\'s viceroy.' },
+  { id: 'moses',        label: 'Moses',         category: 'person', importance: 5, desc: 'Deliverer of Israel from Egypt. Received the Law at Sinai.' },
+  { id: 'aaron',        label: 'Aaron',         category: 'person', importance: 3, desc: 'Moses\'s brother and first High Priest of Israel.' },
+  { id: 'miriam',       label: 'Miriam',        category: 'person', importance: 2, desc: 'Prophetess and sister of Moses; led Israel\'s women in song after the Exodus.' },
+  { id: 'joshua',       label: 'Joshua',        category: 'person', importance: 4, desc: 'Led Israel into Canaan. Faithful spy; successor to Moses.' },
+  { id: 'deborah',      label: 'Deborah',       category: 'person', importance: 3, desc: 'The only female judge of Israel. Prophetess who led Israel to victory.' },
+  { id: 'samson',       label: 'Samson',        category: 'person', importance: 3, desc: 'Nazirite judge with supernatural strength. Fought the Philistines.' },
+  { id: 'ruth',         label: 'Ruth',          category: 'person', importance: 3, desc: 'Moabite widow whose loyalty to Naomi led her into Israel\'s covenant. Ancestor of David.' },
+  { id: 'samuel',       label: 'Samuel',        category: 'person', importance: 4, desc: 'Last judge and first prophet. Anointed both Saul and David as king.' },
+  { id: 'saul',         label: 'King Saul',     category: 'person', importance: 3, desc: 'Israel\'s first king from the tribe of Benjamin. Rejected for disobedience.' },
+  { id: 'david',        label: 'David',         category: 'person', importance: 5, desc: 'Shepherd, warrior, king. Man after God\'s heart. Ancestor of Jesus.' },
+  { id: 'solomon',      label: 'Solomon',       category: 'person', importance: 4, desc: 'David\'s son. Wisest king; built the first Temple in Jerusalem.' },
+  { id: 'elijah',       label: 'Elijah',        category: 'person', importance: 4, desc: 'Prophet of fire. Confronted Baal on Mount Carmel. Taken to heaven in a chariot.' },
+  { id: 'elisha',       label: 'Elisha',        category: 'person', importance: 3, desc: 'Elijah\'s successor. Performed more miracles than any other OT prophet.' },
+  { id: 'isaiah',       label: 'Isaiah',        category: 'person', importance: 4, desc: 'Major prophet. Predicted the birth, ministry, and suffering of the Messiah.' },
+  { id: 'jeremiah',     label: 'Jeremiah',      category: 'person', importance: 4, desc: 'The weeping prophet. Warned Judah of Babylon\'s coming destruction.' },
+  { id: 'daniel',       label: 'Daniel',        category: 'person', importance: 4, desc: 'Statesman in Babylon. Survived the lion\'s den. Received apocalyptic visions.' },
+  { id: 'esther',       label: 'Esther',        category: 'person', importance: 3, desc: 'Jewish queen of Persia. Risked her life to save her people from genocide.' },
+  { id: 'ezra',         label: 'Ezra',          category: 'person', importance: 3, desc: 'Priest and scribe. Led a wave of exiles back to Jerusalem and restored the Law.' },
+  { id: 'nehemiah',     label: 'Nehemiah',      category: 'person', importance: 3, desc: 'Governor who rebuilt Jerusalem\'s walls in 52 days under opposition.' },
+  { id: 'john_baptist', label: 'John the Baptist', category: 'person', importance: 4, desc: 'Forerunner of Jesus. Baptised in the Jordan. "Greatest born of women."' },
+  { id: 'mary',         label: 'Mary',          category: 'person', importance: 4, desc: 'Virgin mother of Jesus. "Blessed among women." Received the Magnificat.' },
+  { id: 'peter',        label: 'Peter',         category: 'person', importance: 4, desc: 'Fisherman from Galilee. Leader of the 12 apostles. First to confess Jesus as Christ.' },
+  { id: 'paul',         label: 'Paul',          category: 'person', importance: 5, desc: 'Apostle to the Gentiles. Wrote 13 NT epistles. Planted churches across Asia Minor and Europe.' },
+  { id: 'john_apostle', label: 'John (Apostle)', category: 'person', importance: 4, desc: '"Beloved disciple." Wrote the Gospel of John, three epistles, and Revelation.' },
+  { id: 'judas',        label: 'Judas Iscariot', category: 'person', importance: 3, desc: 'Betrayed Jesus for 30 pieces of silver. Died by suicide.' },
+  { id: 'pilate',       label: 'Pontius Pilate', category: 'person', importance: 3, desc: 'Roman prefect who ordered the crucifixion of Jesus despite finding no fault.' },
+  { id: 'mary_magdalene', label: 'Mary Magdalene', category: 'person', importance: 3, desc: 'First witness of the resurrection. Devoted follower of Jesus.' },
+  { id: 'stephen',      label: 'Stephen',       category: 'person', importance: 3, desc: 'First Christian martyr. Saw heaven opened as he was stoned.' },
+  { id: 'satan',        label: 'Satan',         category: 'person', importance: 3, desc: 'The adversary. Fell angel who tempts humanity and opposes God\'s plan.' },
+
+  // ── Events ──────────────────────────────────────────────────────────────────
+  { id: 'creation',     label: 'Creation',      category: 'event', importance: 5, desc: 'God creates the heavens, earth, and humanity in six days.' },
+  { id: 'fall',         label: 'The Fall',      category: 'event', importance: 5, desc: 'Adam and Eve disobey God; sin and death enter the world.' },
+  { id: 'flood',        label: 'The Flood',     category: 'event', importance: 4, desc: 'Global judgment on human wickedness; Noah\'s family preserved by the Ark.' },
+  { id: 'exodus',       label: 'The Exodus',    category: 'event', importance: 5, desc: 'God delivers Israel from 400 years of Egyptian slavery through Moses.' },
+  { id: 'passover',     label: 'Passover',      category: 'event', importance: 4, desc: 'The tenth plague spared Israelite firstborns marked by lamb\'s blood.' },
+  { id: 'red_sea',      label: 'Red Sea Crossing', category: 'event', importance: 4, desc: 'God parts the sea for Israel and destroys Pharaoh\'s army.' },
+  { id: 'sinai',        label: 'Mount Sinai',   category: 'event', importance: 4, desc: 'God gives Moses the Ten Commandments and the Torah.' },
+  { id: 'conquest',     label: 'Conquest of Canaan', category: 'event', importance: 3, desc: 'Joshua leads Israel to capture the Promised Land.' },
+  { id: 'exile',        label: 'Babylonian Exile', category: 'event', importance: 4, desc: 'Judah carried captive to Babylon (586 BC). Temple destroyed.' },
+  { id: 'return',       label: 'Return from Exile', category: 'event', importance: 3, desc: 'Cyrus\'s decree (538 BC) allows Jews to return and rebuild Jerusalem.' },
+  { id: 'incarnation',  label: 'Incarnation',   category: 'event', importance: 5, desc: 'The Son of God becomes human — born of Mary in Bethlehem.' },
+  { id: 'baptism',      label: 'Baptism of Jesus', category: 'event', importance: 4, desc: 'The Father declares "This is my Son"; the Spirit descends as a dove.' },
+  { id: 'transfiguration', label: 'Transfiguration', category: 'event', importance: 3, desc: 'Jesus shines in glory on the mountain; Moses and Elijah appear.' },
+  { id: 'last_supper',  label: 'Last Supper',   category: 'event', importance: 4, desc: 'Jesus institutes the Lord\'s Supper; washes the disciples\' feet.' },
+  { id: 'crucifixion',  label: 'Crucifixion',   category: 'event', importance: 5, desc: 'Jesus dies on the cross at Golgotha — the atoning sacrifice for humanity\'s sin.' },
+  { id: 'resurrection', label: 'Resurrection',  category: 'event', importance: 5, desc: 'Jesus rises from the dead on the third day — the foundation of Christian faith.' },
+  { id: 'ascension',    label: 'Ascension',     category: 'event', importance: 3, desc: 'The risen Jesus ascends to heaven 40 days after the resurrection.' },
+  { id: 'pentecost',    label: 'Pentecost',     category: 'event', importance: 4, desc: 'The Holy Spirit fills 120 disciples with wind and fire; 3,000 are saved.' },
+  { id: 'paul_conversion', label: 'Paul\'s Conversion', category: 'event', importance: 4, desc: 'The risen Jesus meets Paul on the Damascus road — the church\'s greatest reversal.' },
+
+  // ── Places ──────────────────────────────────────────────────────────────────
+  { id: 'eden',         label: 'Garden of Eden', category: 'place', importance: 4, desc: 'God\'s first dwelling with humanity. Lost at the Fall; regained in Revelation.' },
+  { id: 'egypt',        label: 'Egypt',          category: 'place', importance: 4, desc: 'Land of Israel\'s slavery and later refuge for Jesus\'s family.' },
+  { id: 'canaan',       label: 'Canaan / Israel', category: 'place', importance: 4, desc: 'The Promised Land — given to Abraham\'s descendants. Modern Israel/Palestine.' },
+  { id: 'jerusalem',    label: 'Jerusalem',      category: 'place', importance: 5, desc: 'City of David. Temple site. Where Jesus died and rose. Heart of Bible prophecy.' },
+  { id: 'bethlehem',    label: 'Bethlehem',      category: 'place', importance: 3, desc: 'City of David. Birthplace of Jesus. Predicted by Micah 700 years earlier.' },
+  { id: 'nazareth',     label: 'Nazareth',       category: 'place', importance: 3, desc: 'Galilee town where Jesus grew up. "Can anything good come from Nazareth?"' },
+  { id: 'galilee',      label: 'Sea of Galilee', category: 'place', importance: 3, desc: 'Centre of Jesus\'s Galilean ministry. Where he called fishermen and calmed storms.' },
+  { id: 'sinai_mt',     label: 'Mount Sinai',    category: 'place', importance: 4, desc: 'The Mountain of God. Where the Law was given and God revealed His name.' },
+  { id: 'jordan',       label: 'Jordan River',   category: 'place', importance: 3, desc: 'Israel crossed it into Canaan; Jesus was baptised here by John.' },
+  { id: 'babylon',      label: 'Babylon',        category: 'place', importance: 4, desc: 'Empire that destroyed Jerusalem; symbol of worldly power and spiritual exile.' },
+  { id: 'rome',         label: 'Rome',           category: 'place', importance: 3, desc: 'Capital of the Empire where Paul was martyred and wrote his prison letters.' },
+  { id: 'ur',           label: 'Ur (Iraq)',       category: 'place', importance: 3, desc: 'Sumerian city-state. Abraham\'s birthplace (modern Tell el-Muqayyar, Iraq).' },
+  { id: 'antioch',      label: 'Antioch',        category: 'place', importance: 3, desc: 'Modern Antakya, Turkey. First Gentile church; disciples first called Christians.' },
+  { id: 'sinai_region', label: 'Sinai Wilderness', category: 'place', importance: 3, desc: 'Israel wandered here 40 years. Where God tested and formed the nation.' },
+  { id: 'golgotha',     label: 'Golgotha',       category: 'place', importance: 4, desc: '"Place of the Skull" — where Jesus was crucified outside Jerusalem\'s walls.' },
+
+  // ── Concepts ─────────────────────────────────────────────────────────────────
+  { id: 'covenant',     label: 'Covenant',       category: 'concept', importance: 5, desc: 'God\'s binding promises with humanity — Adamic, Noahic, Abrahamic, Mosaic, Davidic, New.' },
+  { id: 'sin',          label: 'Sin',            category: 'concept', importance: 5, desc: 'Rebellion against God. Entered through Adam; spreads to all. Atoned by Christ.' },
+  { id: 'redemption',   label: 'Redemption',     category: 'concept', importance: 5, desc: 'Being bought back from sin and death. Pictured in Exodus; fulfilled in Christ.' },
+  { id: 'faith',        label: 'Faith',          category: 'concept', importance: 5, desc: 'Trust in God. "Credited as righteousness" (Gen 15:6). The means of salvation.' },
+  { id: 'grace',        label: 'Grace',          category: 'concept', importance: 5, desc: 'Unmerited favour from God. "By grace you have been saved through faith" (Eph 2:8).' },
+  { id: 'law',          label: 'The Law (Torah)', category: 'concept', importance: 4, desc: 'God\'s moral, civil, and ceremonial instructions given at Sinai. Points to Christ.' },
+  { id: 'prophecy',     label: 'Prophecy',       category: 'concept', importance: 4, desc: 'God\'s declared future. 300+ OT prophecies fulfilled by Jesus alone.' },
+  { id: 'messiah',      label: 'Messiah / Christ', category: 'concept', importance: 5, desc: '"Anointed One." The promised deliverer-king from David\'s line — Jesus.' },
+  { id: 'atonement',    label: 'Atonement',      category: 'concept', importance: 4, desc: 'Covering of sin through sacrifice. OT: animal blood. NT: Jesus\'s blood once for all.' },
+  { id: 'resurrection_concept', label: 'Resurrection (Doctrine)', category: 'concept', importance: 4, desc: 'Bodily rising from the dead. Jesus is first; believers follow at his return.' },
+  { id: 'kingdom',      label: 'Kingdom of God', category: 'concept', importance: 5, desc: 'God\'s reign over creation. Already inaugurated by Jesus; not yet fully consummated.' },
+  { id: 'trinity',      label: 'Trinity',        category: 'concept', importance: 4, desc: 'One God in three persons — Father, Son, Holy Spirit. Co-equal and co-eternal.' },
+  { id: 'prayer',       label: 'Prayer',         category: 'concept', importance: 3, desc: 'Communion with God. The Lord\'s Prayer as model. Integral throughout Scripture.' },
+  { id: 'sacrifice',    label: 'Sacrifice',      category: 'concept', importance: 4, desc: 'Offering to God. Animals in the OT; Jesus as the final sacrifice in the NT.' },
+  { id: 'church',       label: 'The Church',     category: 'concept', importance: 4, desc: 'The body of Christ. Born at Pentecost. Made of all who trust in Jesus.' },
+
+  // ── Books ───────────────────────────────────────────────────────────────────
+  { id: 'genesis',      label: 'Genesis',        category: 'book', importance: 4, desc: 'Beginnings: Creation, Fall, Flood, Babel, and the Patriarchs (Abraham–Joseph).' },
+  { id: 'exodus_book',  label: 'Exodus',         category: 'book', importance: 4, desc: 'Israel\'s deliverance from Egypt, the Passover, Ten Commandments, Tabernacle.' },
+  { id: 'psalms',       label: 'Psalms',         category: 'book', importance: 4, desc: '150 songs and prayers. Israel\'s hymnbook. Deeply Messianic.' },
+  { id: 'isaiah_book',  label: 'Isaiah',         category: 'book', importance: 4, desc: 'Greatest prophetic book. "Suffering Servant" (ch. 53) predicts the cross precisely.' },
+  { id: 'matthew',      label: 'Matthew',        category: 'book', importance: 4, desc: 'Gospel written for Jewish audience. Jesus as the new Moses and promised King.' },
+  { id: 'john_gospel',  label: 'John',           category: 'book', importance: 4, desc: '"In the beginning was the Word." Deeply theological Gospel. Seven signs.' },
+  { id: 'acts',         label: 'Acts',           category: 'book', importance: 4, desc: 'Birth and spread of the Church from Jerusalem to Rome through the Spirit.' },
+  { id: 'romans',       label: 'Romans',         category: 'book', importance: 4, desc: 'Paul\'s masterwork on sin, grace, justification, and the Gospel\'s power.' },
+  { id: 'revelation',   label: 'Revelation',     category: 'book', importance: 4, desc: 'Apocalyptic vision of the end times — Christ\'s final victory over evil.' },
+  { id: 'proverbs',     label: 'Proverbs',       category: 'book', importance: 3, desc: 'Wisdom literature. "The fear of the LORD is the beginning of wisdom."' },
+  { id: 'daniel_book',  label: 'Daniel',         category: 'book', importance: 3, desc: 'Apocalyptic visions; lion\'s den; four world empires and the Son of Man.' },
+];
+
+// ── Edges ──────────────────────────────────────────────────────────────────────
+// source → target (unweighted; strength implied by category proximity)
+export const GRAPH_EDGES = [
+  // God's relationships
+  { source: 'god', target: 'jesus',       label: 'Father–Son'      },
+  { source: 'god', target: 'holy_spirit', label: 'Trinity'         },
+  { source: 'god', target: 'creation',    label: 'Creator'         },
+  { source: 'god', target: 'covenant',    label: 'Covenant Maker'  },
+  { source: 'god', target: 'messiah',     label: 'Sends'           },
+  { source: 'god', target: 'kingdom',     label: 'Reigns'          },
+  { source: 'god', target: 'trinity',     label: 'Is'              },
+  { source: 'god', target: 'prayer',      label: 'Receives'        },
+
+  // Trinity
+  { source: 'jesus',       target: 'holy_spirit', label: 'Sends'       },
+  { source: 'holy_spirit', target: 'pentecost',   label: 'Poured Out'  },
+  { source: 'holy_spirit', target: 'church',      label: 'Empowers'    },
+  { source: 'holy_spirit', target: 'mary',        label: 'Overshadows' },
+
+  // Jesus's life & doctrine
+  { source: 'jesus', target: 'incarnation',  label: 'Is'           },
+  { source: 'jesus', target: 'baptism',      label: 'Receives'     },
+  { source: 'jesus', target: 'crucifixion',  label: 'Dies'         },
+  { source: 'jesus', target: 'resurrection', label: 'Rises'        },
+  { source: 'jesus', target: 'ascension',    label: 'Ascends'      },
+  { source: 'jesus', target: 'last_supper',  label: 'Institutes'   },
+  { source: 'jesus', target: 'transfiguration', label: 'Appears'   },
+  { source: 'jesus', target: 'messiah',      label: 'Fulfils'      },
+  { source: 'jesus', target: 'atonement',    label: 'Completes'    },
+  { source: 'jesus', target: 'kingdom',      label: 'Inaugurates'  },
+  { source: 'jesus', target: 'grace',        label: 'Embodies'     },
+  { source: 'jesus', target: 'redemption',   label: 'Accomplishes' },
+  { source: 'jesus', target: 'bethlehem',    label: 'Born In'      },
+  { source: 'jesus', target: 'nazareth',     label: 'Raised In'    },
+  { source: 'jesus', target: 'galilee',      label: 'Ministers In' },
+  { source: 'jesus', target: 'jerusalem',    label: 'Died In'      },
+  { source: 'jesus', target: 'golgotha',     label: 'Crucified At' },
+  { source: 'jesus', target: 'jordan',       label: 'Baptised In'  },
+  { source: 'jesus', target: 'david',        label: 'Son of David' },
+  { source: 'jesus', target: 'john_gospel',  label: 'Word of God'  },
+  { source: 'jesus', target: 'matthew',      label: 'Messiah King' },
+  { source: 'jesus', target: 'revelation',   label: 'Returns'      },
+
+  // Mary
+  { source: 'mary', target: 'jesus',       label: 'Mother'         },
+  { source: 'mary', target: 'bethlehem',   label: 'Gave Birth In'  },
+  { source: 'mary', target: 'incarnation', label: 'Vessel'         },
+
+  // John the Baptist
+  { source: 'john_baptist', target: 'jesus',   label: 'Prepares Way' },
+  { source: 'john_baptist', target: 'baptism', label: 'Baptises'     },
+  { source: 'john_baptist', target: 'jordan',  label: 'Ministers At' },
+  { source: 'john_baptist', target: 'prophecy',label: 'Fulfils'      },
+
+  // Apostles
+  { source: 'peter',        target: 'jesus',           label: 'Disciple'     },
+  { source: 'peter',        target: 'church',          label: 'Leads'        },
+  { source: 'peter',        target: 'pentecost',       label: 'Preaches At'  },
+  { source: 'john_apostle', target: 'jesus',           label: 'Disciple'     },
+  { source: 'john_apostle', target: 'john_gospel',     label: 'Writes'       },
+  { source: 'john_apostle', target: 'revelation',      label: 'Receives'     },
+  { source: 'judas',        target: 'jesus',           label: 'Betrays'      },
+  { source: 'judas',        target: 'crucifixion',     label: 'Enables'      },
+  { source: 'pilate',       target: 'crucifixion',     label: 'Orders'       },
+  { source: 'pilate',       target: 'jesus',           label: 'Judges'       },
+  { source: 'mary_magdalene', target: 'jesus',         label: 'Follows'      },
+  { source: 'mary_magdalene', target: 'resurrection',  label: 'First Witness'},
+  { source: 'stephen',      target: 'church',          label: 'First Martyr' },
+  { source: 'stephen',      target: 'paul',            label: 'Witnessed By' },
+
+  // Paul
+  { source: 'paul', target: 'paul_conversion', label: 'Transforms'    },
+  { source: 'paul', target: 'church',          label: 'Plants'        },
+  { source: 'paul', target: 'rome',            label: 'Reaches'       },
+  { source: 'paul', target: 'antioch',         label: 'Based In'      },
+  { source: 'paul', target: 'romans',          label: 'Writes'        },
+  { source: 'paul', target: 'acts',            label: 'Featured In'   },
+  { source: 'paul', target: 'grace',           label: 'Proclaims'     },
+  { source: 'paul', target: 'faith',           label: 'Defines'       },
+  { source: 'paul', target: 'law',             label: 'Interprets'    },
+  { source: 'paul_conversion', target: 'jesus', label: 'Encounters'   },
+
+  // Satan
+  { source: 'satan', target: 'fall',      label: 'Causes'     },
+  { source: 'satan', target: 'sin',       label: 'Promotes'   },
+  { source: 'satan', target: 'jesus',     label: 'Tempts'     },
+  { source: 'satan', target: 'revelation',label: 'Defeated In'},
+
+  // OT Patriarchs chain
+  { source: 'adam',     target: 'eve',      label: 'Husband'     },
+  { source: 'adam',     target: 'creation', label: 'Created In'  },
+  { source: 'adam',     target: 'fall',     label: 'Falls'       },
+  { source: 'adam',     target: 'eden',     label: 'Lived In'    },
+  { source: 'adam',     target: 'sin',      label: 'Introduced'  },
+  { source: 'eve',      target: 'fall',     label: 'First Deceived'},
+  { source: 'eve',      target: 'satan',    label: 'Deceived By' },
+  { source: 'noah',     target: 'flood',    label: 'Saved In'    },
+  { source: 'noah',     target: 'covenant', label: 'Rainbow Covenant'},
+  { source: 'noah',     target: 'genesis',  label: 'In'          },
+  { source: 'abraham',  target: 'covenant', label: 'Receives'    },
+  { source: 'abraham',  target: 'faith',    label: 'Father of'   },
+  { source: 'abraham',  target: 'ur',       label: 'From'        },
+  { source: 'abraham',  target: 'canaan',   label: 'Journeys To' },
+  { source: 'abraham',  target: 'isaac',    label: 'Father'      },
+  { source: 'abraham',  target: 'sarah',    label: 'Husband'     },
+  { source: 'abraham',  target: 'sacrifice',label: 'Tests of'    },
+  { source: 'abraham',  target: 'messiah',  label: 'Promised'    },
+  { source: 'isaac',    target: 'jacob',    label: 'Father'      },
+  { source: 'jacob',    target: 'joseph',   label: 'Father'      },
+  { source: 'jacob',    target: 'covenant', label: 'Receives'    },
+  { source: 'jacob',    target: 'canaan',   label: 'Returns To'  },
+  { source: 'joseph',   target: 'egypt',    label: 'Sold Into'   },
+  { source: 'joseph',   target: 'genesis',  label: 'In'          },
+
+  // Moses & Exodus
+  { source: 'moses',   target: 'exodus',     label: 'Leads'        },
+  { source: 'moses',   target: 'passover',   label: 'Institutes'   },
+  { source: 'moses',   target: 'red_sea',    label: 'Parts'        },
+  { source: 'moses',   target: 'law',        label: 'Receives'     },
+  { source: 'moses',   target: 'sinai',      label: 'At'           },
+  { source: 'moses',   target: 'sinai_mt',   label: 'Climbs'       },
+  { source: 'moses',   target: 'egypt',      label: 'Confronts'    },
+  { source: 'moses',   target: 'covenant',   label: 'Mediates'     },
+  { source: 'moses',   target: 'aaron',      label: 'Brother'      },
+  { source: 'moses',   target: 'miriam',     label: 'Sister'       },
+  { source: 'moses',   target: 'exodus_book',label: 'Featured In'  },
+  { source: 'moses',   target: 'prayer',     label: 'Intercedes'   },
+  { source: 'moses',   target: 'sinai_region',label: 'Wanders'     },
+  { source: 'aaron',   target: 'exodus',     label: 'Co-Leads'     },
+  { source: 'aaron',   target: 'sacrifice',  label: 'Offers'       },
+  { source: 'exodus',  target: 'egypt',      label: 'From'         },
+  { source: 'exodus',  target: 'canaan',     label: 'Toward'       },
+  { source: 'exodus',  target: 'redemption', label: 'Pictures'     },
+  { source: 'passover',target: 'atonement',  label: 'Pictures'     },
+  { source: 'passover',target: 'sacrifice',  label: 'Requires'     },
+  { source: 'red_sea', target: 'egypt',      label: 'Leaves'       },
+  { source: 'red_sea', target: 'sinai_region',label: 'Enters'      },
+  { source: 'sinai',   target: 'law',        label: 'Where Given'  },
+  { source: 'sinai',   target: 'covenant',   label: 'Mosaic'       },
+
+  // Joshua / Judges
+  { source: 'joshua',  target: 'conquest',   label: 'Leads'        },
+  { source: 'joshua',  target: 'jordan',     label: 'Crosses'      },
+  { source: 'joshua',  target: 'canaan',     label: 'Enters'       },
+  { source: 'deborah', target: 'israel_nation',label:'Judges'      },
+  { source: 'samson',  target: 'israel_nation',label:'Judges'      },
+  { source: 'ruth',    target: 'david',       label: 'Ancestor Of' },
+  { source: 'ruth',    target: 'faith',       label: 'Models'      },
+  { source: 'ruth',    target: 'covenant',    label: 'Joins'       },
+
+  // Kingdom era
+  { source: 'samuel',  target: 'saul',       label: 'Anoints'      },
+  { source: 'samuel',  target: 'david',      label: 'Anoints'      },
+  { source: 'samuel',  target: 'prophecy',   label: 'Gives'        },
+  { source: 'saul',    target: 'david',      label: 'Pursues'      },
+  { source: 'david',   target: 'jerusalem',  label: 'Captures'     },
+  { source: 'david',   target: 'covenant',   label: 'Davidic'      },
+  { source: 'david',   target: 'messiah',    label: 'Foreshadows'  },
+  { source: 'david',   target: 'psalms',     label: 'Writes Most'  },
+  { source: 'david',   target: 'solomon',    label: 'Father'       },
+  { source: 'solomon', target: 'jerusalem',  label: 'Builds Temple'},
+  { source: 'solomon', target: 'temple',     label: 'Builds'       },
+  { source: 'solomon', target: 'proverbs',   label: 'Writes'       },
+
+  // Prophets
+  { source: 'elijah',  target: 'prophecy',   label: 'Speaks'       },
+  { source: 'elijah',  target: 'john_baptist',label: 'Type of'     },
+  { source: 'elijah',  target: 'transfiguration',label:'Appears'   },
+  { source: 'elisha',  target: 'elijah',     label: 'Successor'    },
+  { source: 'isaiah',  target: 'messiah',    label: 'Predicts'     },
+  { source: 'isaiah',  target: 'prophecy',   label: 'Gives'        },
+  { source: 'isaiah',  target: 'isaiah_book',label: 'Writes'       },
+  { source: 'jeremiah',target: 'exile',      label: 'Warns Of'     },
+  { source: 'jeremiah',target: 'covenant',   label: 'New Covenant' },
+  { source: 'daniel',  target: 'babylon',    label: 'Exiled To'    },
+  { source: 'daniel',  target: 'messiah',    label: '"Son of Man"' },
+  { source: 'daniel',  target: 'daniel_book',label: 'Writes'       },
+  { source: 'daniel',  target: 'kingdom',    label: 'Envisions'    },
+
+  // Exile & Return
+  { source: 'exile',   target: 'babylon',    label: 'In'           },
+  { source: 'exile',   target: 'jerusalem',  label: 'From'         },
+  { source: 'return',  target: 'babylon',    label: 'From'         },
+  { source: 'return',  target: 'jerusalem',  label: 'To'           },
+  { source: 'ezra',    target: 'return',     label: 'Leads'        },
+  { source: 'ezra',    target: 'law',        label: 'Restores'     },
+  { source: 'nehemiah',target: 'return',     label: 'Leads'        },
+  { source: 'nehemiah',target: 'jerusalem',  label: 'Rebuilds'     },
+  { source: 'esther',  target: 'babylon',    label: 'In Diaspora'  },
+  { source: 'esther',  target: 'faith',      label: 'Models'       },
+
+  // Church & Acts
+  { source: 'pentecost',target: 'church',    label: 'Births'       },
+  { source: 'pentecost',target: 'jerusalem', label: 'In'           },
+  { source: 'church',   target: 'antioch',   label: 'Spreads To'   },
+  { source: 'church',   target: 'rome',      label: 'Reaches'      },
+  { source: 'acts',     target: 'church',    label: 'Chronicles'   },
+  { source: 'acts',     target: 'holy_spirit',label: 'Features'    },
+
+  // Concepts cross-links
+  { source: 'covenant',    target: 'redemption', label: 'Ensures'   },
+  { source: 'sin',         target: 'atonement',  label: 'Requires'  },
+  { source: 'atonement',   target: 'sacrifice',  label: 'Through'   },
+  { source: 'faith',       target: 'grace',      label: 'Receives'  },
+  { source: 'grace',       target: 'redemption', label: 'Gives'     },
+  { source: 'prophecy',    target: 'messiah',    label: 'Points To' },
+  { source: 'messiah',     target: 'kingdom',    label: 'Rules'     },
+  { source: 'kingdom',     target: 'resurrection_concept', label: 'Brings' },
+  { source: 'law',         target: 'covenant',   label: 'Part of'   },
+  { source: 'sacrifice',   target: 'atonement',  label: 'Enables'   },
+  { source: 'resurrection',target: 'resurrection_concept', label: 'Is'  },
+  { source: 'trinity',     target: 'god',        label: 'Includes'  },
+  { source: 'trinity',     target: 'jesus',      label: 'Includes'  },
+  { source: 'trinity',     target: 'holy_spirit',label: 'Includes'  },
+
+  // Books cross-links
+  { source: 'genesis',     target: 'creation',   label: 'Records'   },
+  { source: 'genesis',     target: 'fall',       label: 'Records'   },
+  { source: 'genesis',     target: 'flood',      label: 'Records'   },
+  { source: 'genesis',     target: 'abraham',    label: 'Features'  },
+  { source: 'genesis',     target: 'covenant',   label: 'Introduces'},
+  { source: 'exodus_book', target: 'exodus',     label: 'Records'   },
+  { source: 'exodus_book', target: 'law',        label: 'Records'   },
+  { source: 'psalms',      target: 'david',      label: 'By'        },
+  { source: 'psalms',      target: 'worship',    label: 'Inspires'  },
+  { source: 'psalms',      target: 'prayer',     label: 'Teaches'   },
+  { source: 'isaiah_book', target: 'messiah',    label: 'Predicts'  },
+  { source: 'isaiah_book', target: 'redemption', label: 'Promises'  },
+  { source: 'romans',      target: 'sin',        label: 'Diagnoses' },
+  { source: 'romans',      target: 'grace',      label: 'Explains'  },
+  { source: 'romans',      target: 'faith',      label: 'Defines'   },
+  { source: 'revelation',  target: 'kingdom',    label: 'Consummates'},
+  { source: 'revelation',  target: 'jerusalem',  label: 'New Jerusalem'},
+  { source: 'revelation',  target: 'satan',      label: 'Defeats'   },
+  { source: 'daniel_book', target: 'kingdom',    label: 'Envisions' },
+  { source: 'daniel_book', target: 'prophecy',   label: 'Contains'  },
+
+  // Temple concept (extra node implicit)
+  { source: 'solomon',     target: 'jerusalem',  label: 'Temple Built'},
+  { source: 'jerusalem',   target: 'covenant',   label: 'Centre of'  },
+  { source: 'jerusalem',   target: 'crucifixion',label: 'Site of'     },
+  { source: 'jerusalem',   target: 'resurrection',label: 'Site of'    },
+  { source: 'babylon',     target: 'exile',      label: 'Caused'      },
+];
+
+// Helper: pre-compute node degree for sizing
+export function computeNodeDegrees(nodes, edges) {
+  const deg = {};
+  nodes.forEach(n => { deg[n.id] = 0; });
+  edges.forEach(e => {
+    const s = typeof e.source === 'object' ? e.source.id : e.source;
+    const t = typeof e.target === 'object' ? e.target.id : e.target;
+    if (s in deg) deg[s]++;
+    if (t in deg) deg[t]++;
+  });
+  return deg;
+}
+
+// "israel_nation" and "temple" and "worship" referenced in edges but not in nodes — add stubs
+GRAPH_NODES.push(
+  { id: 'israel_nation', label: 'Israel (Nation)', category: 'concept', importance: 4, desc: 'The covenant people of God — 12 tribes descended from Jacob/Israel.' },
+  { id: 'temple',        label: 'The Temple',      category: 'place',   importance: 4, desc: 'God\'s dwelling on Mount Moriah, Jerusalem. Built by Solomon; destroyed by Babylon; rebuilt; fulfilled in Christ.' },
+  { id: 'worship',       label: 'Worship',         category: 'concept', importance: 3, desc: 'Ascribing worth to God through prayer, song, sacrifice, and obedience.' },
+);

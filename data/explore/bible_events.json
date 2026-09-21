@@ -1,0 +1,3797 @@
+[
+  {
+    "id": "creation",
+    "order": 1,
+    "title": "Creation of the World",
+    "era": "Primeval History",
+    "timelineDate": "Beginning",
+    "mapLocation": "Whole earth / Eden",
+    "references": [
+      "Genesis 1-2"
+    ],
+    "summary": "God creates the heavens, earth, light, land, sea, animals, and humanity. Human beings are created in the image of God and given responsibility over creation.",
+    "details": "This is the opening foundation of the Bible story. It shows that God is the source of life, order, beauty, and purpose. The event establishes humanity as God’s image bearers and introduces the world as God’s good creation.",
+    "mainPeople": [
+      "God",
+      "Adam",
+      "Eve"
+    ],
+    "lineageConnection": [
+      "Adam",
+      "Eve",
+      "Humanity"
+    ],
+    "lesson": "God is Creator, and human life has value, purpose, and responsibility.",
+    "mapIcon": "globe",
+    "videoIdea": "Show darkness turning to light, land and sea forming, animals appearing, and Adam and Eve in Eden.",
+    "coords": {
+      "x": 12,
+      "y": 74
+    },
+    "route": [],
+    "tags": [
+      "Primeval History",
+      "God",
+      "Adam",
+      "Eve"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Whole Earth / Garden of Eden",
+      "modern": "Region near modern Iraq / Turkey (Tigris-Euphrates headwaters, disputed)",
+      "construction": "Eden described as a lush garden with four rivers — Pishon, Gihon, Tigris (Hiddekel), and Euphrates — suggesting a Mesopotamian setting.",
+      "significance": "First recorded place of human habitation"
+    },
+    "eventTags": [
+      "Creation",
+      "Covenant",
+      "Divine Act",
+      "Foundation",
+      "Humanity"
+    ],
+    "roleTags": [
+      {
+        "person": "God",
+        "role": "Creator",
+        "origin": "Eternal",
+        "relation": "Source of all life"
+      },
+      {
+        "person": "Adam",
+        "role": "First Man",
+        "origin": "Formed from dust of Eden",
+        "relation": "Image-bearer of God"
+      },
+      {
+        "person": "Eve",
+        "role": "First Woman",
+        "origin": "Formed from Adam's rib, Eden",
+        "relation": "Companion and co-image-bearer"
+      }
+    ]
+  },
+  {
+    "id": "fall_of_man",
+    "order": 2,
+    "title": "The Fall of Man",
+    "era": "Primeval History",
+    "timelineDate": "After Creation",
+    "mapLocation": "Garden of Eden",
+    "references": [
+      "Genesis 3"
+    ],
+    "summary": "Adam and Eve disobey God by eating from the forbidden tree. Sin enters the world, but God gives the first promise of future redemption.",
+    "details": "This event explains why the world becomes broken. It shows temptation, human rebellion, shame, judgment, and mercy. God clothes Adam and Eve and promises that the serpent will ultimately be defeated.",
+    "mainPeople": [
+      "Adam",
+      "Eve",
+      "Serpent"
+    ],
+    "lineageConnection": [
+      "Adam",
+      "Eve",
+      "Humanity affected by sin"
+    ],
+    "lesson": "Disobedience separates people from God, but God begins the plan of redemption.",
+    "mapIcon": "tree",
+    "videoIdea": "Show the garden, the forbidden fruit, the fall, and Adam and Eve leaving Eden.",
+    "coords": {
+      "x": 16,
+      "y": 70
+    },
+    "route": [],
+    "tags": [
+      "Primeval History",
+      "Adam",
+      "Eve",
+      "Serpent"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Garden of Eden",
+      "modern": "Possibly near confluence of Tigris and Euphrates, southern Iraq",
+      "construction": "A divinely tended garden containing the Tree of Life and the Tree of Knowledge of Good and Evil — archetypal sacred enclosure.",
+      "significance": "The place where sin entered human history"
+    },
+    "eventTags": [
+      "Sin",
+      "Judgment",
+      "Redemption Promise",
+      "Temptation",
+      "Exile"
+    ],
+    "roleTags": [
+      {
+        "person": "Adam",
+        "role": "First Man",
+        "origin": "Eden",
+        "relation": "Covenant head of humanity"
+      },
+      {
+        "person": "Eve",
+        "role": "First Woman",
+        "origin": "Eden",
+        "relation": "First to be deceived"
+      },
+      {
+        "person": "Serpent",
+        "role": "Deceiver",
+        "origin": "Eden",
+        "relation": "Instrument of temptation"
+      }
+    ]
+  },
+  {
+    "id": "cain_and_abel",
+    "order": 3,
+    "title": "Cain and Abel",
+    "era": "Primeval History",
+    "timelineDate": "Early Humanity",
+    "mapLocation": "Near Eden",
+    "references": [
+      "Genesis 4"
+    ],
+    "summary": "Cain kills Abel out of jealousy after their offerings. The event shows sin spreading into worship, anger, and family relationships.",
+    "details": "Cain’s anger grows because Abel’s offering is accepted. God warns Cain, but Cain ignores the warning and murders his brother. This marks the first recorded human death and shows the serious spread of sin.",
+    "mainPeople": [
+      "Cain",
+      "Abel",
+      "God"
+    ],
+    "lineageConnection": [
+      "Adam",
+      "Eve",
+      "Cain",
+      "Abel"
+    ],
+    "lesson": "Uncontrolled jealousy and anger can destroy relationships; God calls people to master sin.",
+    "mapIcon": "altar",
+    "videoIdea": "Show two altars, Cain’s anger, Abel’s death, and Cain wandering away.",
+    "coords": {
+      "x": 19,
+      "y": 69
+    },
+    "route": [],
+    "tags": [
+      "Primeval History",
+      "Cain",
+      "Abel",
+      "God"
+    ],
+    "category": "people",
+    "placeContext": {
+      "ancient": "Land of Nod / East of Eden",
+      "modern": "Vaguely east of the Tigris-Euphrates valley, Mesopotamia",
+      "construction": "Nod ('wandering') was Cain's land of exile — no fixed city described, a place of nomadic cursed existence.",
+      "significance": "First recorded human murder site"
+    },
+    "eventTags": [
+      "Murder",
+      "Jealousy",
+      "Worship",
+      "Judgment",
+      "Family"
+    ],
+    "roleTags": [
+      {
+        "person": "Cain",
+        "role": "Farmer / Firstborn",
+        "origin": "Eden descendants",
+        "relation": "Son of Adam and Eve, murderer"
+      },
+      {
+        "person": "Abel",
+        "role": "Shepherd",
+        "origin": "Eden descendants",
+        "relation": "Son of Adam and Eve, first martyr"
+      },
+      {
+        "person": "God",
+        "role": "Judge and Protector",
+        "origin": "Eternal",
+        "relation": "Accepts Abel's offering; marks Cain"
+      }
+    ]
+  },
+  {
+    "id": "noahs_ark",
+    "order": 4,
+    "title": "Noah’s Ark and the Flood",
+    "era": "Primeval History",
+    "timelineDate": "Ancient World",
+    "mapLocation": "Ancient world / Ararat region",
+    "references": [
+      "Genesis 6-9"
+    ],
+    "summary": "God judges human wickedness through the flood while preserving Noah’s family through the ark. Afterward God makes a covenant marked by the rainbow.",
+    "details": "Noah obeys God by building the ark. The flood cleanses the corrupt world, and the ark becomes a picture of rescue through faith and obedience. The covenant with Noah assures the ongoing preservation of creation.",
+    "mainPeople": [
+      "Noah",
+      "Noah’s family",
+      "God"
+    ],
+    "lineageConnection": [
+      "Adam",
+      "Seth",
+      "Noah",
+      "Noah’s sons"
+    ],
+    "lesson": "God judges evil but provides a way of rescue for those who trust Him.",
+    "mapIcon": "ship",
+    "videoIdea": "Show Noah building the ark, animals entering, rain falling, the ark resting, and the rainbow.",
+    "coords": {
+      "x": 53,
+      "y": 11
+    },
+    "route": [],
+    "tags": [
+      "Primeval History",
+      "Noah",
+      "Noah’s family",
+      "God"
+    ],
+    "category": "travel",
+    "placeContext": {
+      "ancient": "Ancient World → Mount Ararat",
+      "modern": "Mount Ararat, eastern Turkey (Ağrı Dağı) near Armenian border",
+      "construction": "The ark came to rest on the 'mountains of Ararat' — traditionally identified with Ağrı Dağı, a volcanic massif rising 5,137 m. The region has been excavated by explorers since the 19th century.",
+      "significance": "The landing site of Noah's Ark — where humanity restarted after the flood"
+    },
+    "eventTags": [
+      "Judgment",
+      "Rescue",
+      "Covenant",
+      "Miraculous",
+      "Flood"
+    ],
+    "roleTags": [
+      {
+        "person": "Noah",
+        "role": "Righteous Man / Ark Builder",
+        "origin": "Antediluvian world",
+        "relation": "Chosen by God to preserve life"
+      },
+      {
+        "person": "Noah's family",
+        "role": "Saved Remnant",
+        "origin": "Antediluvian world",
+        "relation": "Survivors and ancestors of all post-flood humanity"
+      },
+      {
+        "person": "God",
+        "role": "Judge and Rescuer",
+        "origin": "Eternal",
+        "relation": "Initiates the flood; makes the rainbow covenant"
+      }
+    ],
+    "journey": {
+      "travelers": [
+        "Noah",
+        "Noah's family"
+      ],
+      "from": "Ancient world (Mesopotamia)",
+      "to": "Mount Ararat (modern Turkey)",
+      "via": [],
+      "mode": "Ark — a wooden vessel ~137m long",
+      "companions": [
+        "Shem",
+        "Ham",
+        "Japheth",
+        "their wives",
+        "pairs of every animal"
+      ],
+      "reason": "Divine rescue from global flood judgement on human wickedness",
+      "distance": "Drifted across the flooded earth for 150+ days"
+    }
+  },
+  {
+    "id": "tower_of_babel",
+    "order": 5,
+    "title": "Tower of Babel",
+    "era": "Primeval History",
+    "timelineDate": "After Flood",
+    "mapLocation": "Babel / Shinar / Mesopotamia",
+    "references": [
+      "Genesis 11:1-9"
+    ],
+    "summary": "People build a tower to make a name for themselves. God confuses their language and scatters them across the earth.",
+    "details": "Babel shows humanity’s pride and desire for self-made greatness apart from God. God’s judgment disperses people into nations and languages, setting up the later promise that all nations will be blessed through Abraham.",
+    "mainPeople": [
+      "People of Babel",
+      "God"
+    ],
+    "lineageConnection": [
+      "Noah",
+      "Nations of the earth"
+    ],
+    "lesson": "Human pride divides, but God’s plan moves toward blessing all nations.",
+    "mapIcon": "tower",
+    "videoIdea": "Show workers building a massive tower, confusion of languages, and people scattering.",
+    "coords": {
+      "x": 69,
+      "y": 43
+    },
+    "route": [],
+    "tags": [
+      "Primeval History",
+      "People of Babel",
+      "God"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Babel / Shinar (Babylonia)",
+      "modern": "Modern Babylon area, Hillah, Babil Governorate, Iraq",
+      "construction": "The tower is likely based on a Mesopotamian ziggurat — massive stepped mud-brick temple towers. The great ziggurat of Ur-Nammu at Ur is a prime example still standing today.",
+      "significance": "Origin of diverse human languages and nations"
+    },
+    "eventTags": [
+      "Pride",
+      "Judgment",
+      "Languages",
+      "Nations",
+      "Scattered"
+    ],
+    "roleTags": [
+      {
+        "person": "People of Babel",
+        "role": "United Builders",
+        "origin": "Descendants of Noah, Shinar",
+        "relation": "Representatives of unified humanity post-flood"
+      },
+      {
+        "person": "God",
+        "role": "Sovereign Disperser",
+        "origin": "Eternal",
+        "relation": "Confuses language, scatters humanity into 70 nations"
+      }
+    ]
+  },
+  {
+    "id": "call_of_abraham",
+    "order": 6,
+    "title": "God Calls Abraham",
+    "era": "Patriarchs",
+    "timelineDate": "c. 2000 BC",
+    "mapLocation": "Ur → Haran → Canaan",
+    "references": [
+      "Genesis 12:1-9"
+    ],
+    "summary": "God calls Abram to leave his homeland and go to the land God will show him. This begins the covenant family through whom all nations will be blessed.",
+    "details": "Abram responds in faith, leaving security and familiarity. His journey from Ur through Haran into Canaan becomes a key movement in the Bible, beginning the story of Israel and the promise of worldwide blessing.",
+    "mainPeople": [
+      "Abram",
+      "Sarai",
+      "Lot",
+      "God"
+    ],
+    "lineageConnection": [
+      "Terah",
+      "Abraham"
+    ],
+    "lesson": "Faith often begins with obedience before all details are clear.",
+    "mapIcon": "tent",
+    "videoIdea": "Show Abraham leaving Ur with Sarai, Lot, tents, camels, and a marked journey route to Canaan.",
+    "coords": {
+      "x": 70,
+      "y": 50
+    },
+    "route": [
+      "Ur",
+      "Haran",
+      "Canaan"
+    ],
+    "tags": [
+      "Patriarchs",
+      "Abram",
+      "Sarai",
+      "Lot"
+    ],
+    "category": "travel",
+    "placeContext": {
+      "ancient": "Ur of the Chaldeans → Haran → Canaan",
+      "modern": "Ur = Tell el-Muqayyar, Nasiriyah, Iraq → Haran = Harran, Şanlıurfa, Turkey → Canaan = Israel/Palestine",
+      "construction": "Ur was a prosperous Sumerian city-state (3rd dynasty, ~2100 BC) with a famous ziggurat dedicated to the moon-god Nanna. Haran was a key trade crossroads in upper Mesopotamia. Canaan was a land of city-states between Egypt and Mesopotamia.",
+      "significance": "Ur to Canaan — the founding journey of the Jewish, Christian, and Islamic faiths"
+    },
+    "eventTags": [
+      "Covenant",
+      "Faith",
+      "Call",
+      "Obedience",
+      "Promise Land",
+      "Patriarch"
+    ],
+    "roleTags": [
+      {
+        "person": "Abram",
+        "role": "Patriarch / Covenant Bearer",
+        "origin": "Ur of the Chaldeans (modern Iraq)",
+        "relation": "Called father of all who believe (Romans 4:11)"
+      },
+      {
+        "person": "Sarai",
+        "role": "Matriarch",
+        "origin": "Ur of the Chaldeans (modern Iraq)",
+        "relation": "Wife of Abraham, mother of promised Isaac"
+      },
+      {
+        "person": "Lot",
+        "role": "Nephew / Fellow Traveller",
+        "origin": "Ur of the Chaldeans",
+        "relation": "Separated from Abraham at Canaan"
+      }
+    ],
+    "journey": {
+      "travelers": [
+        "Abram (Abraham)",
+        "Sarai (Sarah)",
+        "Lot"
+      ],
+      "from": "Ur of the Chaldeans (modern Nasiriyah, Iraq)",
+      "to": "Land of Canaan (modern Israel/Palestine)",
+      "via": [
+        "Haran (modern Harran, Turkey)"
+      ],
+      "mode": "On foot with livestock, servants, and possessions",
+      "companions": [
+        "Lot (nephew)",
+        "household servants",
+        "Terah (father, as far as Haran)"
+      ],
+      "reason": "Divine call — God promised Abraham land, descendants, and worldwide blessing",
+      "distance": "~2,000 km total (Ur → Haran ~960 km; Haran → Canaan ~600 km)"
+    }
+  },
+  {
+    "id": "abrahamic_covenant",
+    "order": 7,
+    "title": "Abrahamic Covenant",
+    "era": "Patriarchs",
+    "timelineDate": "c. 2000 BC",
+    "mapLocation": "Canaan",
+    "references": [
+      "Genesis 15",
+      "Genesis 17"
+    ],
+    "summary": "God promises Abraham land, descendants, and blessing. The covenant becomes a major foundation for the rest of the biblical story.",
+    "details": "God tells Abraham to look at the stars as a picture of his future descendants. The covenant includes descendants, land, and a mission of blessing. Circumcision becomes the sign of the covenant family.",
+    "mainPeople": [
+      "Abraham",
+      "God"
+    ],
+    "lineageConnection": [
+      "Abraham",
+      "Isaac",
+      "Jacob",
+      "Israel"
+    ],
+    "lesson": "God keeps His promises even when fulfillment seems impossible.",
+    "mapIcon": "stars",
+    "videoIdea": "Show Abraham under the night sky as stars fill the heavens and a covenant promise is spoken.",
+    "coords": {
+      "x": 44,
+      "y": 48
+    },
+    "route": [],
+    "tags": [
+      "Patriarchs",
+      "Abraham",
+      "God"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Canaan (various locations — Shechem, Bethel, Hebron)",
+      "modern": "West Bank and Israel — Nablus (Shechem), Beit El (Bethel), Al-Khalil (Hebron)",
+      "construction": "Shechem sat in a valley between Mount Ebal and Mount Gerizim. Bethel (meaning 'House of God') was a high place used for worship. Mamre/Hebron was a grove of oaks where Abraham camped.",
+      "significance": "Where God made his binding covenant with Abraham and his descendants"
+    },
+    "eventTags": [
+      "Covenant",
+      "Promise",
+      "Land",
+      "Descendants",
+      "Blessing",
+      "Patriarch"
+    ],
+    "roleTags": [
+      {
+        "person": "Abram",
+        "role": "Covenant Recipient",
+        "origin": "Ur → Canaan",
+        "relation": "God promises him land, nation, and worldwide blessing"
+      },
+      {
+        "person": "God",
+        "role": "Covenant Maker",
+        "origin": "Eternal",
+        "relation": "Initiates and seals the unconditional covenant"
+      }
+    ]
+  },
+  {
+    "id": "birth_of_isaac",
+    "order": 8,
+    "title": "Birth of Isaac",
+    "era": "Patriarchs",
+    "timelineDate": "c. 1900 BC",
+    "mapLocation": "Canaan / Beersheba region",
+    "references": [
+      "Genesis 21"
+    ],
+    "summary": "Isaac is born to Abraham and Sarah in their old age, fulfilling God’s promise.",
+    "details": "Isaac’s birth confirms that the covenant line depends on God’s power, not human possibility. Sarah laughs with joy because God has done what seemed impossible.",
+    "mainPeople": [
+      "Abraham",
+      "Sarah",
+      "Isaac"
+    ],
+    "lineageConnection": [
+      "Abraham",
+      "Isaac"
+    ],
+    "lesson": "God’s promise may seem delayed, but His timing is faithful.",
+    "mapIcon": "baby",
+    "videoIdea": "Show Sarah holding Isaac, Abraham rejoicing, and a warm family tent scene.",
+    "coords": {
+      "x": 42,
+      "y": 55
+    },
+    "route": [],
+    "tags": [
+      "Patriarchs",
+      "Abraham",
+      "Sarah",
+      "Isaac"
+    ],
+    "category": "people",
+    "placeContext": {
+      "ancient": "Mamre / Hebron area, Canaan",
+      "modern": "Al-Khalil (Hebron), West Bank, Palestine",
+      "construction": "Mamre was an ancient oak grove near Hebron where Abraham and Sarah lived. It was also the site of their burial cave — the Cave of Machpelah, still sacred today.",
+      "significance": "The miraculous child through whom God's covenant continued"
+    },
+    "eventTags": [
+      "Miracle",
+      "Promise Fulfilled",
+      "Faith",
+      "Covenant",
+      "Birth"
+    ],
+    "roleTags": [
+      {
+        "person": "Isaac",
+        "role": "Child of Promise",
+        "origin": "Mamre/Hebron, Canaan",
+        "relation": "Born supernaturally to 100-year-old Abraham and 90-year-old Sarah"
+      },
+      {
+        "person": "Abraham",
+        "role": "Patriarch",
+        "origin": "Ur → Canaan",
+        "relation": "Father at 100 years old by divine promise"
+      },
+      {
+        "person": "Sarah",
+        "role": "Matriarch",
+        "origin": "Ur → Canaan",
+        "relation": "Mother at 90 — laughed in disbelief, then faith"
+      }
+    ]
+  },
+  {
+    "id": "abraham_tested_with_isaac",
+    "order": 9,
+    "title": "Abraham Tested with Isaac",
+    "era": "Patriarchs",
+    "timelineDate": "c. 1900 BC",
+    "mapLocation": "Mount Moriah",
+    "references": [
+      "Genesis 22"
+    ],
+    "summary": "God tests Abraham by asking him to offer Isaac, but God provides a ram instead.",
+    "details": "This event reveals deep faith and obedience. Abraham trusts God with the promised son, and God provides a substitute. The mountain location becomes connected with worship, sacrifice, and later Jerusalem tradition.",
+    "mainPeople": [
+      "Abraham",
+      "Isaac",
+      "God"
+    ],
+    "lineageConnection": [
+      "Abraham",
+      "Isaac"
+    ],
+    "lesson": "True faith trusts God with what is most precious, and God provides.",
+    "mapIcon": "ram",
+    "videoIdea": "Show Abraham and Isaac climbing the mountain, the altar, and the ram caught in the thicket.",
+    "coords": {
+      "x": 45,
+      "y": 51
+    },
+    "route": [],
+    "tags": [
+      "Patriarchs",
+      "Abraham",
+      "Isaac",
+      "God"
+    ],
+    "category": "travel",
+    "placeContext": {
+      "ancient": "Mount Moriah, Canaan",
+      "modern": "Temple Mount, Jerusalem (identified since Solomon's temple)",
+      "construction": "Mount Moriah is the rocky summit where Solomon later built the Temple, and where the Dome of the Rock now stands — one of the most contested and sacred sites in the world.",
+      "significance": "The mountain of sacrifice — foreshadows Christ's sacrifice at nearby Golgotha"
+    },
+    "eventTags": [
+      "Test of Faith",
+      "Sacrifice",
+      "Providence",
+      "Foreshadowing",
+      "Obedience"
+    ],
+    "roleTags": [
+      {
+        "person": "Abraham",
+        "role": "Faithful Patriarch",
+        "origin": "Ur → Canaan",
+        "relation": "Willing to sacrifice his son in obedience to God"
+      },
+      {
+        "person": "Isaac",
+        "role": "Son of Promise / Type of Christ",
+        "origin": "Hebron, Canaan",
+        "relation": "Bound on the altar; spared by the Ram"
+      },
+      {
+        "person": "God",
+        "role": "Provider (Jehovah Jireh)",
+        "origin": "Eternal",
+        "relation": "Provides a ram at the last moment; reconfirms the covenant"
+      }
+    ],
+    "journey": {
+      "travelers": [
+        "Abraham",
+        "Isaac"
+      ],
+      "from": "Beersheba (or Hebron)",
+      "to": "Mount Moriah (Jerusalem area)",
+      "via": [],
+      "mode": "On foot with two servants, a donkey, and wood",
+      "companions": [
+        "Two unnamed servants (left at the foot of the mountain)"
+      ],
+      "reason": "God's test of Abraham's faith — commanded to offer Isaac as a sacrifice",
+      "distance": "~70–90 km, three-day journey"
+    }
+  },
+  {
+    "id": "jacob_receives_blessing",
+    "order": 10,
+    "title": "Jacob Receives the Blessing",
+    "era": "Patriarchs",
+    "timelineDate": "c. 1800 BC",
+    "mapLocation": "Beersheba / Bethel",
+    "references": [
+      "Genesis 27-28"
+    ],
+    "summary": "Jacob receives Isaac’s blessing and later sees the ladder vision at Bethel, where God confirms the covenant promise to him.",
+    "details": "Jacob’s family conflict leads him away from home. At Bethel, God meets him in a dream and promises presence, land, descendants, and blessing, continuing the Abrahamic promise through Jacob.",
+    "mainPeople": [
+      "Isaac",
+      "Rebekah",
+      "Jacob",
+      "Esau",
+      "God"
+    ],
+    "lineageConnection": [
+      "Abraham",
+      "Isaac",
+      "Jacob"
+    ],
+    "lesson": "God can work through broken family situations and still move His covenant purpose forward.",
+    "mapIcon": "ladder",
+    "videoIdea": "Show Jacob’s ladder with angels ascending and descending, with Bethel highlighted on the map.",
+    "coords": {
+      "x": 44,
+      "y": 48
+    },
+    "route": [],
+    "tags": [
+      "Patriarchs",
+      "Isaac",
+      "Rebekah",
+      "Jacob"
+    ],
+    "category": "people",
+    "placeContext": {
+      "ancient": "Canaan — Beer-sheba / Beersheba area",
+      "modern": "Beersheba (Be'er Sheva), Negev, southern Israel",
+      "construction": "Beersheba was a significant well-city at the edge of the Negev desert, named 'Well of the Oath/Seven'. Isaac lived and dug wells here. It marked the southern boundary of settled Israelite territory.",
+      "significance": "Where the covenant blessing was transferred to the third generation"
+    },
+    "eventTags": [
+      "Deception",
+      "Blessing",
+      "Covenant Transfer",
+      "Family Conflict",
+      "Prophecy"
+    ],
+    "roleTags": [
+      {
+        "person": "Jacob",
+        "role": "Younger Twin / Schemer",
+        "origin": "Canaan (Beer-sheba)",
+        "relation": "Disguises himself as Esau to steal the firstborn blessing"
+      },
+      {
+        "person": "Esau",
+        "role": "Firstborn Hunter",
+        "origin": "Canaan (Beer-sheba)",
+        "relation": "Loses his blessing through carelessness and Jacob's deception"
+      },
+      {
+        "person": "Isaac",
+        "role": "Aging Patriarch / Covenant Bearer",
+        "origin": "Canaan",
+        "relation": "Blind, deceived, but prophetically blesses the right son"
+      },
+      {
+        "person": "Rebekah",
+        "role": "Scheming Mother",
+        "origin": "Haran (modern Turkey) → Canaan",
+        "relation": "Orchestrates Jacob's deception, fulfilling God's earlier word"
+      }
+    ]
+  },
+  {
+    "id": "jacob_becomes_israel",
+    "order": 11,
+    "title": "Jacob Becomes Israel",
+    "era": "Patriarchs",
+    "timelineDate": "c. 1800 BC",
+    "mapLocation": "Peniel / Canaan",
+    "references": [
+      "Genesis 32",
+      "Genesis 35"
+    ],
+    "summary": "Jacob wrestles with God and receives the name Israel. His twelve sons become the foundation of the twelve tribes.",
+    "details": "Jacob’s new name marks transformation. His personal story becomes national identity as his descendants become Israel. The event connects family lineage, covenant promise, and the future nation.",
+    "mainPeople": [
+      "Jacob",
+      "God",
+      "Twelve sons"
+    ],
+    "lineageConnection": [
+      "Abraham",
+      "Isaac",
+      "Jacob / Israel",
+      "Twelve Tribes"
+    ],
+    "lesson": "God can rename, reshape, and redirect a person’s life.",
+    "mapIcon": "staff",
+    "videoIdea": "Show Jacob wrestling at night by the river, then dawn breaking as he receives a new name.",
+    "coords": {
+      "x": 49,
+      "y": 48
+    },
+    "route": [],
+    "tags": [
+      "Patriarchs",
+      "Jacob",
+      "God",
+      "Twelve sons"
+    ],
+    "category": "travel",
+    "placeContext": {
+      "ancient": "Jabbok River ford / Peniel (Penuel)",
+      "modern": "Zarqa River area, modern Jordan",
+      "construction": "Peniel/Penuel ('Face of God') was near the ford of the Jabbok — a tributary of the Jordan. It later became a fortified city. Jacob named the place after his encounter with God.",
+      "significance": "Where God renamed Jacob 'Israel' — establishing the nation's founding identity"
+    },
+    "eventTags": [
+      "Wrestling with God",
+      "Transformation",
+      "Covenant",
+      "Name Change",
+      "Vision"
+    ],
+    "roleTags": [
+      {
+        "person": "Jacob",
+        "role": "Patriarch / Wrestler",
+        "origin": "Canaan → Haran (Turkey) → Canaan",
+        "relation": "Wrestles God, receives new name Israel ('he strives with God')"
+      },
+      {
+        "person": "God / Angel",
+        "role": "Divine Wrestler",
+        "origin": "Eternal",
+        "relation": "Wounds Jacob's hip but blesses him; gives name Israel"
+      }
+    ],
+    "journey": {
+      "travelers": [
+        "Jacob (renamed Israel)"
+      ],
+      "from": "Haran / Paddan-Aram (modern Turkey)",
+      "to": "Canaan (returning home)",
+      "via": [
+        "Peniel / Jabbok ford (modern Jordan)"
+      ],
+      "mode": "Large caravan — wives, children, flocks, servants",
+      "companions": [
+        "Leah",
+        "Rachel",
+        "Bilhah",
+        "Zilpah",
+        "12 sons",
+        "Dinah",
+        "servants and flocks"
+      ],
+      "reason": "Returning home after 20 years; fleeing Laban; facing feared brother Esau",
+      "distance": "~700 km (Haran to Canaan)"
+    }
+  },
+  {
+    "id": "joseph_sold_into_egypt",
+    "order": 12,
+    "title": "Joseph Sold into Egypt",
+    "era": "Patriarchs",
+    "timelineDate": "c. 1700 BC",
+    "mapLocation": "Canaan → Egypt",
+    "references": [
+      "Genesis 37"
+    ],
+    "summary": "Joseph’s brothers sell him into slavery. God later uses this painful event to save many lives.",
+    "details": "Joseph’s brothers act from jealousy and hatred, but the journey to Egypt becomes part of a hidden divine plan. This event links the patriarchal family to Egypt, where the Exodus story will later begin.",
+    "mainPeople": [
+      "Joseph",
+      "Jacob",
+      "Joseph’s brothers"
+    ],
+    "lineageConnection": [
+      "Jacob",
+      "Joseph"
+    ],
+    "lesson": "God can work through betrayal and hardship for a larger purpose.",
+    "mapIcon": "coat",
+    "videoIdea": "Show Joseph’s coat, the pit, the caravan, and the route to Egypt.",
+    "coords": {
+      "x": 38,
+      "y": 55
+    },
+    "route": [
+      "Canaan",
+      "Egypt"
+    ],
+    "tags": [
+      "Patriarchs",
+      "Joseph",
+      "Jacob",
+      "Joseph’s brothers"
+    ],
+    "category": "travel",
+    "placeContext": {
+      "ancient": "Dothan, Canaan → Egypt",
+      "modern": "Tel Dothan, West Bank → Egypt",
+      "construction": "Dothan was a trade route junction in Samaria hills. Ishmaelite/Midianite traders used the Via Maris — the ancient coastal highway — to transport goods (and slaves) from Canaan to Egypt.",
+      "significance": "Where Joseph's providential journey to Egypt began — setting up Israel's 400-year sojourn"
+    },
+    "eventTags": [
+      "Betrayal",
+      "Providence",
+      "Slavery",
+      "Egypt",
+      "Family",
+      "Foreshadowing"
+    ],
+    "roleTags": [
+      {
+        "person": "Joseph",
+        "role": "Dreamer / Slave",
+        "origin": "Canaan (Hebron/Dothan)",
+        "relation": "11th son of Jacob; sold by brothers; used by God for Israel's survival"
+      },
+      {
+        "person": "Brothers of Joseph",
+        "role": "Jealous Siblings",
+        "origin": "Canaan",
+        "relation": "Sell Joseph out of envy; later bow before him in Egypt"
+      },
+      {
+        "person": "Reuben",
+        "role": "Oldest Brother / Protector",
+        "origin": "Canaan",
+        "relation": "Tries to save Joseph; proposes the pit instead of death"
+      }
+    ],
+    "journey": {
+      "travelers": [
+        "Joseph"
+      ],
+      "from": "Dothan, Canaan (near modern Jenin, West Bank)",
+      "to": "Egypt (sold to Potiphar in Egypt)",
+      "via": [
+        "Via Maris (coastal trade route)"
+      ],
+      "mode": "Sold as a slave — bound by Midianite/Ishmaelite traders",
+      "companions": [
+        "Ishmaelite/Midianite traders"
+      ],
+      "reason": "Brothers' jealousy over Joseph's dreams and favour with Jacob — sold for 20 pieces of silver",
+      "distance": "~400 km (Dothan to Egypt)"
+    }
+  },
+  {
+    "id": "joseph_rises_to_power",
+    "order": 13,
+    "title": "Joseph Rises to Power in Egypt",
+    "era": "Patriarchs",
+    "timelineDate": "c. 1700 BC",
+    "mapLocation": "Egypt",
+    "references": [
+      "Genesis 39-50"
+    ],
+    "summary": "Joseph interprets Pharaoh’s dreams and becomes a ruler in Egypt, saving Egypt and his family from famine.",
+    "details": "Joseph moves from slavery and prison to leadership. His wisdom and God-given interpretation preserve nations during famine. His forgiveness of his brothers becomes a major example of providence and reconciliation.",
+    "mainPeople": [
+      "Joseph",
+      "Pharaoh",
+      "Jacob’s family"
+    ],
+    "lineageConnection": [
+      "Jacob",
+      "Joseph",
+      "Israel’s family preserved"
+    ],
+    "lesson": "God can turn suffering into rescue and reconciliation.",
+    "mapIcon": "grain",
+    "videoIdea": "Show Pharaoh’s dreams, Joseph in the palace, grain storehouses, and family reunion.",
+    "coords": {
+      "x": 28,
+      "y": 65
+    },
+    "route": [],
+    "tags": [
+      "Patriarchs",
+      "Joseph",
+      "Pharaoh",
+      "Jacob’s family"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Egypt — Memphis / Avaris area",
+      "modern": "Cairo region, Egypt (near Mit Rahina / Tell el-Dab'a)",
+      "construction": "Joseph likely served in the area of Avaris (Tell el-Dab'a), the Hyksos capital in the Nile Delta — archaeologically associated with Semitic presence in the 2nd millennium BC. Pharaoh's court was likely at Memphis or Avaris.",
+      "significance": "Where a Hebrew slave became the second most powerful man in the world"
+    },
+    "eventTags": [
+      "Providence",
+      "Wisdom",
+      "Dreams",
+      "Power",
+      "Famine",
+      "Egypt"
+    ],
+    "roleTags": [
+      {
+        "person": "Joseph",
+        "role": "Viceroy of Egypt",
+        "origin": "Canaan (sold into Egypt)",
+        "relation": "Interprets Pharaoh's dreams; appointed over all Egypt"
+      },
+      {
+        "person": "Pharaoh",
+        "role": "Egyptian King",
+        "origin": "Egypt (likely Hyksos dynasty)",
+        "relation": "Recognises God's spirit in Joseph; elevates him to power"
+      },
+      {
+        "person": "God",
+        "role": "Sovereign Provider",
+        "origin": "Eternal",
+        "relation": "Orchestrates Joseph's rise to save Israel and Egypt from famine"
+      }
+    ]
+  },
+  {
+    "id": "israelites_enslaved",
+    "order": 14,
+    "title": "Israelites Enslaved in Egypt",
+    "era": "Exodus",
+    "timelineDate": "c. 1600-1400 BC",
+    "mapLocation": "Egypt",
+    "references": [
+      "Exodus 1-2"
+    ],
+    "summary": "The Israelites grow in number and become enslaved in Egypt. Moses is born during Pharaoh’s oppression.",
+    "details": "A new Pharaoh fears Israel’s growth and forces them into harsh labor. Moses is preserved as a baby in a basket, preparing the future deliverer even before Israel knows rescue is coming.",
+    "mainPeople": [
+      "Israelites",
+      "Pharaoh",
+      "Moses’ family"
+    ],
+    "lineageConnection": [
+      "Jacob’s descendants",
+      "Israel nation",
+      "Moses"
+    ],
+    "lesson": "God sees suffering and prepares deliverance even in dark seasons.",
+    "mapIcon": "chains",
+    "videoIdea": "Show brick-making labor, Pharaoh’s decree, and baby Moses in the Nile basket.",
+    "coords": {
+      "x": 28,
+      "y": 66
+    },
+    "route": [],
+    "tags": [
+      "Exodus",
+      "Israelites",
+      "Pharaoh",
+      "Moses’ family"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Goshen / Nile Delta, Egypt",
+      "modern": "Eastern Nile Delta, Sharqia Governorate, Egypt (near modern Zagazig)",
+      "construction": "Goshen was fertile grazing land in the eastern Nile Delta where Jacob's family settled. The building cities Pithom (Tell el-Maskhuta) and Rameses (Pi-Ramesse / Qantir) were major construction projects of Ramesses II.",
+      "significance": "Where Israel became a nation through suffering — 430 years in Egypt"
+    },
+    "eventTags": [
+      "Slavery",
+      "Oppression",
+      "Egypt",
+      "Israel",
+      "400 Years"
+    ],
+    "roleTags": [
+      {
+        "person": "Israelites",
+        "role": "Enslaved Nation",
+        "origin": "Canaan → Goshen, Egypt",
+        "relation": "Descendants of Jacob's 12 sons, grown to a great multitude"
+      },
+      {
+        "person": "Pharaoh",
+        "role": "Oppressive King",
+        "origin": "Egypt (likely New Kingdom)",
+        "relation": "Fears Israelite growth; enslaves them to build store cities"
+      }
+    ]
+  },
+  {
+    "id": "burning_bush",
+    "order": 15,
+    "title": "Moses and the Burning Bush",
+    "era": "Exodus",
+    "timelineDate": "c. 1446 BC",
+    "mapLocation": "Mount Horeb / Sinai region",
+    "references": [
+      "Exodus 3-4"
+    ],
+    "summary": "God appears to Moses in a burning bush and calls him to deliver Israel from Egypt.",
+    "details": "Moses is reluctant, but God reveals His name and mission. The burning bush is a holy encounter where God promises to be with Moses and deliver His people.",
+    "mainPeople": [
+      "Moses",
+      "God",
+      "Aaron"
+    ],
+    "lineageConnection": [
+      "Levi",
+      "Moses"
+    ],
+    "lesson": "God equips the people He calls, even when they feel inadequate.",
+    "mapIcon": "flame",
+    "videoIdea": "Show Moses shepherding, seeing the burning bush, removing sandals, and receiving his call.",
+    "coords": {
+      "x": 38,
+      "y": 66
+    },
+    "route": [],
+    "tags": [
+      "Exodus",
+      "Moses",
+      "God",
+      "Aaron"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Mount Horeb / Sinai (Midian region)",
+      "modern": "Traditionally Jebel Musa (Mount Moses), South Sinai, Egypt — some scholars suggest Jebel al-Lawz, northwestern Saudi Arabia",
+      "construction": "Horeb and Sinai are used interchangeably. The traditional site at St. Catherine's Monastery (established 330 AD) remains a major pilgrimage site. The Sinai peninsula sits between Africa and Asia.",
+      "significance": "Where God revealed His name YHWH and commissioned Israel's deliverer"
+    },
+    "eventTags": [
+      "Theophany",
+      "Commission",
+      "Name of God",
+      "YHWH",
+      "Moses",
+      "Miracle"
+    ],
+    "roleTags": [
+      {
+        "person": "Moses",
+        "role": "Shepherd / Called Deliverer",
+        "origin": "Egypt (born) → Midian (fled to)",
+        "relation": "Tending Jethro's flock when God appears; receives his life commission"
+      },
+      {
+        "person": "God (YHWH)",
+        "role": "Self-Revealing Creator",
+        "origin": "Eternal",
+        "relation": "Reveals His name as 'I AM WHO I AM'; calls Moses to lead Israel out"
+      }
+    ]
+  },
+  {
+    "id": "ten_plagues_passover",
+    "order": 16,
+    "title": "Ten Plagues and Passover",
+    "era": "Exodus",
+    "timelineDate": "c. 1446 BC",
+    "mapLocation": "Egypt",
+    "references": [
+      "Exodus 7-12"
+    ],
+    "summary": "God sends ten plagues against Egypt. The Passover protects Israel’s firstborn and becomes a central remembrance of deliverance.",
+    "details": "The plagues confront Pharaoh’s hardness and Egypt’s gods. The Passover lamb and blood on the doorposts mark Israel’s protection, preparing the Exodus from slavery.",
+    "mainPeople": [
+      "Moses",
+      "Aaron",
+      "Pharaoh",
+      "Israelites"
+    ],
+    "lineageConnection": [
+      "Israel delivered from slavery"
+    ],
+    "lesson": "God is powerful to judge oppression and protect His people.",
+    "mapIcon": "lamb",
+    "videoIdea": "Show plague scenes, Passover homes, and Israel preparing to leave Egypt.",
+    "coords": {
+      "x": 27,
+      "y": 65
+    },
+    "route": [],
+    "tags": [
+      "Exodus",
+      "Moses",
+      "Aaron",
+      "Pharaoh"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Egypt — Nile Delta / Goshen",
+      "modern": "Eastern Nile Delta, Egypt",
+      "construction": "The plagues struck the heart of Egyptian civilization — the Nile, crops, livestock, the sun, and finally the firstborn. Each plague targeted a specific Egyptian deity. The Passover lamb's blood on doorposts marked Israel's homes.",
+      "significance": "The ten plagues broke Pharaoh's grip and established the annual Passover — prefiguring Christ as the ultimate Passover Lamb"
+    },
+    "eventTags": [
+      "Miracle",
+      "Judgment",
+      "Passover",
+      "Redemption",
+      "Egypt",
+      "Plagues",
+      "Liberation"
+    ],
+    "roleTags": [
+      {
+        "person": "Moses",
+        "role": "Prophet / Mediator",
+        "origin": "Egypt → Midian → Egypt",
+        "relation": "Declares each plague to Pharaoh; leads the Passover ceremony"
+      },
+      {
+        "person": "Aaron",
+        "role": "High Priest / Moses' Spokesman",
+        "origin": "Egypt (Goshen)",
+        "relation": "Staff-bearer who enacts several plagues"
+      },
+      {
+        "person": "Pharaoh",
+        "role": "Hardened King",
+        "origin": "Egypt (Ramesses II era)",
+        "relation": "Repeatedly hardens his heart until his own son dies"
+      },
+      {
+        "person": "Israelites",
+        "role": "Redeemed People",
+        "origin": "Goshen, Egypt",
+        "relation": "Marked by blood; spared the final plague"
+      }
+    ]
+  },
+  {
+    "id": "red_sea_crossing",
+    "order": 17,
+    "title": "Crossing the Red Sea",
+    "era": "Exodus",
+    "timelineDate": "c. 1446 BC",
+    "mapLocation": "Red Sea / Sea of Reeds region",
+    "references": [
+      "Exodus 14"
+    ],
+    "summary": "God parts the sea, Israel crosses safely, and Pharaoh’s army is defeated.",
+    "details": "Israel is trapped between the sea and Pharaoh’s army, but God opens a path through the waters. The event becomes a defining picture of salvation and deliverance.",
+    "mainPeople": [
+      "Moses",
+      "Pharaoh",
+      "Israelites"
+    ],
+    "lineageConnection": [
+      "Abraham",
+      "Isaac",
+      "Jacob",
+      "Levi",
+      "Moses"
+    ],
+    "lesson": "God can make a way where there seems to be no way.",
+    "mapIcon": "waves",
+    "videoIdea": "Show Israelites at the sea, Moses lifting his staff, waters parting, and the people crossing safely.",
+    "coords": {
+      "x": 36,
+      "y": 72
+    },
+    "route": [
+      "Egypt",
+      "Red Sea",
+      "Sinai"
+    ],
+    "tags": [
+      "Exodus",
+      "Moses",
+      "Pharaoh",
+      "Israelites"
+    ],
+    "category": "travel",
+    "placeContext": {
+      "ancient": "Yam Suph (Sea of Reeds / Red Sea)",
+      "modern": "Possibly the Gulf of Suez or a papyrus reed lake in NE Egypt (debate ongoing)",
+      "construction": "Yam Suph (Hebrew) literally means 'Sea of Reeds' — possibly a shallow marshy area in the eastern Nile Delta or the northern tip of the Gulf of Suez. A miraculous east wind parted the waters.",
+      "significance": "Israel's defining redemption event — celebrated in Exodus 15 and referenced 50+ times in Scripture"
+    },
+    "eventTags": [
+      "Miracle",
+      "Deliverance",
+      "Exodus",
+      "Red Sea",
+      "Egypt",
+      "Salvation"
+    ],
+    "roleTags": [
+      {
+        "person": "Moses",
+        "role": "Deliverer / Prophet",
+        "origin": "Egypt (Levite tribe)",
+        "relation": "Stretches staff over the sea; leads Israel through on dry ground"
+      },
+      {
+        "person": "Israelites",
+        "role": "Liberated Nation",
+        "origin": "Goshen, Egypt",
+        "relation": "Walk through on dry ground; sing the Song of the Sea (Exodus 15)"
+      },
+      {
+        "person": "Pharaoh's Army",
+        "role": "Pursuers / Defeated",
+        "origin": "Egypt",
+        "relation": "Drowned in the sea when the waters return"
+      }
+    ],
+    "journey": {
+      "travelers": [
+        "Moses",
+        "600,000+ men of Israel plus women and children"
+      ],
+      "from": "Egypt (Goshen / Ramesses)",
+      "to": "Sinai Wilderness",
+      "via": [
+        "Succoth",
+        "Etham",
+        "Pi-hahiroth",
+        "Crossing of the Sea"
+      ],
+      "mode": "On foot — vast multitude with flocks, herds, and possessions",
+      "companions": [
+        "Aaron",
+        "Miriam",
+        "all 12 tribes of Israel",
+        "mixed multitude of non-Israelites"
+      ],
+      "reason": "Fleeing Pharaoh's army; God divided the sea for their escape and drowned the Egyptian forces",
+      "distance": "~50 km from Goshen to the crossing point"
+    }
+  },
+  {
+    "id": "ten_commandments",
+    "order": 18,
+    "title": "Ten Commandments at Mount Sinai",
+    "era": "Exodus",
+    "timelineDate": "c. 1446 BC",
+    "mapLocation": "Mount Sinai",
+    "references": [
+      "Exodus 19-20"
+    ],
+    "summary": "God gives the Ten Commandments and establishes the Sinai covenant with Israel.",
+    "details": "Mount Sinai becomes the place where Israel receives God’s law and calling. The commandments define covenant faithfulness and Israel’s identity as God’s holy people.",
+    "mainPeople": [
+      "Moses",
+      "Israelites",
+      "God"
+    ],
+    "lineageConnection": [
+      "Israel as covenant nation"
+    ],
+    "lesson": "Freedom is meant to be lived under God’s wise instruction.",
+    "mapIcon": "tablets",
+    "videoIdea": "Show thunder on Sinai, Moses ascending, and tablets of the covenant.",
+    "coords": {
+      "x": 41,
+      "y": 66
+    },
+    "route": [],
+    "tags": [
+      "Exodus",
+      "Moses",
+      "Israelites",
+      "God"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Mount Sinai / Mount Horeb",
+      "modern": "Traditionally Jebel Musa (2,285 m), South Sinai Governorate, Egypt",
+      "construction": "The mountain was veiled in smoke and fire. God carved the commandments onto two stone tablets. The tabernacle instructions were also given here over 40 days. St. Catherine's Monastery at the base has housed monks since AD 330.",
+      "significance": "The moral and covenantal foundation of Israel — the basis of Western law"
+    },
+    "eventTags": [
+      "Law",
+      "Covenant",
+      "Theophany",
+      "Moses",
+      "Torah",
+      "Foundation"
+    ],
+    "roleTags": [
+      {
+        "person": "Moses",
+        "role": "Mediator of the Law",
+        "origin": "Egypt → Sinai",
+        "relation": "Spends 40 days on the mountain; receives the Torah directly from God"
+      },
+      {
+        "person": "God (YHWH)",
+        "role": "Lawgiver",
+        "origin": "Eternal",
+        "relation": "Speaks the 10 commandments audibly; writes them on stone tablets"
+      },
+      {
+        "person": "Israelites",
+        "role": "Covenant People",
+        "origin": "Freed from Egypt, at Sinai",
+        "relation": "Agree to the covenant: 'All that the LORD has spoken we will do'"
+      }
+    ]
+  },
+  {
+    "id": "golden_calf_tabernacle",
+    "order": 19,
+    "title": "Golden Calf and Tabernacle",
+    "era": "Exodus",
+    "timelineDate": "c. 1446 BC",
+    "mapLocation": "Mount Sinai",
+    "references": [
+      "Exodus 32-40"
+    ],
+    "summary": "Israel sins by worshiping the golden calf, but God shows mercy and the tabernacle is built for His presence.",
+    "details": "While Moses is on the mountain, Israel turns to idolatry. God judges and restores, and the completed tabernacle shows His desire to dwell among His people.",
+    "mainPeople": [
+      "Moses",
+      "Aaron",
+      "Israelites",
+      "God"
+    ],
+    "lineageConnection": [
+      "Israel worship system begins"
+    ],
+    "lesson": "God is holy, yet merciful; worship must be centered on Him.",
+    "mapIcon": "tabernacle",
+    "videoIdea": "Show the golden calf, Moses breaking tablets, and the tabernacle filled with glory.",
+    "coords": {
+      "x": 41,
+      "y": 66
+    },
+    "route": [],
+    "tags": [
+      "Exodus",
+      "Moses",
+      "Aaron",
+      "Israelites"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Mount Sinai / Israelite camp at the foot of the mountain",
+      "modern": "Base of Jebel Musa, South Sinai, Egypt",
+      "construction": "The camp at Sinai was an organised tent city for 2+ million people. The tabernacle — a portable tent-sanctuary — was meticulously built to God's specifications using gold, silver, bronze, fine linen, and acacia wood.",
+      "significance": "Sin of idolatry at the very mountain where God's law was given; then the tabernacle as God's renewed dwelling"
+    },
+    "eventTags": [
+      "Idolatry",
+      "Judgment",
+      "Repentance",
+      "Tabernacle",
+      "Worship",
+      "Covenant Renewal"
+    ],
+    "roleTags": [
+      {
+        "person": "Aaron",
+        "role": "High Priest / Weak Leader",
+        "origin": "Egypt (Levite)",
+        "relation": "Yields to pressure and fashions the golden calf"
+      },
+      {
+        "person": "Moses",
+        "role": "Intercessor",
+        "origin": "Egypt → Sinai",
+        "relation": "Smashes the tablets; pleads for Israel; receives renewed covenant"
+      },
+      {
+        "person": "Israelites",
+        "role": "Idolaters / Repentant People",
+        "origin": "Sinai wilderness",
+        "relation": "Worship the calf; 3,000 die; then build the tabernacle in obedience"
+      }
+    ]
+  },
+  {
+    "id": "spies_enter_canaan",
+    "order": 20,
+    "title": "Spies Enter Canaan",
+    "era": "Wilderness",
+    "timelineDate": "c. 1445 BC",
+    "mapLocation": "Kadesh / Canaan",
+    "references": [
+      "Numbers 13-14"
+    ],
+    "summary": "Twelve spies explore Canaan. Israel fears the giants and refuses to trust God, leading to forty years in the wilderness.",
+    "details": "Joshua and Caleb urge faith, but the people listen to fear. The consequence is a generation of wilderness wandering, showing the danger of unbelief after deliverance.",
+    "mainPeople": [
+      "Moses",
+      "Joshua",
+      "Caleb",
+      "Israelites"
+    ],
+    "lineageConnection": [
+      "Joshua and Caleb remain faithful"
+    ],
+    "lesson": "Fear can keep people from entering what God promises.",
+    "mapIcon": "grapes",
+    "videoIdea": "Show spies carrying grapes from Canaan and the people reacting in fear.",
+    "coords": {
+      "x": 43,
+      "y": 58
+    },
+    "route": [],
+    "tags": [
+      "Wilderness",
+      "Moses",
+      "Joshua",
+      "Caleb"
+    ],
+    "category": "travel",
+    "placeContext": {
+      "ancient": "Kadesh-Barnea → Canaan (Hebron / Eshcol Valley)",
+      "modern": "Ain el-Qudeirat (Kadesh), Negev, Israel → Hebron (Al-Khalil), West Bank",
+      "construction": "Kadesh-Barnea was Israel's main staging camp near the southern border of Canaan. The Valley of Eshcol near Hebron, where the spies cut grapes, is still known for its viticulture.",
+      "significance": "The moment Israel chose fear over faith — leading to 40 years of wilderness wandering"
+    },
+    "eventTags": [
+      "Spies",
+      "Faith vs Fear",
+      "Judgment",
+      "Wilderness",
+      "Canaan"
+    ],
+    "roleTags": [
+      {
+        "person": "Joshua",
+        "role": "Faithful Spy / Future Leader",
+        "origin": "Egypt (Ephraim tribe)",
+        "relation": "One of two who believed God; inherits leadership of Israel"
+      },
+      {
+        "person": "Caleb",
+        "role": "Faithful Spy",
+        "origin": "Egypt (Judah tribe)",
+        "relation": "Urges immediate entry; given Hebron as his inheritance"
+      },
+      {
+        "person": "10 Unfaithful Spies",
+        "role": "Fear-Driven Leaders",
+        "origin": "Egypt (various tribes)",
+        "relation": "Report the land as unconquerable; condemned to die in wilderness"
+      }
+    ],
+    "journey": {
+      "travelers": [
+        "12 spies — one from each tribe"
+      ],
+      "from": "Kadesh-Barnea (Negev desert)",
+      "to": "Throughout the land of Canaan",
+      "via": [
+        "Negev",
+        "hill country",
+        "Hebron",
+        "Valley of Eshcol"
+      ],
+      "mode": "On foot, incognito reconnaissance",
+      "companions": [
+        "Caleb (Judah)",
+        "Joshua (Ephraim) — the two faithful spies"
+      ],
+      "reason": "Ordered by Moses to survey the Promised Land before conquest",
+      "distance": "~300+ km round trip through Canaan"
+    }
+  },
+  {
+    "id": "joshua_crosses_jordan",
+    "order": 21,
+    "title": "Joshua Crosses the Jordan",
+    "era": "Conquest",
+    "timelineDate": "c. 1406 BC",
+    "mapLocation": "Jordan River",
+    "references": [
+      "Joshua 3-4"
+    ],
+    "summary": "Joshua leads Israel across the Jordan River into the Promised Land, and memorial stones are set up.",
+    "details": "As the priests carrying the ark step into the river, the waters stop. This confirms Joshua’s leadership and marks Israel’s entrance into the land God promised.",
+    "mainPeople": [
+      "Joshua",
+      "Israelites",
+      "Priests"
+    ],
+    "lineageConnection": [
+      "Moses’ leadership passes to Joshua"
+    ],
+    "lesson": "God’s presence leads His people into new territory.",
+    "mapIcon": "river",
+    "videoIdea": "Show the ark entering the Jordan, dry ground, and twelve memorial stones.",
+    "coords": {
+      "x": 48,
+      "y": 55
+    },
+    "route": [],
+    "tags": [
+      "Conquest",
+      "Joshua",
+      "Israelites",
+      "Priests"
+    ],
+    "category": "travel",
+    "placeContext": {
+      "ancient": "Jordan River (near Jericho) — Gilgal",
+      "modern": "Adam Bridge area near Damiya, Jordan Valley",
+      "construction": "The Jordan River crossing near Jericho occurred when the waters 'rose up in a heap' at Adam (Tell ed-Damieh). The site of Gilgal ('circle of stones'), Israel's first camp in Canaan, is 3 km east of Jericho.",
+      "significance": "Mirrors the Red Sea crossing — the second great water miracle of Exodus; entering the Promised Land"
+    },
+    "eventTags": [
+      "Miracle",
+      "Promised Land",
+      "Jordan River",
+      "Conquest",
+      "Faith"
+    ],
+    "roleTags": [
+      {
+        "person": "Joshua",
+        "role": "Commander / Successor to Moses",
+        "origin": "Egypt (Ephraim tribe)",
+        "relation": "Led Israel across Jordan; commissioned directly by God"
+      },
+      {
+        "person": "Priests / Ark Bearers",
+        "role": "Faith Pioneers",
+        "origin": "Levite tribe",
+        "relation": "Stepped into the river first — the water stopped when their feet touched"
+      },
+      {
+        "person": "Rahab",
+        "role": "Gentile Convert / Protected",
+        "origin": "Jericho, Canaan",
+        "relation": "Hidden the spies; her scarlet cord saves her family; ancestor of David and Jesus"
+      }
+    ],
+    "journey": {
+      "travelers": [
+        "Joshua",
+        "All Israel — the entire nation"
+      ],
+      "from": "Plains of Moab (east of Jordan)",
+      "to": "Canaan (west of Jordan) — camped at Gilgal",
+      "via": [
+        "Jordan River crossing on dry ground"
+      ],
+      "mode": "On foot — priests carried the Ark of the Covenant into the river first",
+      "companions": [
+        "Priests with the Ark",
+        "all 12 tribes",
+        "Rahab and her family"
+      ],
+      "reason": "Entering the Promised Land after 40 years of wilderness — fulfilling God's covenant to Abraham",
+      "distance": "~5–10 km crossing point to Gilgal camp"
+    }
+  },
+  {
+    "id": "fall_of_jericho",
+    "order": 22,
+    "title": "Fall of Jericho",
+    "era": "Conquest",
+    "timelineDate": "c. 1406 BC",
+    "mapLocation": "Jericho",
+    "references": [
+      "Joshua 6"
+    ],
+    "summary": "Israel marches around Jericho, and the walls fall by God’s power.",
+    "details": "The victory is not won by ordinary military strategy but by obedience to God’s command. Rahab and her household are spared, showing mercy within judgment.",
+    "mainPeople": [
+      "Joshua",
+      "Rahab",
+      "Israelites"
+    ],
+    "lineageConnection": [
+      "Israel enters the land"
+    ],
+    "lesson": "Obedience and faith matter more than human strategy.",
+    "mapIcon": "trumpet",
+    "videoIdea": "Show priests with trumpets, the city walls, and the walls falling.",
+    "coords": {
+      "x": 47,
+      "y": 53
+    },
+    "route": [],
+    "tags": [
+      "Conquest",
+      "Joshua",
+      "Rahab",
+      "Israelites"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Jericho (Yericho)",
+      "modern": "Tell es-Sultan, West Bank — oldest continuously inhabited city on earth (~10,000 years)",
+      "construction": "Jericho in the Late Bronze Age had massive walls and was a key trade hub controlling access to Canaan from the east. Archaeological excavation at Tell es-Sultan has revealed multiple destruction layers. The walls 'fell flat' (Joshua 6:20) after seven days of marching.",
+      "significance": "First city captured in Canaan — established God fights for Israel"
+    },
+    "eventTags": [
+      "Miracle",
+      "Battle",
+      "Conquest",
+      "Obedience",
+      "Judgment"
+    ],
+    "roleTags": [
+      {
+        "person": "Joshua",
+        "role": "Military Commander",
+        "origin": "Egypt → Wilderness → Canaan",
+        "relation": "Leads the seven-day march; commands the shout"
+      },
+      {
+        "person": "Rahab",
+        "role": "Saved Inhabitant / Ancestor of Jesus",
+        "origin": "Jericho, Canaan",
+        "relation": "Scarlet cord marks her house; spared with her family"
+      },
+      {
+        "person": "Priests / Ark Bearers",
+        "role": "Worship Warriors",
+        "origin": "Levite tribe",
+        "relation": "Blow ram's horn trumpets for seven days"
+      }
+    ]
+  },
+  {
+    "id": "land_divided",
+    "order": 23,
+    "title": "Land Divided Among the Tribes",
+    "era": "Conquest",
+    "timelineDate": "c. 1400 BC",
+    "mapLocation": "Canaan / Shechem",
+    "references": [
+      "Joshua 13-24"
+    ],
+    "summary": "The Promised Land is divided among Israel’s tribes, and Joshua calls Israel to serve the Lord faithfully.",
+    "details": "The tribal allotments give Israel a settled identity in the land. Joshua’s farewell challenges the people to choose faithfulness and reject idols.",
+    "mainPeople": [
+      "Joshua",
+      "Twelve tribes"
+    ],
+    "lineageConnection": [
+      "Twelve tribes settled in land"
+    ],
+    "lesson": "Receiving blessing also brings responsibility to remain faithful.",
+    "mapIcon": "map",
+    "videoIdea": "Show a tribal land map filling with colored territories and Joshua addressing the tribes.",
+    "coords": {
+      "x": 44,
+      "y": 48
+    },
+    "route": [],
+    "tags": [
+      "Conquest",
+      "Joshua",
+      "Twelve tribes"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Shiloh, Canaan",
+      "modern": "Khirbet Seilun, West Bank, Israel (near Nablus)",
+      "construction": "Shiloh was Israel's religious capital before Jerusalem. The tabernacle stood here for ~300 years. Joshua cast lots before God to divide the land among the 12 tribes at Shiloh.",
+      "significance": "Where Israel's 12 tribes received their territorial inheritance in Canaan"
+    },
+    "eventTags": [
+      "Inheritance",
+      "Tribal Land",
+      "Shiloh",
+      "Tabernacle",
+      "Conquest Complete"
+    ],
+    "roleTags": [
+      {
+        "person": "Joshua",
+        "role": "Judge and Allotter",
+        "origin": "Egypt → Wilderness → Canaan",
+        "relation": "Oversees fair distribution of land among the tribes"
+      },
+      {
+        "person": "Eleazar the Priest",
+        "role": "High Priest",
+        "origin": "Wilderness / Aaron's son",
+        "relation": "Casts lots with Joshua before God at Shiloh"
+      }
+    ]
+  },
+  {
+    "id": "judges_period_begins",
+    "order": 24,
+    "title": "Judges Period Begins",
+    "era": "Judges",
+    "timelineDate": "c. 1350-1050 BC",
+    "mapLocation": "Israel / Canaan",
+    "references": [
+      "Judges 2"
+    ],
+    "summary": "Israel enters repeated cycles of sin, oppression, crying out, and deliverance through judges.",
+    "details": "After Joshua’s generation, Israel struggles without consistent covenant faithfulness. God raises deliverers, but the cycle repeats and exposes the need for deeper transformation and righteous leadership.",
+    "mainPeople": [
+      "Israelites",
+      "Judges"
+    ],
+    "lineageConnection": [
+      "Israel before the monarchy"
+    ],
+    "lesson": "Spiritual compromise can become a cycle unless hearts change.",
+    "mapIcon": "cycle",
+    "videoIdea": "Animate the Judges cycle: sin, oppression, cry, deliverance, rest, repeat.",
+    "coords": {
+      "x": 44,
+      "y": 50
+    },
+    "route": [],
+    "tags": [
+      "Judges",
+      "Israelites"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Canaan (various tribal territories)",
+      "modern": "Israel / West Bank / Jordan",
+      "construction": "After Joshua's generation died, Israel had no central government. Each tribe managed its own territory, often failing to drive out Canaanites. The Judges period (~1350–1050 BC) was marked by a repeated cycle: sin → oppression → cry → judge → peace → sin again.",
+      "significance": "Shows the human need for a king — ultimately fulfilled in Christ"
+    },
+    "eventTags": [
+      "Cycle of Sin",
+      "Judges",
+      "Oppression",
+      "Deliverance",
+      "Israel"
+    ],
+    "roleTags": [
+      {
+        "person": "Israelites",
+        "role": "Covenant Breakers",
+        "origin": "Canaan (various tribes)",
+        "relation": "Intermarry with Canaanites; worship Baal; face repeated oppression"
+      },
+      {
+        "person": "Canaanites / Surrounding Nations",
+        "role": "Oppressors",
+        "origin": "Canaan / Mesopotamia",
+        "relation": "God uses them to discipline disobedient Israel"
+      }
+    ]
+  },
+  {
+    "id": "deborah_and_barak",
+    "order": 25,
+    "title": "Deborah and Barak’s Victory",
+    "era": "Judges",
+    "timelineDate": "c. 1200 BC",
+    "mapLocation": "Mount Tabor / Kishon region",
+    "references": [
+      "Judges 4-5"
+    ],
+    "summary": "Deborah and Barak lead Israel against Sisera, and God gives victory.",
+    "details": "Deborah’s prophetic leadership guides Barak into battle. Jael’s action completes the victory, and Deborah’s song celebrates God’s deliverance.",
+    "mainPeople": [
+      "Deborah",
+      "Barak",
+      "Jael",
+      "Sisera"
+    ],
+    "lineageConnection": [
+      "Judge leadership in Israel"
+    ],
+    "lesson": "God can use courageous leadership and unexpected people to bring deliverance.",
+    "mapIcon": "palm",
+    "videoIdea": "Show Deborah under the palm tree, Barak leading troops, and stormy battle terrain.",
+    "coords": {
+      "x": 43,
+      "y": 43
+    },
+    "route": [],
+    "tags": [
+      "Judges",
+      "Deborah",
+      "Barak",
+      "Jael"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Mount Tabor / Jezreel Valley / Kishon River",
+      "modern": "Mount Tabor (588 m), Lower Galilee, Israel — Kishon River near Haifa",
+      "construction": "The Jezreel Valley (Plain of Megiddo) was the ancient battlefield of Israel — where many decisive battles were fought. Sisera's 900 iron chariots were useless after the Kishon River flooded during battle.",
+      "significance": "God uses a woman judge and a storm to defeat a technologically superior enemy"
+    },
+    "eventTags": [
+      "Battle",
+      "Woman Leader",
+      "Prophecy Fulfilled",
+      "Deliverance",
+      "Judges"
+    ],
+    "roleTags": [
+      {
+        "person": "Deborah",
+        "role": "Prophetess / Judge",
+        "origin": "Ephraim tribe (Bethel area)",
+        "relation": "Only female judge of Israel; commanded the battle strategy"
+      },
+      {
+        "person": "Barak",
+        "role": "Military Commander",
+        "origin": "Naphtali tribe (Kedesh)",
+        "relation": "Led 10,000 soldiers from Naphtali and Zebulun"
+      },
+      {
+        "person": "Jael",
+        "role": "Warrior Woman / Unexpected Hero",
+        "origin": "Kenite clan (allied with Israel)",
+        "relation": "Kills Sisera with a tent peg — fulfilling Deborah's prophecy"
+      }
+    ]
+  },
+  {
+    "id": "gideon_defeats_midian",
+    "order": 26,
+    "title": "Gideon Defeats Midian",
+    "era": "Judges",
+    "timelineDate": "c. 1150 BC",
+    "mapLocation": "Jezreel Valley / Midian region",
+    "references": [
+      "Judges 6-7"
+    ],
+    "summary": "God uses Gideon and a small army to defeat Midian, showing victory comes from God.",
+    "details": "Gideon begins afraid but is called a mighty warrior. God reduces the army to make clear that deliverance comes by divine power, not human numbers.",
+    "mainPeople": [
+      "Gideon",
+      "Midianites",
+      "God"
+    ],
+    "lineageConnection": [
+      "Judge leadership in Israel"
+    ],
+    "lesson": "God’s strength is displayed through human weakness.",
+    "mapIcon": "torch",
+    "videoIdea": "Show nighttime torches, clay jars breaking, and the Midianite camp thrown into confusion.",
+    "coords": {
+      "x": 44,
+      "y": 45
+    },
+    "route": [],
+    "tags": [
+      "Judges",
+      "Gideon",
+      "Midianites",
+      "God"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Ophrah / Spring of Harod / Jezreel Valley",
+      "modern": "Ein Harod (Spring of Harod), Jezreel Valley, northern Israel",
+      "construction": "Gideon reduced his army from 32,000 to 300 at the Spring of Harod (Ein Harod). The Midianite camp was in the valley below. Gideon's night raid with torches inside clay jars created chaos in the massive enemy camp.",
+      "significance": "God proves He saves by His power, not numbers — 300 vs. 135,000"
+    },
+    "eventTags": [
+      "Battle",
+      "Faith",
+      "300 Warriors",
+      "Miracle",
+      "Judges",
+      "Deliverance"
+    ],
+    "roleTags": [
+      {
+        "person": "Gideon",
+        "role": "Reluctant Judge / Warrior",
+        "origin": "Ophrah, Manasseh tribe",
+        "relation": "Called while hiding; fleece signs; leads 300 men to victory"
+      },
+      {
+        "person": "Midianites",
+        "role": "Oppressive Raiders",
+        "origin": "Northwest Arabia / Sinai region",
+        "relation": "Reduced Israel to poverty for 7 years; defeated by torches and trumpets"
+      }
+    ]
+  },
+  {
+    "id": "samson_and_philistines",
+    "order": 27,
+    "title": "Samson and the Philistines",
+    "era": "Judges",
+    "timelineDate": "c. 1100 BC",
+    "mapLocation": "Philistine region / Gaza",
+    "references": [
+      "Judges 13-16"
+    ],
+    "summary": "Samson is given great strength but struggles with disobedience. His final act brings judgment on the Philistines.",
+    "details": "Samson’s life mixes divine calling with personal weakness. His story warns about compromise, yet also shows God working even through flawed servants.",
+    "mainPeople": [
+      "Samson",
+      "Delilah",
+      "Philistines"
+    ],
+    "lineageConnection": [
+      "Judge against Philistine oppression"
+    ],
+    "lesson": "Great gifting requires faithful character and obedience.",
+    "mapIcon": "pillar",
+    "videoIdea": "Show Samson, the lion, Delilah, blindness, and the temple pillars falling.",
+    "coords": {
+      "x": 39,
+      "y": 57
+    },
+    "route": [],
+    "tags": [
+      "Judges",
+      "Samson",
+      "Delilah",
+      "Philistines"
+    ],
+    "category": "people",
+    "placeContext": {
+      "ancient": "Dan territory / Philistine cities (Gaza, Ashkelon, Timnah)",
+      "modern": "Coastal Shephelah, modern Israel (Zorah = Sar'a; Gaza = Gaza City)",
+      "construction": "The Philistines were Sea Peoples who settled on the southern Canaanite coast around 1200 BC, bringing iron weapons and five major city-states: Gaza, Ashkelon, Ashdod, Gath, Ekron. Their conflict with Israel lasted centuries.",
+      "significance": "Shows Israel's spiritual compromise through intermarriage; God uses even Samson's failures for His purposes"
+    },
+    "eventTags": [
+      "Judges",
+      "Nazirite",
+      "Philistines",
+      "Strength",
+      "Betrayal",
+      "Sacrifice"
+    ],
+    "roleTags": [
+      {
+        "person": "Samson",
+        "role": "Nazirite Judge / Flawed Hero",
+        "origin": "Zorah, Dan tribe (modern Israel)",
+        "relation": "Consecrated from birth; supernatural strength tied to Nazirite vow"
+      },
+      {
+        "person": "Delilah",
+        "role": "Betrayer",
+        "origin": "Valley of Sorek (Philistine area)",
+        "relation": "Paid 1,100 silver pieces to discover Samson's secret; betrays him"
+      },
+      {
+        "person": "Philistines",
+        "role": "Oppressing Nation",
+        "origin": "Gaza/Coastal Canaan (Aegean origin)",
+        "relation": "Oppress Israel for 40 years; Samson's mortal enemy"
+      }
+    ]
+  },
+  {
+    "id": "ruth_and_boaz",
+    "order": 28,
+    "title": "Ruth and Boaz",
+    "era": "Judges / Ruth",
+    "timelineDate": "c. 1100 BC",
+    "mapLocation": "Moab → Bethlehem",
+    "references": [
+      "Ruth 1-4"
+    ],
+    "summary": "Ruth shows loyalty to Naomi and marries Boaz. Their family line leads to David and later to Jesus.",
+    "details": "Ruth’s faithfulness, Boaz’s kindness, and God’s providence transform loss into hope. The genealogy at the end connects this family story to the messianic line.",
+    "mainPeople": [
+      "Ruth",
+      "Naomi",
+      "Boaz",
+      "Obed"
+    ],
+    "lineageConnection": [
+      "Ruth",
+      "Boaz",
+      "Obed",
+      "Jesse",
+      "David",
+      "Jesus"
+    ],
+    "lesson": "God can bring redemption through ordinary faithfulness and kindness.",
+    "mapIcon": "wheat",
+    "videoIdea": "Show Ruth leaving Moab, gleaning in Boaz’s field, and the family line to David.",
+    "coords": {
+      "x": 43,
+      "y": 56
+    },
+    "route": [
+      "Moab",
+      "Bethlehem"
+    ],
+    "tags": [
+      "Judges",
+      "Ruth",
+      "Naomi",
+      "Boaz"
+    ],
+    "category": "travel",
+    "placeContext": {
+      "ancient": "Moab → Bethlehem",
+      "modern": "Moab = Al-Karak area, Jordan → Bethlehem = Bayt Lahm, West Bank",
+      "construction": "Moab was a highland plateau east of the Dead Sea, modern Jordan. Bethlehem ('House of Bread') sat in the Judean hills, famous for its grain harvest. The journey crossed the Jordan River and rose into the Judean highlands.",
+      "significance": "A Moabite woman's journey to Israel prefigures Gentile inclusion in God's covenant people"
+    },
+    "eventTags": [
+      "Loyalty",
+      "Redemption",
+      "Gentile Inclusion",
+      "Kinsman Redeemer",
+      "Ruth",
+      "Covenant Faithfulness"
+    ],
+    "roleTags": [
+      {
+        "person": "Ruth",
+        "role": "Moabite Widow / Loyal Daughter",
+        "origin": "Moab (modern Jordan)",
+        "relation": "Great-grandmother of King David; in the lineage of Jesus (Matthew 1:5)"
+      },
+      {
+        "person": "Naomi",
+        "role": "Bereaved Israelite Mother",
+        "origin": "Bethlehem, Judah",
+        "relation": "Returns bitter to Bethlehem; redeemed through Ruth's loyalty and Boaz's kindness"
+      },
+      {
+        "person": "Boaz",
+        "role": "Kinsman Redeemer / Type of Christ",
+        "origin": "Bethlehem, Judah (son of Rahab)",
+        "relation": "Wealthy landowner who redeems Ruth; marries her; ancestor of David and Jesus"
+      }
+    ],
+    "journey": {
+      "travelers": [
+        "Ruth",
+        "Naomi"
+      ],
+      "from": "Moab (modern Jordan)",
+      "to": "Bethlehem, Judah (modern West Bank)",
+      "via": [
+        "Crossing the Jordan River"
+      ],
+      "mode": "On foot — two widows, poor",
+      "companions": [
+        "Orpah left at the border; only Ruth continued"
+      ],
+      "reason": "Ruth's commitment to Naomi: 'Where you go I will go' (Ruth 1:16); following Naomi back to her homeland",
+      "distance": "~80 km (Moab highlands to Bethlehem)"
+    }
+  },
+  {
+    "id": "samuel_called",
+    "order": 29,
+    "title": "Samuel Called by God",
+    "era": "Transition to Monarchy",
+    "timelineDate": "c. 1050 BC",
+    "mapLocation": "Shiloh",
+    "references": [
+      "1 Samuel 3"
+    ],
+    "summary": "Young Samuel hears God’s voice and becomes a prophet, beginning a leadership transition in Israel.",
+    "details": "Samuel learns to recognize and respond to God’s call. His prophetic ministry connects the period of judges to the rise of Israel’s kings.",
+    "mainPeople": [
+      "Samuel",
+      "Eli",
+      "God"
+    ],
+    "lineageConnection": [
+      "Prophet leadership before kings"
+    ],
+    "lesson": "Listening to God is the beginning of faithful service.",
+    "mapIcon": "lamp",
+    "videoIdea": "Show Samuel in the temple at night hearing God call his name.",
+    "coords": {
+      "x": 44,
+      "y": 49
+    },
+    "route": [],
+    "tags": [
+      "Transition to Monarchy",
+      "Samuel",
+      "Eli",
+      "God"
+    ],
+    "category": "people",
+    "placeContext": {
+      "ancient": "Shiloh (Tabernacle / Ark of the Covenant site)",
+      "modern": "Khirbet Seilun, West Bank (about 35 km north of Jerusalem)",
+      "construction": "Shiloh housed the tabernacle for ~300 years during the Judges period. The ark stood in a permanent structure there. After the Philistines captured the ark (~1080 BC), Shiloh was destroyed — fulfilling Jeremiah's later prophecy (Jer 7:12).",
+      "significance": "The last judge and first prophet — Samuel bridged the Judges era and the monarchy"
+    },
+    "eventTags": [
+      "Prophetic Call",
+      "Tabernacle",
+      "Eli",
+      "Samuel",
+      "Voice of God"
+    ],
+    "roleTags": [
+      {
+        "person": "Samuel",
+        "role": "Prophet / Judge / Last Judge",
+        "origin": "Ramathaim-Zophim (Ephraim), dedicated to God at Shiloh",
+        "relation": "Dedicated by Hannah before birth; hears God's voice as a child; anoints Saul and David"
+      },
+      {
+        "person": "Eli",
+        "role": "Aging High Priest",
+        "origin": "Shiloh, Levite",
+        "relation": "Mentor to Samuel; cursed because his sons were wicked and he did not restrain them"
+      },
+      {
+        "person": "Hannah",
+        "role": "Praying Mother",
+        "origin": "Ramathaim-Zophim, Ephraim",
+        "relation": "Prays for a son at Shiloh; dedicates Samuel to God; her prayer in 1 Sam 2 parallels Mary's Magnificat"
+      }
+    ]
+  },
+  {
+    "id": "saul_first_king",
+    "order": 30,
+    "title": "Saul Becomes First King",
+    "era": "United Kingdom",
+    "timelineDate": "c. 1050 BC",
+    "mapLocation": "Mizpah / Israel",
+    "references": [
+      "1 Samuel 8-10"
+    ],
+    "summary": "Israel asks for a king, and Saul is chosen as the first king of Israel.",
+    "details": "The monarchy begins with tension between Israel’s desire to be like other nations and God’s rule. Saul’s reign begins with promise but later declines through disobedience.",
+    "mainPeople": [
+      "Saul",
+      "Samuel",
+      "Israelites"
+    ],
+    "lineageConnection": [
+      "Monarchy begins"
+    ],
+    "lesson": "Leadership must remain submitted to God, not just public approval.",
+    "mapIcon": "crown",
+    "videoIdea": "Show Samuel anointing Saul and Israel gathering to receive a king.",
+    "coords": {
+      "x": 44,
+      "y": 49
+    },
+    "route": [],
+    "tags": [
+      "United Kingdom",
+      "Saul",
+      "Samuel",
+      "Israelites"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Mizpah / Gibeah (Saul's capital)",
+      "modern": "Tell en-Nasbeh (Mizpah) / Tell el-Ful (Gibeah) — both near modern Ramallah, West Bank",
+      "construction": "Saul built a fortified residence at Gibeah (Tell el-Ful), excavated by William Albright. It was a small but strategically positioned fortress on a hill in Benjamin territory.",
+      "significance": "Israel's first human king — beginning of the united monarchy (1050–930 BC)"
+    },
+    "eventTags": [
+      "Monarchy Begins",
+      "Anointing",
+      "Benjamin",
+      "Samuel",
+      "Israel's King"
+    ],
+    "roleTags": [
+      {
+        "person": "Saul",
+        "role": "First King of Israel",
+        "origin": "Gibeah of Benjamin",
+        "relation": "Tall, handsome; anointed by Samuel; later rejected for disobedience"
+      },
+      {
+        "person": "Samuel",
+        "role": "Kingmaker / Prophet",
+        "origin": "Shiloh → Ramah",
+        "relation": "Anoints Saul privately; presents him publicly; warns against kingship"
+      }
+    ]
+  },
+  {
+    "id": "david_and_goliath",
+    "order": 31,
+    "title": "David and Goliath",
+    "era": "United Kingdom",
+    "timelineDate": "c. 1020 BC",
+    "mapLocation": "Valley of Elah",
+    "references": [
+      "1 Samuel 17"
+    ],
+    "summary": "David defeats Goliath through faith in God, revealing courage and future leadership.",
+    "details": "David sees the battle differently from Israel’s army. He trusts the Lord rather than armor or size, and his victory over Goliath becomes a defining example of faith-filled courage.",
+    "mainPeople": [
+      "David",
+      "Goliath",
+      "Saul",
+      "Israelites",
+      "Philistines"
+    ],
+    "lineageConnection": [
+      "Judah",
+      "Jesse",
+      "David"
+    ],
+    "lesson": "Faith in God gives courage against impossible-looking challenges.",
+    "mapIcon": "sling",
+    "videoIdea": "Show David facing Goliath with a sling, armies watching, and the stone striking the giant.",
+    "coords": {
+      "x": 41,
+      "y": 54
+    },
+    "route": [],
+    "tags": [
+      "United Kingdom",
+      "David",
+      "Goliath",
+      "Saul"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Valley of Elah, Judean Shephelah",
+      "modern": "Elah Valley (Emek Elah), near Beit Shemesh, Israel",
+      "construction": "The Valley of Elah was a natural corridor between the Judean hills and Philistine coastal cities. Archaeologists have found ancient Philistine pottery and a large fortified Israelite site (Khirbet Qeiyafa) overlooking the valley.",
+      "significance": "David's faith against Goliath — paradigm of God's power through the weak defeating the strong"
+    },
+    "eventTags": [
+      "Faith",
+      "Battle",
+      "David",
+      "Goliath",
+      "Philistines",
+      "Giant"
+    ],
+    "roleTags": [
+      {
+        "person": "David",
+        "role": "Shepherd Boy / Anointed King",
+        "origin": "Bethlehem, Judah",
+        "relation": "Youngest son of Jesse; defeats Goliath with a sling and stone; 2nd King of Israel"
+      },
+      {
+        "person": "Goliath",
+        "role": "Philistine Champion / Giant",
+        "origin": "Gath, Philistia (Gaza region)",
+        "relation": "~2.9 m tall; armoured warrior; defies Israel for 40 days; killed by David"
+      },
+      {
+        "person": "Saul",
+        "role": "King in Fear",
+        "origin": "Gibeah, Benjamin",
+        "relation": "Paralysed by Goliath's challenge; offers his armour to David"
+      }
+    ]
+  },
+  {
+    "id": "david_king_jerusalem",
+    "order": 32,
+    "title": "David Becomes King and Captures Jerusalem",
+    "era": "United Kingdom",
+    "timelineDate": "c. 1000 BC",
+    "mapLocation": "Hebron → Jerusalem",
+    "references": [
+      "2 Samuel 5"
+    ],
+    "summary": "David becomes king over all Israel and makes Jerusalem the capital city.",
+    "details": "David’s rule unites the tribes and establishes Jerusalem as the political and spiritual center. The city becomes central to worship, kingship, and later messianic expectation.",
+    "mainPeople": [
+      "David",
+      "Tribes of Israel"
+    ],
+    "lineageConnection": [
+      "Davidic kingdom established"
+    ],
+    "lesson": "God can prepare a leader through long seasons before public responsibility.",
+    "mapIcon": "city",
+    "videoIdea": "Show David moving from Hebron to Jerusalem and establishing the capital.",
+    "coords": {
+      "x": 43,
+      "y": 53
+    },
+    "route": [
+      "Hebron",
+      "Jerusalem"
+    ],
+    "tags": [
+      "United Kingdom",
+      "David",
+      "Tribes of Israel"
+    ],
+    "category": "travel",
+    "placeContext": {
+      "ancient": "Hebron → Jerusalem (Jebus)",
+      "modern": "Hebron (Al-Khalil), West Bank → Jerusalem (Al-Quds / Yerushalayim)",
+      "construction": "Jerusalem was a Jebusite city on a limestone ridge — considered impregnable due to the Gihon Spring water tunnel. David's men entered through the tsinnor (water shaft) and captured it. David built a royal palace and brought the Ark of the Covenant to the city.",
+      "significance": "Jerusalem becomes the eternal capital of God's chosen king and the centre of biblical history"
+    },
+    "eventTags": [
+      "David",
+      "Jerusalem",
+      "Ark of Covenant",
+      "Capital",
+      "Kingdom"
+    ],
+    "roleTags": [
+      {
+        "person": "David",
+        "role": "King of United Israel",
+        "origin": "Bethlehem → Hebron → Jerusalem",
+        "relation": "Dances before the Ark; establishes Jerusalem as Zion, City of David"
+      },
+      {
+        "person": "Michal",
+        "role": "King's Wife / Critic",
+        "origin": "Gibeah (Saul's daughter)",
+        "relation": "Despises David for dancing before the Ark; punished with childlessness"
+      }
+    ],
+    "journey": {
+      "travelers": [
+        "David",
+        "The Ark of the Covenant procession"
+      ],
+      "from": "Hebron (7 years as king of Judah)",
+      "to": "Jerusalem (unified capital)",
+      "via": [
+        "Capture of Jebus (Jerusalem)"
+      ],
+      "mode": "Military campaign then ceremonial procession with the Ark",
+      "companions": [
+        "30,000 chosen men of Israel",
+        "priests and Levites bearing the Ark"
+      ],
+      "reason": "Unify all 12 tribes under one king; establish Jerusalem as the religious and political capital",
+      "distance": "~37 km (Hebron to Jerusalem)"
+    }
+  },
+  {
+    "id": "davidic_covenant",
+    "order": 33,
+    "title": "Davidic Covenant",
+    "era": "United Kingdom",
+    "timelineDate": "c. 1000 BC",
+    "mapLocation": "Jerusalem",
+    "references": [
+      "2 Samuel 7"
+    ],
+    "summary": "God promises David a lasting throne and kingdom, forming a foundation for messianic hope.",
+    "details": "David wants to build a house for God, but God promises to build David a house, meaning a dynasty. This promise points forward to the Messiah, the Son of David.",
+    "mainPeople": [
+      "David",
+      "Nathan",
+      "God"
+    ],
+    "lineageConnection": [
+      "David",
+      "Solomon",
+      "Messiah promise",
+      "Jesus"
+    ],
+    "lesson": "God’s promises are larger than human plans.",
+    "mapIcon": "throne",
+    "videoIdea": "Show Nathan speaking to David, a royal throne, and a future glowing line toward Jesus.",
+    "coords": {
+      "x": 43,
+      "y": 53
+    },
+    "route": [],
+    "tags": [
+      "United Kingdom",
+      "David",
+      "Nathan",
+      "God"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Jerusalem / Zion",
+      "modern": "Old City of Jerusalem — City of David archaeological site",
+      "construction": "David wanted to build God a temple in Jerusalem. Through Nathan the prophet, God reversed this — instead promising to build David a 'house' (dynasty) that would last forever. The Davidic covenant is the foundation of messianic hope in the Old Testament.",
+      "significance": "The foundation of all messianic prophecy — Jesus is the eternal fulfillment of this covenant"
+    },
+    "eventTags": [
+      "Covenant",
+      "Prophecy",
+      "Messiah",
+      "David",
+      "Eternal Kingdom",
+      "Nathan"
+    ],
+    "roleTags": [
+      {
+        "person": "David",
+        "role": "King and Covenant Recipient",
+        "origin": "Bethlehem → Jerusalem",
+        "relation": "Receives promise of an eternal throne and dynasty through 2 Samuel 7"
+      },
+      {
+        "person": "Nathan",
+        "role": "Court Prophet",
+        "origin": "Jerusalem (court prophet)",
+        "relation": "Delivers God's covenant promise; later confronts David over Bathsheba"
+      },
+      {
+        "person": "God",
+        "role": "Covenant Maker",
+        "origin": "Eternal",
+        "relation": "Promises David a son who will reign forever — ultimately Jesus (Luke 1:32–33)"
+      }
+    ]
+  },
+  {
+    "id": "solomon_builds_temple",
+    "order": 34,
+    "title": "Solomon Builds the Temple",
+    "era": "United Kingdom",
+    "timelineDate": "c. 960 BC",
+    "mapLocation": "Jerusalem",
+    "references": [
+      "1 Kings 6-8"
+    ],
+    "summary": "Solomon builds and dedicates the temple, and God’s glory fills it.",
+    "details": "The temple becomes the central place of worship for Israel. Solomon’s dedication prayer connects the temple with covenant faithfulness, prayer, forgiveness, and God’s presence.",
+    "mainPeople": [
+      "Solomon",
+      "Priests",
+      "Israelites"
+    ],
+    "lineageConnection": [
+      "David",
+      "Solomon"
+    ],
+    "lesson": "Worship is centered on God’s presence, holiness, and mercy.",
+    "mapIcon": "temple",
+    "videoIdea": "Show the temple being built and the cloud of God’s glory filling it.",
+    "coords": {
+      "x": 43,
+      "y": 53
+    },
+    "route": [],
+    "tags": [
+      "United Kingdom",
+      "Solomon",
+      "Priests",
+      "Israelites"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Mount Moriah, Jerusalem",
+      "modern": "Temple Mount (Haram al-Sharif), Old City Jerusalem — Dome of the Rock marks the location",
+      "construction": "Solomon's Temple (c. 957 BC) took 7 years and 180,000+ workers. Cedar from Lebanon, gold from Ophir, and bronze from Hiram of Tyre were used. The Holy of Holies housed the Ark of the Covenant. Destroyed by Babylon in 586 BC.",
+      "significance": "The first permanent dwelling of God's presence — fulfilled Abraham's 'house' promise and foreshadowed Christ as the true Temple"
+    },
+    "eventTags": [
+      "Temple",
+      "Jerusalem",
+      "Solomon",
+      "Ark of Covenant",
+      "Worship",
+      "Construction"
+    ],
+    "roleTags": [
+      {
+        "person": "Solomon",
+        "role": "Builder King / Wise Ruler",
+        "origin": "Jerusalem (son of David and Bathsheba)",
+        "relation": "Builds the Temple in 7 years; dedicates it with a great prayer (1 Kings 8)"
+      },
+      {
+        "person": "Hiram of Tyre",
+        "role": "Allied King / Craftsman Supplier",
+        "origin": "Tyre (modern Tyre, Lebanon)",
+        "relation": "Provides cedar and gold workers; craftsmen for temple construction"
+      },
+      {
+        "person": "God",
+        "role": "Dwelling Presence",
+        "origin": "Eternal",
+        "relation": "Fills the temple with His glory cloud at dedication"
+      }
+    ]
+  },
+  {
+    "id": "kingdom_divides",
+    "order": 35,
+    "title": "Kingdom Divides",
+    "era": "Divided Kingdom",
+    "timelineDate": "c. 930 BC",
+    "mapLocation": "Shechem / Israel and Judah",
+    "references": [
+      "1 Kings 12"
+    ],
+    "summary": "After Solomon, the kingdom splits into northern Israel and southern Judah.",
+    "details": "Rehoboam’s harsh answer and Jeroboam’s rise divide the nation. The split shapes the rest of Old Testament history, with separate kings, prophets, and eventual exiles.",
+    "mainPeople": [
+      "Rehoboam",
+      "Jeroboam",
+      "Israel",
+      "Judah"
+    ],
+    "lineageConnection": [
+      "Davidic line continues in Judah"
+    ],
+    "lesson": "Prideful leadership can tear apart a community.",
+    "mapIcon": "split-crown",
+    "videoIdea": "Show the map splitting into Israel and Judah with two crowns.",
+    "coords": {
+      "x": 44,
+      "y": 49
+    },
+    "route": [],
+    "tags": [
+      "Divided Kingdom",
+      "Rehoboam",
+      "Jeroboam",
+      "Israel"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Shechem",
+      "modern": "Nablus, West Bank",
+      "construction": "Shechem was an ancient covenant city in the central highlands between Gerizim and Ebal. Rehoboam went there to be crowned by all Israel. When he refused to lighten the tax burden, 10 tribes revolted under Jeroboam. The northern kingdom built Dan and Bethel as rival worship centres.",
+      "significance": "The permanent split of Israel into two kingdoms — a direct consequence of Solomon's idolatry"
+    },
+    "eventTags": [
+      "Division",
+      "Kingdom",
+      "Rehoboam",
+      "Jeroboam",
+      "Northern Kingdom",
+      "Southern Kingdom"
+    ],
+    "roleTags": [
+      {
+        "person": "Rehoboam",
+        "role": "King of Judah (South)",
+        "origin": "Jerusalem (Solomon's son)",
+        "relation": "Foolishly heeds young advisers; 10 tribes revolt under him"
+      },
+      {
+        "person": "Jeroboam",
+        "role": "King of Israel (North)",
+        "origin": "Zeredah, Ephraim",
+        "relation": "Returns from Egypt; leads 10-tribe rebellion; sets up golden calves in Dan and Bethel"
+      },
+      {
+        "person": "Ahijah the Prophet",
+        "role": "Prophetic Voice",
+        "origin": "Shiloh",
+        "relation": "Tears his robe into 12 pieces to symbolise the coming kingdom split"
+      }
+    ]
+  },
+  {
+    "id": "elijah_mount_carmel",
+    "order": 36,
+    "title": "Elijah on Mount Carmel",
+    "era": "Divided Kingdom",
+    "timelineDate": "c. 870 BC",
+    "mapLocation": "Mount Carmel",
+    "references": [
+      "1 Kings 18"
+    ],
+    "summary": "Elijah confronts the prophets of Baal, and God sends fire from heaven to prove that the Lord is God.",
+    "details": "The contest on Mount Carmel calls Israel to stop wavering between Baal and the Lord. God’s fire answers Elijah’s prayer and exposes false worship.",
+    "mainPeople": [
+      "Elijah",
+      "Ahab",
+      "Prophets of Baal",
+      "Israelites"
+    ],
+    "lineageConnection": [
+      "Prophets call Israel back to God"
+    ],
+    "lesson": "God alone deserves worship and trust.",
+    "mapIcon": "fire-altar",
+    "videoIdea": "Show two altars, Elijah praying, fire falling from heaven, and the people declaring the Lord is God.",
+    "coords": {
+      "x": 42,
+      "y": 44
+    },
+    "route": [],
+    "tags": [
+      "Divided Kingdom",
+      "Elijah",
+      "Ahab",
+      "Prophets of Baal"
+    ],
+    "category": "travel",
+    "placeContext": {
+      "ancient": "Mount Carmel / Brook Cherith / Zarephath",
+      "modern": "Mount Carmel (Haifa region, Israel) / Zarephath = Sarafand, Lebanon",
+      "construction": "Mount Carmel juts into the Mediterranean near Haifa. It was a traditional high place for Baal worship. Zarephath ('Sarepta') was a Phoenician coastal town in modern Lebanon — outside Israel's territory.",
+      "significance": "The decisive confrontation between YHWH and Baal — proving God's supremacy over Canaanite religion"
+    },
+    "eventTags": [
+      "Prophet",
+      "Fire from Heaven",
+      "Baal vs YHWH",
+      "Elijah",
+      "Miracle",
+      "Drought"
+    ],
+    "roleTags": [
+      {
+        "person": "Elijah",
+        "role": "Prophet / Man of Fire",
+        "origin": "Tishbe, Gilead (modern Jordan)",
+        "relation": "Calls down fire on Carmel; later taken to heaven in a chariot — forerunner of John the Baptist"
+      },
+      {
+        "person": "Ahab",
+        "role": "Wicked King of Israel",
+        "origin": "Samaria, Northern Kingdom",
+        "relation": "Married Jezebel; allowed Baal worship; confronted by Elijah"
+      },
+      {
+        "person": "Jezebel",
+        "role": "Foreign Queen / Baal Promoter",
+        "origin": "Sidon, Phoenicia (modern Lebanon)",
+        "relation": "Kills 450 prophets of God; hunts Elijah; overthrown by Jehu"
+      }
+    ],
+    "journey": {
+      "travelers": [
+        "Elijah"
+      ],
+      "from": "Hiding at Brook Cherith (east of Jordan)",
+      "to": "Zarephath (Sidon, modern Lebanon), then Mount Carmel (Haifa, Israel)",
+      "via": [
+        "Brook Cherith (Jordan area)",
+        "Zarephath (Lebanon)"
+      ],
+      "mode": "On foot alone — led by God's direction",
+      "companions": [
+        "Widow of Zarephath (host during 3-year drought)"
+      ],
+      "reason": "Hiding from Ahab during drought; then confronting Baal's 450 prophets on Mount Carmel",
+      "distance": "~300 km total travel"
+    }
+  },
+  {
+    "id": "elishas_ministry",
+    "order": 37,
+    "title": "Elisha’s Ministry",
+    "era": "Divided Kingdom",
+    "timelineDate": "c. 850 BC",
+    "mapLocation": "Israel / Jordan region",
+    "references": [
+      "2 Kings 2-8"
+    ],
+    "summary": "Elisha continues prophetic ministry with miracles, healing, and guidance for Israel.",
+    "details": "After Elijah is taken up, Elisha receives the mantle and ministers through signs of provision, healing, resurrection, and prophetic counsel. His ministry shows God’s care in everyday needs and national crises.",
+    "mainPeople": [
+      "Elisha",
+      "Elijah",
+      "Naaman",
+      "Widow of Zarephath?"
+    ],
+    "lineageConnection": [
+      "Elijah",
+      "Elisha prophetic succession"
+    ],
+    "lesson": "God’s power works through servants who carry forward faithful ministry.",
+    "mapIcon": "mantle",
+    "videoIdea": "Show Elijah’s mantle falling, Jordan parting, and Naaman healed in the river.",
+    "coords": {
+      "x": 47,
+      "y": 51
+    },
+    "route": [],
+    "tags": [
+      "Divided Kingdom",
+      "Elisha",
+      "Elijah",
+      "Naaman"
+    ],
+    "category": "people",
+    "placeContext": {
+      "ancient": "Northern Kingdom (Samaria, Jordan Valley, Shunem, Dothan)",
+      "modern": "West Bank / northern Israel",
+      "construction": "Elisha ministered across the northern kingdom from his base at Carmel and Dothan. The Jordan Valley, where he parted the Jordan, runs between Israel and Jordan. The wealthy woman of Shunem (Sulam) had a prophet's room for Elisha.",
+      "significance": "Elisha performed more miracles than any other Old Testament prophet — double portion of Elijah's spirit"
+    },
+    "eventTags": [
+      "Prophet",
+      "Miracle",
+      "Healing",
+      "Northern Kingdom",
+      "Elisha"
+    ],
+    "roleTags": [
+      {
+        "person": "Elisha",
+        "role": "Prophet / Miracle Worker",
+        "origin": "Abel-meholah, Jordan Valley",
+        "relation": "Successor to Elijah; performed 16 recorded miracles"
+      },
+      {
+        "person": "Naaman",
+        "role": "Syrian Commander / Healed Leper",
+        "origin": "Damascus, Syria (Aram)",
+        "relation": "Healed of leprosy by washing in the Jordan — prefigures Gentile faith"
+      }
+    ]
+  },
+  {
+    "id": "assyria_conquers_israel",
+    "order": 38,
+    "title": "Assyria Conquers Northern Israel",
+    "era": "Exile Warning",
+    "timelineDate": "722 BC",
+    "mapLocation": "Samaria",
+    "references": [
+      "2 Kings 17"
+    ],
+    "summary": "Assyria captures Samaria and the northern kingdom falls because of long-term idolatry and covenant unfaithfulness.",
+    "details": "The fall of Israel is interpreted as covenant judgment. The event marks the end of the northern kingdom and highlights the warnings given by prophets.",
+    "mainPeople": [
+      "Assyrians",
+      "Northern Israel",
+      "Prophets"
+    ],
+    "lineageConnection": [
+      "Northern kingdom ends"
+    ],
+    "lesson": "Persistent unfaithfulness has serious consequences.",
+    "mapIcon": "broken-city",
+    "videoIdea": "Show Samaria under siege and people being taken into exile.",
+    "coords": {
+      "x": 43,
+      "y": 48
+    },
+    "route": [],
+    "tags": [
+      "Exile Warning",
+      "Assyrians",
+      "Northern Israel",
+      "Prophets"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Samaria (Capital of Northern Kingdom) → Assyria",
+      "modern": "Sebastos / Sebastiye, West Bank → Nineveh area, Mosul, Iraq",
+      "construction": "Samaria was built by Omri around 880 BC on a strategic hill. Shalmaneser V besieged it for 3 years; Sargon II finally took it in 722 BC, deporting ~27,290 Israelites to Mesopotamia and repopulating with foreign peoples — creating the Samaritans.",
+      "significance": "End of the Northern Kingdom — 10 tribes scattered, never to fully return"
+    },
+    "eventTags": [
+      "Exile",
+      "Judgment",
+      "Assyria",
+      "Northern Kingdom Falls",
+      "722 BC"
+    ],
+    "roleTags": [
+      {
+        "person": "Sargon II",
+        "role": "Assyrian Emperor",
+        "origin": "Nineveh / Dur-Sharrukin (modern Iraq)",
+        "relation": "Conquered Samaria; deported 27,290 Israelites"
+      },
+      {
+        "person": "Israelites (10 Tribes)",
+        "role": "Exiled Nation",
+        "origin": "Northern Kingdom, Samaria",
+        "relation": "Scattered across Assyrian empire; the 'lost tribes of Israel'"
+      }
+    ]
+  },
+  {
+    "id": "hezekiah_jerusalem_delivered",
+    "order": 39,
+    "title": "Hezekiah and Jerusalem Delivered",
+    "era": "Judah Kingdom",
+    "timelineDate": "c. 701 BC",
+    "mapLocation": "Jerusalem",
+    "references": [
+      "2 Kings 18-19",
+      "Isaiah 36-37"
+    ],
+    "summary": "Assyria threatens Jerusalem, but Hezekiah prays and God delivers the city.",
+    "details": "Sennacherib’s army mocks Judah and the Lord. Hezekiah spreads the threatening letter before God and prays. Jerusalem is spared, showing God’s power over empires.",
+    "mainPeople": [
+      "Hezekiah",
+      "Isaiah",
+      "Sennacherib"
+    ],
+    "lineageConnection": [
+      "Judah preserved for Davidic line"
+    ],
+    "lesson": "Prayer is the right response when threats are too large to handle alone.",
+    "mapIcon": "shield",
+    "videoIdea": "Show Hezekiah praying in the temple while Assyrian armies surround Jerusalem.",
+    "coords": {
+      "x": 43,
+      "y": 53
+    },
+    "route": [],
+    "tags": [
+      "Judah Kingdom",
+      "Hezekiah",
+      "Isaiah",
+      "Sennacherib"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Jerusalem — Siloam Tunnel / Pool",
+      "modern": "City of David, East Jerusalem — the Siloam Tunnel is still walkable today",
+      "construction": "Hezekiah dug the famous 533-meter Siloam Tunnel to secure Jerusalem's water supply during Sennacherib's siege. The Siloam Inscription, discovered in 1880, describes the tunnel's construction. Sennacherib's own annals record surrounding but not taking Jerusalem.",
+      "significance": "God's dramatic deliverance of Jerusalem from the world's most powerful army"
+    },
+    "eventTags": [
+      "Deliverance",
+      "Prayer",
+      "Miracle",
+      "Siege",
+      "Hezekiah",
+      "Sennacherib",
+      "Angel"
+    ],
+    "roleTags": [
+      {
+        "person": "Hezekiah",
+        "role": "Faithful King of Judah",
+        "origin": "Jerusalem (son of Ahaz)",
+        "relation": "Prays before God in the Temple; receives miraculous deliverance"
+      },
+      {
+        "person": "Isaiah",
+        "role": "Court Prophet",
+        "origin": "Jerusalem",
+        "relation": "Delivers God's promise: Sennacherib will not enter Jerusalem"
+      },
+      {
+        "person": "Sennacherib",
+        "role": "Assyrian Emperor",
+        "origin": "Nineveh, Assyria (modern Mosul, Iraq)",
+        "relation": "185,000 troops killed overnight by the Angel of the LORD; returns to Nineveh"
+      }
+    ]
+  },
+  {
+    "id": "josiahs_reform",
+    "order": 40,
+    "title": "Josiah’s Reform",
+    "era": "Judah Kingdom",
+    "timelineDate": "c. 622 BC",
+    "mapLocation": "Jerusalem",
+    "references": [
+      "2 Kings 22-23"
+    ],
+    "summary": "The Book of the Law is found in the temple, and Josiah leads reforms calling Judah back to the covenant.",
+    "details": "Josiah responds to Scripture with humility, repentance, and action. The reforms remove idols and renew covenant commitment, although judgment is still approaching.",
+    "mainPeople": [
+      "Josiah",
+      "Hilkiah",
+      "Judah"
+    ],
+    "lineageConnection": [
+      "Last major reform before exile"
+    ],
+    "lesson": "True revival begins when God’s word is rediscovered and obeyed.",
+    "mapIcon": "scroll",
+    "videoIdea": "Show the scroll found in the temple and Josiah leading national reform.",
+    "coords": {
+      "x": 43,
+      "y": 53
+    },
+    "route": [],
+    "tags": [
+      "Judah Kingdom",
+      "Josiah",
+      "Hilkiah",
+      "Judah"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Jerusalem — Temple Mount",
+      "modern": "Old City Jerusalem — Temple Mount",
+      "construction": "Josiah began his reform at age 16 (640 BC). During temple repairs, the Book of the Law (likely Deuteronomy) was discovered. He destroyed all high places, smashed idols, and celebrated the greatest Passover since Samuel. He died at Megiddo fighting Pharaoh Necho.",
+      "significance": "The last great revival before Babylon's destruction of Jerusalem"
+    },
+    "eventTags": [
+      "Reform",
+      "Passover",
+      "Book of the Law",
+      "Revival",
+      "Josiah"
+    ],
+    "roleTags": [
+      {
+        "person": "Josiah",
+        "role": "Reforming King",
+        "origin": "Jerusalem (grandson of Manasseh)",
+        "relation": "Youngest king to reign (8 years old); greatest reformer; killed at Megiddo at 39"
+      },
+      {
+        "person": "Hilkiah",
+        "role": "High Priest",
+        "origin": "Jerusalem, Levite",
+        "relation": "Discovers the Book of the Law during temple repair"
+      },
+      {
+        "person": "Huldah",
+        "role": "Prophetess",
+        "origin": "Jerusalem (Second Quarter)",
+        "relation": "One of few female prophets; consulted by Josiah regarding the found scroll"
+      }
+    ]
+  },
+  {
+    "id": "babylon_destroys_jerusalem",
+    "order": 41,
+    "title": "Babylon Destroys Jerusalem",
+    "era": "Exile",
+    "timelineDate": "586 BC",
+    "mapLocation": "Jerusalem → Babylon",
+    "references": [
+      "2 Kings 24-25",
+      "Jeremiah 39"
+    ],
+    "summary": "Babylon destroys Jerusalem and the temple, and many people are taken into exile.",
+    "details": "This is one of the most devastating events in Israel’s history. The temple burns, the city falls, and the people face exile, yet the prophets still speak of future hope and restoration.",
+    "mainPeople": [
+      "Nebuchadnezzar",
+      "Zedekiah",
+      "Jeremiah",
+      "Judah"
+    ],
+    "lineageConnection": [
+      "Judah enters exile"
+    ],
+    "lesson": "Judgment is real, but God’s story does not end in destruction.",
+    "mapIcon": "burning-temple",
+    "videoIdea": "Show Jerusalem burning and a long road of captives moving toward Babylon.",
+    "coords": {
+      "x": 43,
+      "y": 53
+    },
+    "route": [
+      "Jerusalem",
+      "Babylon"
+    ],
+    "tags": [
+      "Exile",
+      "Nebuchadnezzar",
+      "Zedekiah",
+      "Jeremiah"
+    ],
+    "category": "travel",
+    "placeContext": {
+      "ancient": "Jerusalem → Babylon",
+      "modern": "Jerusalem → Hillah (ancient Babylon), Babil Governorate, Iraq",
+      "construction": "Nebuchadnezzar's Babylon was the most magnificent city in the ancient world — the Ishtar Gate, Hanging Gardens, and massive ziggurat. The Babylonian exile of Judah came in three waves (605, 597, 586 BC). Jerusalem's walls, palace, and Temple were completely destroyed in 586 BC.",
+      "significance": "The darkest moment of the Old Testament — Temple destroyed, David's line seemingly ended, the people exiled"
+    },
+    "eventTags": [
+      "Judgment",
+      "Exile",
+      "Temple Destroyed",
+      "Babylon",
+      "586 BC",
+      "Lamentations"
+    ],
+    "roleTags": [
+      {
+        "person": "Nebuchadnezzar",
+        "role": "Babylonian Emperor",
+        "origin": "Babylon (modern Iraq)",
+        "relation": "God's 'servant' of judgment (Jer 25:9); destroys Temple; exiles Judah"
+      },
+      {
+        "person": "Zedekiah",
+        "role": "Last King of Judah",
+        "origin": "Jerusalem",
+        "relation": "Tries to flee; captured; watches his sons killed; eyes gouged out; dies in Babylon"
+      },
+      {
+        "person": "Jeremiah",
+        "role": "Weeping Prophet",
+        "origin": "Anathoth, Benjamin (near Jerusalem)",
+        "relation": "Warned of the disaster for 40 years; stayed in the ruins; wrote Lamentations"
+      }
+    ],
+    "journey": {
+      "travelers": [
+        "King Zedekiah",
+        "Exiles of Judah"
+      ],
+      "from": "Jerusalem",
+      "to": "Babylon (modern Hillah, Iraq)",
+      "via": [
+        "Riblah (Nebuchadnezzar's headquarters, modern Syria)"
+      ],
+      "mode": "Forced march — captives in chains, bound to Babylonian soldiers",
+      "companions": [
+        "Nobles, craftsmen, soldiers — tens of thousands exiled"
+      ],
+      "reason": "Divine judgment on Judah's sustained covenant unfaithfulness — 490 years of sabbath violations (2 Chron 36:21)",
+      "distance": "~1,400 km (Jerusalem to Babylon)"
+    }
+  },
+  {
+    "id": "daniel_in_babylon",
+    "order": 42,
+    "title": "Daniel in Babylon",
+    "era": "Exile",
+    "timelineDate": "c. 605-530 BC",
+    "mapLocation": "Babylon",
+    "references": [
+      "Daniel 1-6"
+    ],
+    "summary": "Daniel remains faithful in exile. The fiery furnace and lions’ den show God’s power outside Israel.",
+    "details": "Daniel and his friends live faithfully in a foreign empire. Their stories show wisdom, prayer, courage, and God’s sovereignty over kings and kingdoms.",
+    "mainPeople": [
+      "Daniel",
+      "Shadrach",
+      "Meshach",
+      "Abednego",
+      "Babylonian kings"
+    ],
+    "lineageConnection": [
+      "Faithfulness during exile"
+    ],
+    "lesson": "God is present with His people even far from home.",
+    "mapIcon": "lion",
+    "videoIdea": "Show Daniel in the lions’ den and the three friends in the fiery furnace.",
+    "coords": {
+      "x": 70,
+      "y": 48
+    },
+    "route": [],
+    "tags": [
+      "Exile",
+      "Daniel",
+      "Shadrach",
+      "Meshach"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Babylon — Royal court of Nebuchadnezzar / Belshazzar / Darius",
+      "modern": "Tell Babil, Hillah, Babil Governorate, Iraq",
+      "construction": "Babylon under Nebuchadnezzar was the largest city on earth (~900 hectares). The royal palace, Marduk temple, and the ziggurat Etemenanki (likely the Tower of Babel inspiration) were massive structures. The Lion's Den was a real Babylonian feature.",
+      "significance": "Daniel demonstrates faithful witness to God in the world's most powerful pagan empire"
+    },
+    "eventTags": [
+      "Exile",
+      "Faith Under Pressure",
+      "Visions",
+      "Babylon",
+      "Lion's Den",
+      "Prophecy"
+    ],
+    "roleTags": [
+      {
+        "person": "Daniel",
+        "role": "Prophet / Statesman",
+        "origin": "Jerusalem, Judah (noble family)",
+        "relation": "Exiled as a youth; rises to power; faithful through lions' den; receives apocalyptic visions"
+      },
+      {
+        "person": "Nebuchadnezzar",
+        "role": "Babylonian Emperor",
+        "origin": "Babylon, Iraq",
+        "relation": "Humbled by God with madness for 7 years; eventually acknowledges the Most High God"
+      },
+      {
+        "person": "Shadrach, Meshach, Abednego",
+        "role": "Three Faithful Exiles",
+        "origin": "Jerusalem, Judah",
+        "relation": "Refused to bow to the gold statue; protected in the fiery furnace by a fourth figure"
+      }
+    ]
+  },
+  {
+    "id": "esther_saves_jews",
+    "order": 43,
+    "title": "Esther Saves the Jews",
+    "era": "Persian Period",
+    "timelineDate": "c. 480 BC",
+    "mapLocation": "Susa, Persia",
+    "references": [
+      "Esther 1-10"
+    ],
+    "summary": "Esther risks her life to save the Jewish people from destruction.",
+    "details": "Though God’s name is not directly mentioned in Esther, providence is visible throughout. Esther’s courage and Mordecai’s wisdom preserve the Jewish people in the Persian empire.",
+    "mainPeople": [
+      "Esther",
+      "Mordecai",
+      "Haman",
+      "King Xerxes"
+    ],
+    "lineageConnection": [
+      "God preserves His people in exile"
+    ],
+    "lesson": "Courageous action at the right time can protect many lives.",
+    "mapIcon": "crown-scroll",
+    "videoIdea": "Show Esther entering the king’s court and the reversal of Haman’s plot.",
+    "coords": {
+      "x": 82,
+      "y": 48
+    },
+    "route": [],
+    "tags": [
+      "Persian Period",
+      "Esther",
+      "Mordecai",
+      "Haman"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Susa (Shushan) — Persian Royal Court",
+      "modern": "Shush, Khuzestan Province, Iran",
+      "construction": "Susa was one of the four capitals of the Persian Empire under Xerxes I (Ahasuerus). The Palace of Susa (Apadana) was a magnificent hypostyle hall. Archaeological excavations have revealed the gate structure where Mordecai sat.",
+      "significance": "A Jewish woman in a foreign empire risks her life to save her people — showing God's providential protection"
+    },
+    "eventTags": [
+      "Providence",
+      "Courage",
+      "Purim",
+      "Persian Empire",
+      "Deliverance",
+      "Woman Hero"
+    ],
+    "roleTags": [
+      {
+        "person": "Esther",
+        "role": "Queen / Courageous Deliverer",
+        "origin": "Jewish exile, Persia (Hadassah)",
+        "relation": "'For such a time as this' — risks death to approach the king without invitation"
+      },
+      {
+        "person": "Mordecai",
+        "role": "Elder Cousin / Strategist",
+        "origin": "Jewish exile, Susa",
+        "relation": "Refuses to bow to Haman; discovers the assassination plot; mentors Esther"
+      },
+      {
+        "person": "Haman",
+        "role": "Wicked Vizier / Villain",
+        "origin": "Agagite (Amalekite descent)",
+        "relation": "Plots genocide of all Jews in the Persian Empire; hanged on his own gallows"
+      }
+    ]
+  },
+  {
+    "id": "return_from_exile",
+    "order": 44,
+    "title": "Return from Exile and Temple Rebuilt",
+    "era": "Return Period",
+    "timelineDate": "538-516 BC",
+    "mapLocation": "Babylon → Jerusalem",
+    "references": [
+      "Ezra 1-6"
+    ],
+    "summary": "Cyrus allows the Jews to return, and the temple is rebuilt in Jerusalem.",
+    "details": "The return begins restoration after exile. Zerubbabel and Jeshua lead temple rebuilding despite opposition. Worship is restored, though the community still awaits fuller renewal.",
+    "mainPeople": [
+      "Cyrus",
+      "Zerubbabel",
+      "Jeshua",
+      "Returned Jews"
+    ],
+    "lineageConnection": [
+      "Restoration after exile"
+    ],
+    "lesson": "God can restore worship and identity after loss.",
+    "mapIcon": "rebuilt-temple",
+    "videoIdea": "Show exiles returning with hope and rebuilding the temple stone by stone.",
+    "coords": {
+      "x": 43,
+      "y": 53
+    },
+    "route": [
+      "Babylon",
+      "Jerusalem"
+    ],
+    "tags": [
+      "Return Period",
+      "Cyrus",
+      "Zerubbabel",
+      "Jeshua"
+    ],
+    "category": "travel",
+    "placeContext": {
+      "ancient": "Babylon → Jerusalem",
+      "modern": "Hillah, Iraq → Jerusalem, Israel",
+      "construction": "Cyrus the Great's decree (538 BC) — recorded in both the Bible (Ezra 1) and the Cyrus Cylinder (British Museum) — allowed all exiled peoples to return to their homelands. The first wave of ~50,000 Jews returned under Zerubbabel. The route followed the Fertile Crescent north through Syria then south to Canaan.",
+      "significance": "Fulfillment of Isaiah's 150-year-old prophecy naming Cyrus; prefigures the final return of God's people"
+    },
+    "eventTags": [
+      "Return",
+      "Restoration",
+      "Prophecy Fulfilled",
+      "Cyrus",
+      "538 BC",
+      "Second Exodus"
+    ],
+    "roleTags": [
+      {
+        "person": "Zerubbabel",
+        "role": "Governor / Leader of First Return",
+        "origin": "Babylon exile, Davidic line",
+        "relation": "Grandson of King Jehoiachin; leads first wave back; lays the Temple foundation"
+      },
+      {
+        "person": "Cyrus the Great",
+        "role": "Persian Emperor / God's Instrument",
+        "origin": "Persia (modern Iran)",
+        "relation": "Named by Isaiah 150 years before his birth (Isa 44:28); issues the return decree"
+      },
+      {
+        "person": "Joshua (High Priest)",
+        "role": "High Priest / Restorer of Worship",
+        "origin": "Babylon exile, Levite",
+        "relation": "Restores the altar and sacrifices; crowned as a type of the coming Priest-King"
+      }
+    ],
+    "journey": {
+      "travelers": [
+        "Zerubbabel",
+        "~49,897 Jewish exiles (first wave)"
+      ],
+      "from": "Babylon (modern Hillah, Iraq)",
+      "to": "Jerusalem and Judah",
+      "via": [
+        "Fertile Crescent route through Syria",
+        "Damascus",
+        "northern Canaan"
+      ],
+      "mode": "Caravan — families with possessions, animals, temple vessels",
+      "companions": [
+        "Joshua the High Priest",
+        "12 tribal leaders",
+        "Levites and priests"
+      ],
+      "reason": "Cyrus's imperial decree allowing Jews to return and rebuild the Temple",
+      "distance": "~1,400 km (4–6 months journey)"
+    }
+  },
+  {
+    "id": "nehemiah_rebuilds_walls",
+    "order": 45,
+    "title": "Nehemiah Rebuilds Jerusalem’s Walls",
+    "era": "Return Period",
+    "timelineDate": "c. 445 BC",
+    "mapLocation": "Jerusalem",
+    "references": [
+      "Nehemiah 1-6"
+    ],
+    "summary": "Nehemiah leads the rebuilding of Jerusalem’s walls despite opposition.",
+    "details": "Nehemiah prays, plans, and leads with courage. The wall is rebuilt quickly while workers face threats, showing the power of prayerful leadership and community effort.",
+    "mainPeople": [
+      "Nehemiah",
+      "Returned Jews",
+      "Opponents"
+    ],
+    "lineageConnection": [
+      "Jerusalem restored"
+    ],
+    "lesson": "Prayer, planning, and perseverance rebuild what is broken.",
+    "mapIcon": "wall",
+    "videoIdea": "Show workers rebuilding Jerusalem’s walls with tools in one hand and guards nearby.",
+    "coords": {
+      "x": 43,
+      "y": 53
+    },
+    "route": [],
+    "tags": [
+      "Return Period",
+      "Nehemiah",
+      "Returned Jews",
+      "Opponents"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Jerusalem — broken walls and gates",
+      "modern": "Old City Jerusalem — sections of Nehemiah's wall visible in the Jewish Quarter",
+      "construction": "Nehemiah surveyed the ruins of Jerusalem by night (Nehemiah 2). The wall was rebuilt in 52 days despite intense opposition. Nehemiah was cupbearer to Artaxerxes at Susa before being appointed governor. The rebuilt wall follows roughly the same line as Old City walls today.",
+      "significance": "Community rebuilding under opposition — a model of prayerful, organised, courageous leadership"
+    },
+    "eventTags": [
+      "Rebuilding",
+      "Prayer",
+      "Leadership",
+      "Opposition",
+      "Community",
+      "Wall"
+    ],
+    "roleTags": [
+      {
+        "person": "Nehemiah",
+        "role": "Governor / Builder",
+        "origin": "Jewish exile, cupbearer to Artaxerxes at Susa (Iran)",
+        "relation": "Left a prestigious position to rebuild Jerusalem's walls; finished in 52 days"
+      },
+      {
+        "person": "Sanballat",
+        "role": "Opponent",
+        "origin": "Horon (Samaria)",
+        "relation": "Mocks and threatens Nehemiah; attempts sabotage and assassination"
+      },
+      {
+        "person": "Ezra",
+        "role": "Scribe / Priest",
+        "origin": "Babylon exile, Levite (Aaron's line)",
+        "relation": "Reads the Law to the people publicly; great revival follows"
+      }
+    ]
+  },
+  {
+    "id": "john_baptist_prepares_way",
+    "order": 46,
+    "title": "John the Baptist Prepares the Way",
+    "era": "Life of Jesus",
+    "timelineDate": "c. AD 27",
+    "mapLocation": "Judean wilderness / Jordan River",
+    "references": [
+      "Matthew 3",
+      "Mark 1",
+      "Luke 3",
+      "John 1"
+    ],
+    "summary": "John calls people to repentance and prepares the way for Jesus, identifying Him as the Lamb of God.",
+    "details": "John stands as the prophetic bridge between Old Testament expectation and Jesus’ ministry. His message calls for repentance and readiness for the kingdom.",
+    "mainPeople": [
+      "John the Baptist",
+      "Jesus",
+      "Crowds"
+    ],
+    "lineageConnection": [
+      "Prophetic bridge to Jesus"
+    ],
+    "lesson": "Preparation for Jesus begins with repentance and humility.",
+    "mapIcon": "river-dove",
+    "videoIdea": "Show John preaching in the wilderness and baptizing people in the Jordan.",
+    "coords": {
+      "x": 47,
+      "y": 53
+    },
+    "route": [],
+    "tags": [
+      "Life of Jesus",
+      "John the Baptist",
+      "Jesus",
+      "Crowds"
+    ],
+    "category": "people",
+    "placeContext": {
+      "ancient": "Judean Wilderness / Jordan River (Bethabara / Bethany beyond Jordan)",
+      "modern": "Jordan River, near Wadi Kharrar, Jordan (traditional baptism site)",
+      "construction": "The Bethabara/Bethany-beyond-Jordan baptism site is on the eastern bank of the Jordan River. Excavations have revealed Byzantine-era churches and baptismal pools. The Jordanian site (Al-Maghtas) is now a UNESCO World Heritage Site.",
+      "significance": "John bridges the Old and New Testaments — the last prophet before the Messiah arrives"
+    },
+    "eventTags": [
+      "Prophecy Fulfilled",
+      "Baptism",
+      "Forerunner",
+      "Repentance",
+      "Isaiah 40",
+      "Elijah Figure"
+    ],
+    "roleTags": [
+      {
+        "person": "John the Baptist",
+        "role": "Forerunner / Last OT Prophet",
+        "origin": "Hill country of Judea (son of Zechariah and Elizabeth)",
+        "relation": "Cousin of Jesus; announces the Kingdom; baptises in the Jordan; 'greatest born of women' (Matt 11:11)"
+      },
+      {
+        "person": "Zechariah",
+        "role": "Priest / Father of John",
+        "origin": "Hill country of Judea, Levite",
+        "relation": "Struck mute for disbelief; prophesies the Benedictus at John's birth"
+      },
+      {
+        "person": "Herod Antipas",
+        "role": "Tetrarch / Executioner",
+        "origin": "Galilee (son of Herod the Great)",
+        "relation": "Imprisons and beheads John for condemning his marriage to Herodias"
+      }
+    ]
+  },
+  {
+    "id": "birth_of_jesus",
+    "order": 47,
+    "title": "Birth of Jesus",
+    "era": "Life of Jesus",
+    "timelineDate": "c. 5-4 BC",
+    "mapLocation": "Bethlehem",
+    "references": [
+      "Matthew 1-2",
+      "Luke 1-2"
+    ],
+    "summary": "Jesus is born in Bethlehem to Mary and Joseph. Angels announce His birth, and shepherds come to worship.",
+    "details": "The birth of Jesus fulfills promises about David’s line and Bethlehem. The humble manger setting reveals God’s kingdom arriving in unexpected humility and glory.",
+    "mainPeople": [
+      "Mary",
+      "Joseph",
+      "Jesus",
+      "Shepherds",
+      "Angels"
+    ],
+    "lineageConnection": [
+      "Abraham",
+      "Isaac",
+      "Jacob",
+      "Judah",
+      "David",
+      "Jesus"
+    ],
+    "lesson": "God’s greatest gift came in humility and fulfilled His ancient promises.",
+    "mapIcon": "star",
+    "videoIdea": "Show Bethlehem at night, the manger, angels, shepherds, and the star.",
+    "coords": {
+      "x": 43,
+      "y": 55
+    },
+    "route": [],
+    "tags": [
+      "Life of Jesus",
+      "Mary",
+      "Joseph",
+      "Jesus"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Bethlehem of Judea / Nazareth / Egypt (Flight)",
+      "modern": "Bethlehem (Bayt Lahm), West Bank — Church of the Nativity over traditional birth site",
+      "construction": "The Church of the Nativity (built AD 326 by Constantine) is the oldest continuously used Christian church. The traditional cave-stable birthplace is beneath the altar. Bethlehem sat 8 km south of Jerusalem on the main road south.",
+      "significance": "God becomes human — the Incarnation, the central miracle of Christianity"
+    },
+    "eventTags": [
+      "Incarnation",
+      "Messiah Born",
+      "Christmas",
+      "Virgin Birth",
+      "Prophecy Fulfilled",
+      "Nativity"
+    ],
+    "roleTags": [
+      {
+        "person": "Jesus",
+        "role": "Son of God / Messiah / Saviour",
+        "origin": "Heaven → Bethlehem, Judea",
+        "relation": "Eternal Word made flesh (John 1:14); born of a virgin; fulfills 300+ prophecies"
+      },
+      {
+        "person": "Mary",
+        "role": "Virgin Mother / Theotokos",
+        "origin": "Nazareth, Galilee",
+        "relation": "Chosen by God; conceives by the Holy Spirit; treasures these things in her heart"
+      },
+      {
+        "person": "Joseph",
+        "role": "Earthly Father / Protector",
+        "origin": "Nazareth (Davidic line, from Bethlehem)",
+        "relation": "Takes family to Egypt; protects Jesus from Herod's massacre"
+      },
+      {
+        "person": "Herod the Great",
+        "role": "Paranoid King / Murderer",
+        "origin": "Idumea (Edomite king of Judea)",
+        "relation": "Orders massacre of Bethlehem boys under 2; dies shortly after"
+      }
+    ]
+  },
+  {
+    "id": "baptism_temptation_jesus",
+    "order": 48,
+    "title": "Baptism and Temptation of Jesus",
+    "era": "Life of Jesus",
+    "timelineDate": "c. AD 27",
+    "mapLocation": "Jordan River / Wilderness",
+    "references": [
+      "Matthew 3-4"
+    ],
+    "summary": "Jesus is baptized, the Spirit descends, and the Father declares Him beloved Son. Jesus then resists temptation in the wilderness.",
+    "details": "Jesus’ baptism publicly begins His ministry, while the wilderness temptation reveals His obedience as Son. He succeeds where Israel failed, trusting God’s word.",
+    "mainPeople": [
+      "Jesus",
+      "John the Baptist",
+      "Satan"
+    ],
+    "lineageConnection": [
+      "Jesus begins public ministry"
+    ],
+    "lesson": "Identity in God strengthens obedience during temptation.",
+    "mapIcon": "dove",
+    "videoIdea": "Show baptism at the Jordan, the dove descending, and Jesus in the wilderness.",
+    "coords": {
+      "x": 47,
+      "y": 53
+    },
+    "route": [],
+    "tags": [
+      "Life of Jesus",
+      "Jesus",
+      "John the Baptist",
+      "Satan"
+    ],
+    "category": "travel",
+    "placeContext": {
+      "ancient": "Jordan River (baptism) → Judean Wilderness (temptation)",
+      "modern": "Qasr el-Yahud / Al-Maghtas, Jordan River → Wadi Qelt / Jebel Quruntul, West Bank",
+      "construction": "The Mount of Temptation (Jebel Quruntul, 'Quarantine') towers above Jericho. A Greek Orthodox monastery clings to its cliffside. The 40-day fast in the wilderness echoes Israel's 40 years — Jesus succeeds where Israel failed.",
+      "significance": "Jesus is publicly commissioned at baptism; tested and victorious in the wilderness"
+    },
+    "eventTags": [
+      "Baptism",
+      "Temptation",
+      "Holy Spirit",
+      "Sonship Declared",
+      "40 Days",
+      "Satan Defeated"
+    ],
+    "roleTags": [
+      {
+        "person": "Jesus",
+        "role": "Beloved Son / Second Adam",
+        "origin": "Nazareth (30 years); baptism at Jordan",
+        "relation": "Baptised by John; Father declares 'My beloved Son'; led by Spirit into wilderness"
+      },
+      {
+        "person": "Satan",
+        "role": "Tempter / Defeated Enemy",
+        "origin": "Fallen angel",
+        "relation": "Tests Jesus with bread, power, and worship; defeated by Scripture"
+      },
+      {
+        "person": "The Holy Spirit",
+        "role": "Dove / Guide",
+        "origin": "Third Person of Trinity",
+        "relation": "Descends as a dove at baptism; leads Jesus into the wilderness"
+      }
+    ],
+    "journey": {
+      "travelers": [
+        "Jesus"
+      ],
+      "from": "Nazareth, Galilee",
+      "to": "Jordan River → Judean Wilderness",
+      "via": [
+        "Jordan River baptism",
+        "wilderness 40 days"
+      ],
+      "mode": "On foot",
+      "companions": [
+        "John the Baptist (at baptism)",
+        "Angels (after temptation)",
+        "the Spirit leading him"
+      ],
+      "reason": "Baptism: publicly identified with humanity's sin; Wilderness: tested as the new Israel and new Adam",
+      "distance": "~120 km (Nazareth to Jordan) + wilderness"
+    }
+  },
+  {
+    "id": "sermon_on_mount",
+    "order": 49,
+    "title": "Sermon on the Mount",
+    "era": "Ministry of Jesus",
+    "timelineDate": "c. AD 28",
+    "mapLocation": "Galilee / mountain region",
+    "references": [
+      "Matthew 5-7"
+    ],
+    "summary": "Jesus teaches about the kingdom of God, including the Beatitudes, prayer, forgiveness, righteousness, and wise living.",
+    "details": "The Sermon on the Mount gives a kingdom vision for character, worship, relationships, enemies, money, prayer, and obedience. It shows Jesus as authoritative teacher and king.",
+    "mainPeople": [
+      "Jesus",
+      "Disciples",
+      "Crowds"
+    ],
+    "lineageConnection": [
+      "Jesus as teacher and king"
+    ],
+    "lesson": "Kingdom life begins with a transformed heart, not external religion alone.",
+    "mapIcon": "mountain-scroll",
+    "videoIdea": "Show Jesus teaching on a hillside with crowds listening closely.",
+    "coords": {
+      "x": 43,
+      "y": 41
+    },
+    "route": [],
+    "tags": [
+      "Ministry of Jesus",
+      "Jesus",
+      "Disciples",
+      "Crowds"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Mount of Beatitudes, Galilee",
+      "modern": "Korazim Plateau / Mount of Beatitudes, Sea of Galilee, northern Israel",
+      "construction": "The traditional site is a gentle hillside above the Sea of Galilee near Tabgha and Capernaum. The Church of the Beatitudes (1938) marks the spot. The acoustics of the natural amphitheatre allow large crowds to hear a single speaker.",
+      "significance": "The constitution of the Kingdom of God — Jesus as the new Moses on a new Sinai"
+    },
+    "eventTags": [
+      "Teaching",
+      "Kingdom of God",
+      "Beatitudes",
+      "Sermon",
+      "New Law",
+      "Jesus"
+    ],
+    "roleTags": [
+      {
+        "person": "Jesus",
+        "role": "Teacher / King of the Kingdom",
+        "origin": "Nazareth → Galilee ministry",
+        "relation": "Teaches with authority unlike the scribes (Matt 7:29); the fulfillment of the Law"
+      },
+      {
+        "person": "Disciples",
+        "role": "Primary Audience / Kingdom Community",
+        "origin": "Galilee (fishermen, tax collectors)",
+        "relation": "Called to live the radical ethics of the Beatitudes"
+      },
+      {
+        "person": "Crowds",
+        "role": "Astonished Listeners",
+        "origin": "Galilee, Syria, Judea, Transjordan",
+        "relation": "Followed Jesus from across the region; astonished at his teaching"
+      }
+    ]
+  },
+  {
+    "id": "crucifixion_resurrection",
+    "order": 50,
+    "title": "Crucifixion and Resurrection of Jesus",
+    "era": "Death and Resurrection",
+    "timelineDate": "c. AD 30",
+    "mapLocation": "Jerusalem",
+    "references": [
+      "Matthew 27-28",
+      "Mark 15-16",
+      "Luke 23-24",
+      "John 19-20"
+    ],
+    "summary": "Jesus dies on the cross for sin and rises from the dead. This is the center of Christian faith and salvation hope.",
+    "details": "The crucifixion reveals sacrifice, forgiveness, and the weight of sin. The resurrection announces victory over death and confirms Jesus as Lord. The empty tomb becomes the foundation for the church’s mission.",
+    "mainPeople": [
+      "Jesus",
+      "Mary",
+      "Disciples",
+      "Roman soldiers"
+    ],
+    "lineageConnection": [
+      "Jesus fulfills redemption promise"
+    ],
+    "lesson": "The cross and empty tomb are the foundation of Christian hope.",
+    "mapIcon": "cross-tomb",
+    "videoIdea": "Show the cross at Golgotha, darkness, the sealed tomb, and the empty tomb at sunrise.",
+    "coords": {
+      "x": 43,
+      "y": 53
+    },
+    "route": [],
+    "tags": [
+      "Death and Resurrection",
+      "Jesus",
+      "Mary",
+      "Disciples"
+    ],
+    "category": "event",
+    "placeContext": {
+      "ancient": "Golgotha (Place of the Skull) / Garden Tomb — Jerusalem",
+      "modern": "Church of the Holy Sepulchre, Old City Jerusalem (most likely site) — Garden Tomb also venerated",
+      "construction": "The Church of the Holy Sepulchre was built by Constantine in AD 335 over the traditional Golgotha and tomb site. Archaeological evidence places this outside the first-century city walls — matching John 19:20. The Garden Tomb offers a visible rock-cut tomb alternative. The resurrection is the most attested miracle in history.",
+      "significance": "The death and resurrection of Jesus Christ — the hinge of all history, the heart of the gospel, the foundation of Christianity"
+    },
+    "eventTags": [
+      "Crucifixion",
+      "Resurrection",
+      "Salvation",
+      "Atonement",
+      "Easter",
+      "Gospel",
+      "Passover Lamb"
+    ],
+    "roleTags": [
+      {
+        "person": "Jesus",
+        "role": "Sacrificial Lamb / Risen Lord",
+        "origin": "Eternal → Bethlehem → Jerusalem",
+        "relation": "Crucified for the sins of the world; raised on the third day; appeared to 500+ people"
+      },
+      {
+        "person": "Pilate",
+        "role": "Roman Governor",
+        "origin": "Rome / Caesarea Maritima",
+        "relation": "Finds no fault but yields to pressure; orders crucifixion; posts guards at the tomb"
+      },
+      {
+        "person": "Mary Magdalene",
+        "role": "First Resurrection Witness",
+        "origin": "Magdala (Migdal), Galilee",
+        "relation": "First person to see the risen Jesus; sent to tell the disciples"
+      },
+      {
+        "person": "Peter",
+        "role": "Apostle / Denier / Restored Leader",
+        "origin": "Bethsaida, Galilee",
+        "relation": "Denies Jesus three times; runs to the empty tomb; restored by the risen Jesus"
+      },
+      {
+        "person": "Caiaphas",
+        "role": "High Priest / Conspirator",
+        "origin": "Jerusalem, Sadducee",
+        "relation": "Prophesied unknowingly that one man must die for the nation (John 11:50)"
+      }
+    ]
+  }
+]

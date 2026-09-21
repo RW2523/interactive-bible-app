@@ -1,0 +1,121 @@
+/* Sermon Studio — small, scoped additions on top of the design system in src/styles/app.css.
+   Everything here is namespaced (.sermon-editor / .sermon-prose / .studio-*) so it can't leak into other pages. */
+@layer components {
+  .sermon-editor .ProseMirror {
+    outline: none;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+  }
+  .sermon-editor .ProseMirror:focus,
+  .sermon-editor .ProseMirror:focus-visible {
+    outline: none;
+  }
+  /* Tiptap placeholder (first empty paragraph) */
+  .sermon-editor .ProseMirror p.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    color: var(--ink-3);
+    float: left;
+    height: 0;
+    pointer-events: none;
+  }
+  .sermon-editor .ProseMirror a {
+    cursor: text;
+  }
+
+  .sermon-editor .ProseMirror li > p,
+  .sermon-prose li > p {
+    margin: 0;
+  }
+  .sermon-editor .ProseMirror h1,
+  .sermon-prose h1 {
+    font-size: 1.6em;
+  }
+  .sermon-editor .ProseMirror strong,
+  .sermon-prose strong {
+    font-weight: 650;
+  }
+  .sermon-editor .ProseMirror hr,
+  .sermon-prose hr {
+    border: 0;
+    border-top: 1px solid var(--line);
+    margin: 2em 0;
+  }
+  .sermon-editor .ProseMirror code,
+  .sermon-prose code {
+    font-family: var(--mono);
+    font-size: 0.85em;
+    background: var(--surface-2);
+    border-radius: 4px;
+    padding: 0.1em 0.3em;
+  }
+
+  /* Public share page: a calm reading column */
+  .sermon-prose {
+    overflow-wrap: anywhere;
+  }
+  .sermon-prose img {
+    border-radius: 12px;
+    margin: 1.2em 0;
+    max-width: 100%;
+    height: auto;
+  }
+  .sermon-prose table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    border-collapse: collapse;
+    margin: 1em 0;
+    font-size: 0.95em;
+  }
+  .sermon-prose th,
+  .sermon-prose td {
+    border: 1px solid var(--line);
+    padding: 0.4em 0.6em;
+    text-align: left;
+  }
+  .sermon-prose pre {
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: pre-wrap;
+  }
+  .sermon-prose h2 {
+    scroll-margin-top: 5rem;
+  }
+  .sermon-prose blockquote {
+    background: color-mix(in srgb, var(--gold-400) 7%, var(--surface));
+    border-radius: 0 12px 12px 0;
+    padding: 0.8em 1em 0.8em 1.1em;
+    color: var(--ink);
+  }
+  /* On navy, a gold tint turns grey — use the card surface so quotes read as part of the page. */
+  [data-theme="dark"] .sermon-prose blockquote {
+    background: var(--surface);
+  }
+  @media (min-width: 640px) {
+    .sermon-prose {
+      font-size: 18.5px;
+      line-height: 1.8;
+    }
+  }
+
+  /* Indeterminate progress sweep used while AI work is running */
+  @keyframes studio-indeterminate {
+    0% {
+      transform: translateX(-110%);
+    }
+    100% {
+      transform: translateX(320%);
+    }
+  }
+  .studio-indeterminate {
+    animation: studio-indeterminate 1.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .studio-indeterminate {
+      animation: none;
+      width: 100%;
+      opacity: 0.45;
+    }
+  }
+}
